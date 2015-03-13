@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/titlebar_mapsos"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_mapsos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/titlebar_mapsos"
+        android:background="@color/comm_activity_background"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mapsos_call_110"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/comm_activity_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_mapsos_textView1_8_layout_height"
+            android:background="@color/title_green_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_mapsos_btn_call_110_12_layout_marginBottom"
+            android:layout_marginLeft="@dimen/activity_mapsos_btn_call_110_9_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_mapsos_btn_call_110_10_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_mapsos_btn_call_110_11_layout_marginTop" >
+
+            <Button
+                android:id="@+id/btn_call_110"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:background="@drawable/button_green_selector" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/activity_mapsos_imageView1_1_layout_width"
+                    android:layout_height="@dimen/activity_mapsos_imageView1_2_layout_height"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/call_on_button" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_mapsos_tv_call110_2_layout_left"
+                    android:text="@string/activity_mapsos_call_110_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_18" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mapbar_mapsos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_mapsos_call_110"
+        android:layout_marginBottom="@dimen/mapbar_layout_marginBottom"
+        android:layout_marginLeft="@dimen/mapbar_layout_marginLeft"
+        android:layout_marginRight="@dimen/mapbar_layout_marginRight"
+        layout="@layout/layout_mapbar" />
+
+    <LinearLayout
+        android:id="@+id/layout_mapsos_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_mapsos_call_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_mapsos_textView2_13_layout_height"
+                android:background="@color/title_green_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_mapsos_img_mapsos_rl_18_layout_height" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/img_mapsos_image"
+                        android:layout_width="@dimen/activity_mapsos_img_mapsos_image_17_layout_width"
+                        android:layout_height="@dimen/activity_mapsos_img_mapsos_image_18_layout_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_mapsos_img_mapsos_image_16_layout_marginLeft"
+                        android:src="@drawable/icon_police" />
+
+                    <TextView
+                        android:id="@+id/tv_mapsos_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_mapsos_tv_mapsos_name_19_layout_marginLeft"
+                        android:layout_marginRight="@dimen/activity_mapsos_tv_mapsos_name_20_layout_marginRight"
+                        android:layout_toRightOf="@+id/img_mapsos_image"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:singleLine="true"
+                        android:text=" "
+                        android:textColor="@color/setting_item_text_color"
+                        android:textSize="@dimen/font_size_14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp" >
+
+                    <ImageView
+                        android:id="@+id/img_mapsos_location"
+                        android:layout_width="@dimen/activity_mapsos_img_mapsos_location_23_layout_width"
+                        android:layout_height="@dimen/activity_mapsos_img_mapsos_location_24_layout_height"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_mapsos_img_mapsos_location_22_layout_marginLeft"
+                        android:src="@drawable/img_location" />
+
+                    <TextView
+                        android:id="@+id/tv_mapsos_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_mapsos_tv_mapsos_location_25_layout_marginLeft"
+                        android:layout_marginRight="@dimen/activity_mapsos_tv_mapsos_location_26_layout_marginRight"
+                        android:layout_toRightOf="@+id/img_mapsos_location"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:singleLine="true"
+                        android:text=" "
+                        android:textColor="@color/setting_item_text_color"
+                        android:textSize="@dimen/font_size_14" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_mapsos_btn_mapsos_call_29_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_mapsos_btn_mapsos_call_27_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_mapsos_btn_mapsos_call_28_layout_marginRight" >
+
+                <Button
+                    android:id="@+id/btn_mapsos_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:background="@drawable/button_green_selector" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_centerHorizontal="true" >
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="@dimen/activity_familylocate_imageView1_2_layout_width"
+                        android:layout_height="@dimen/activity_familylocate_imageView1_3_layout_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/call_on_button" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_mapsos_tv_call110_2_layout_left"
+                        android:text="@string/activity_mapsos_polices_btn_call"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_18" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_mapsos_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_marginBottom="@dimen/activity_mapsos_btn_mapsos_cancel_32_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_mapsos_btn_mapsos_cancel_30_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_mapsos_btn_mapsos_cancel_31_layout_marginRight"
+                android:background="@drawable/button_red_selector"
+                android:text="@string/activity_mapsos_polices_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_mapsos_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/titlebar_mapsos"
+        android:background="@color/comm_black_transparent_background"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/layout_mapsos_list2"
+            android:layout_width="@dimen/activity_mapsos_layout_mapsos_list2_3_layout_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white" >
+
+            <ListView
+                android:id="@+id/lv_pois"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/line_color"
+                android:dividerHeight="@dimen/comm_line_height"
+                android:headerDividersEnabled="true"
+                android:listSelector="@color/transparent" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_mapsos_locate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar_mapsos"
+        android:background="@color/comm_activity_background"
+        android:gravity="center_horizontal"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/img_mapsos_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="@dimen/activity_mapsos_img_mapsos_locate_4_layout_marginTop" >
+
+            <include layout="@layout/radar_view" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_mapsos_locate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_mapsos_locate"
+            android:layout_marginTop="@dimen/activity_mapsos_tv_mapsos_locate_6_layout_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/activity_mapsos_located_tv_tip"
+            android:textColor="#575757"
+            android:textSize="@dimen/font_size_17" />
+    </RelativeLayout>
+
+</RelativeLayout>

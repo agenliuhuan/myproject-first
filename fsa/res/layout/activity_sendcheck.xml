@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <TextView
+        android:id="@+id/tv_sendcheck_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_sendcheck_tv_sendcheck_tip_0_layout_marginTop"
+        android:text="@string/activity_sendcheck_tv_tip"
+        android:textColor="@color/textview_sending_text_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <ImageView
+        android:id="@+id/img_sendcheck_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sendcheck_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_sendcheck_img_sendcheck_tip_1_layout_marginTop"
+        android:background="@anim/img_sending" />
+
+</RelativeLayout>

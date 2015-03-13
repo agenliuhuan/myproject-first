@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@drawable/on_item_selected" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/list_item_pois_RelativeLayout_3_layout_marginBottom"
+        android:layout_marginLeft="@dimen/list_item_pois_RelativeLayout_0_layout_marginLeft"
+        android:layout_marginRight="@dimen/list_item_pois_RelativeLayout_1_layout_marginRight"
+        android:layout_marginTop="@dimen/list_item_pois_RelativeLayout_2_layout_marginTop" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/list_item_pois_LinearLayout_4_layout_marginRight"
+            android:layout_toLeftOf="@+id/img_call"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/textview_voicesos_location_color"
+                    android:textSize="@dimen/list_item_pois_tv_name_5_textSize" />
+
+                <TextView
+                    android:id="@+id/tv_howfar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/comm_green"
+                    android:textSize="@dimen/list_item_pois_tv_howfar_6_textSize" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/button_disable_text_color"
+                android:textSize="@dimen/list_item_pois_tv_addr_7_textSize" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/button_disable_text_color"
+                android:textSize="@dimen/list_item_pois_tv_phone_8_textSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_call"
+            android:layout_width="@dimen/list_item_pois_img_call_9_layout_width"
+            android:layout_height="@dimen/list_item_pois_img_call_10_layout_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mapsos_pois_phone_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

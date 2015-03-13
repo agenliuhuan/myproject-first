@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_escort"
+        layout="@layout/comm_title_bar" />
+
+    <FrameLayout
+        android:id="@+id/escort_frameLayoutmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_escort" />
+
+    <RelativeLayout
+        android:id="@+id/escort_infoRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar_escort"
+        android:background="@drawable/escort_infobg"
+        android:paddingBottom="20px"
+        android:paddingTop="10px" >
+
+        <Button
+            android:id="@+id/escort_arriveBtn"
+            android:layout_width="128px"
+            android:layout_height="62px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34px"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:text="@string/activity_escort_arriveBtn"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/escort_arriveBtn"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/escort_info_locationTipTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_position"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/escort_info_locationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_wu"
+                    android:textColor="#009fcc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22px"
+                android:layout_marginTop="5px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/escort_info_arriveTipTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_arrive"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/escort_info_arriveTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_wu"
+                    android:textColor="#009fcc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_overplus"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/escort_info_overTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_wu"
+                        android:textColor="#009fcc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="346px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/escort_info_powerTipTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_power"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/escort_info_powerTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_wu"
+                        android:textColor="#11b300"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_pass"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/escort_info_passTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_wu"
+                        android:textColor="#009fcc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="346px"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_familynum"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/escort_info_familynumTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_escort_wu"
+                        android:textColor="#009fcc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/escort_bottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/escort_ChatRL"
+            android:layout_width="246px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <LinearLayout
+                android:id="@+id/escort_ChatLL"
+                android:layout_width="246px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mainfragment_bottomllbg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:background="@drawable/mainfragment_bottomchatimg_selector" />
+
+                <TextView
+                    android:id="@+id/txt_escort_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18px"
+                    android:text="@string/mainfragment_chatTV"
+                    android:textColor="@drawable/mainfragment_bottomtextselector"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_escort_msg_count"
+                android:layout_width="37px"
+                android:layout_height="37px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_menu_red_point"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/escort_ChatRL"
+            android:background="#cccccc" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/escort_ChatRL"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/escort_familiesGridLL"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/escort_familiesGrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" >
+                </GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/escort_myLocationBtn"
+        android:layout_width="66px"
+        android:layout_height="66px"
+        android:layout_above="@+id/escort_bottomRL"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="42px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/icon_mylocation" />
+
+    <RelativeLayout
+        android:id="@+id/escort_chatRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_escort"
+        android:background="@color/chatrl_transparent_background"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/escort_chatTopRL"
+            android:layout_width="match_parent"
+            android:layout_height="78px" >
+
+            <TextView
+                android:id="@+id/escort_chatTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#595959"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/escort_chatRLColseBtn"
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12px"
+                android:background="@drawable/icon_chatclose" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/escort_chatinputRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/escort_chatinputtextRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="98px" >
+
+                        <Button
+                            android:id="@+id/escort_chatinput_SendBtn"
+                            android:layout_width="112px"
+                            android:layout_height="62px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="22px"
+                            android:background="@drawable/mainchatinput_voice_selector"
+                            android:gravity="center"
+                            android:text="@string/mainfragment_ChatSendText"
+                            android:textColor="@drawable/chatinput_voicebtn_text_selector"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="360px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20px"
+                            android:layout_toLeftOf="@+id/escort_chatinput_SendBtn" >
+
+                            <EditText
+                                android:id="@+id/escort_chatinput_edit"
+                                android:layout_width="360px"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/main_chatinput_editbg"
+                                android:maxLines="3"
+                                android:minHeight="62px" />
+
+                            <Button
+                                android:id="@+id/escort_chatinput_voiceBtn"
+                                android:layout_width="360px"
+                                android:layout_height="62px"
+                                android:background="@drawable/mainchatinput_voice_selector"
+                                android:gravity="center"
+                                android:text="@string/mainfragment_ChatVoiceBtnText"
+                                android:textColor="@drawable/chatinput_voicebtn_text_selector"
+                                android:textSize="15sp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/escort_chatinput_ExpressionBtn"
+                            android:layout_width="74px"
+                            android:layout_height="74px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22px"
+                            android:background="@drawable/chatinput_express_selector" />
+
+                        <Button
+                            android:id="@+id/escort_chatinput_voicetextBtn"
+                            android:layout_width="74px"
+                            android:layout_height="74px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16px"
+                            android:layout_toRightOf="@+id/escort_chatinput_ExpressionBtn"
+                            android:background="@drawable/chatinput_voice_selector" />
+                    </RelativeLayout>
+
+                    <!-- 表情图片 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_face_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/escort_chatinputtextRL"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/escort_chatList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/escort_chatinputRL"
+            android:layout_below="@+id/escort_chatTopRL"
+            android:background="#20000000"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dp"
+            android:headerDividersEnabled="true"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:transcriptMode="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/escort_popView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/escort_popllbg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="6px"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/escort_PosiBtn"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:background="@drawable/btn_escortposition_selector" />
+
+        <Button
+            android:id="@+id/escort_PhoneBtn"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_marginLeft="14px"
+            android:background="@drawable/btn_escortphone_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

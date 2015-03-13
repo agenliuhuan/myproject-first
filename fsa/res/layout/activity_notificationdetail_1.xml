@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/notificationdetail1_title"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notificationdetail1_title" >
+
+        <RelativeLayout
+            android:id="@+id/notificationdetail_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_notificationdetail_1_notificationdetail_RL_3_layout_height"
+            android:layout_marginLeft="@dimen/activity_notificationdetail_1_notificationdetail_RL_0_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_notificationdetail_1_notificationdetail_RL_1_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_notificationdetail_1_notificationdetail_RL_2_layout_marginTop"
+            android:background="@drawable/notication_red_bg" >
+
+            <Button
+                android:id="@+id/btn_notificationdetail_play"
+                android:layout_width="@dimen/activity_notificationdetail_1_btn_notificationdetail_play_0_layout_width"
+                android:layout_height="@dimen/activity_notificationdetail_1_btn_notificationdetail_play_1_layout_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_notificationdetail_1_btn_notificationdetail_play_4_layout_marginTop"
+                android:background="@drawable/notification_play_selector" />
+
+            <TextView
+                android:id="@+id/notificationdetail_duration_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btn_notificationdetail_play"
+                android:layout_toRightOf="@+id/btn_notificationdetail_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_17" />
+
+            <TextView
+                android:id="@+id/notificationdetail_tip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/btn_notificationdetail_play"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/activity_notificationdetail_1_notificationdetail_tip1_5_layout_marginBottom"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_17" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notificationdetail_RL_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificationdetail_RL"
+            android:layout_marginLeft="@dimen/activity_notificationdetail_1_notificationdetail_RL_2_6_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_notificationdetail_1_notificationdetail_RL_2_7_layout_marginRight"
+            android:background="@drawable/notification_detail_bg" >
+
+            <LinearLayout
+                android:id="@+id/img_notificationdetail_1_map"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_notificationdetail_1_img_notificationdetail_1_map_11_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/activity_notificationdetail_1_img_notificationdetail_1_map_8_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_notificationdetail_1_img_notificationdetail_1_map_9_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_notificationdetail_1_img_notificationdetail_1_map_10_layout_marginTop"
+                android:background="@color/comm_activity_background"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/notificationdetail_LL"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_voicesos_rl_13_layout_height"
+                android:layout_below="@+id/img_notificationdetail_1_map"
+                android:layout_marginTop="@dimen/activity_voicesos_rl_13_layout_top"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/activity_notificationdetail_1_ImageView_15_layout_width"
+                    android:layout_height="@dimen/activity_notificationdetail_1_ImageView_16_layout_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_notificationdetail_1_ImageView_14_layout_marginLeft"
+                    android:src="@drawable/icon_location2" />
+
+                <TextView
+                    android:id="@+id/notificationdetail_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_notificationdetail_1_notificationdetail_location_tv_17_layout_marginLeft"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/textview_voicesos_location_color"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/callchart_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificationdetail_RL_2"
+            android:layout_marginTop="@dimen/activity_voicesos_LinearLayout_21_layout_marginTop"
+            layout="@layout/layout_callchat" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_notificationdetail_1_tv_notificationdetail_call_19_layout_marginTop" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

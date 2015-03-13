@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/img_startcheckin1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin7"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/img_startcheckin8"
+        android:duration="200"/>
+
+</animation-list>

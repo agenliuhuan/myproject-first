@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_locations"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar_locations" >
+
+        <mobi.dlys.android.familysafer.ui.comm.xlistview.XListView
+            android:id="@+id/lv_locations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/line_color"
+            android:dividerHeight="@dimen/comm_line_height"
+            android:fastScrollEnabled="true"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:visibility="invisible" >
+        </mobi.dlys.android.familysafer.ui.comm.xlistview.XListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_locations"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlebar_locations"
+        android:background="@color/comm_activity_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_locations_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="@dimen/activity_locations_layout_locations_loading_0_layout_marginTop" >
+
+            <include layout="@layout/radar_view" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_loading_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_locations_loading"
+            android:layout_marginTop="@dimen/activity_mapsos_tv_mapsos_locate_6_layout_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/activity_familylocate_loading"
+            android:textColor="#575757"
+            android:textSize="@dimen/font_size_17" />
+    </RelativeLayout>
+
+</RelativeLayout>

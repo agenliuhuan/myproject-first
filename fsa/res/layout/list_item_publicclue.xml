@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/list_item_publicclue_LinearLayout_main_layout_marginBottom"
+        android:layout_marginLeft="@dimen/list_item_publicclue_LinearLayout_main_layout_marginTop"
+        android:layout_marginRight="@dimen/list_item_publicclue_LinearLayout_main_layout_marginTop"
+        android:layout_marginTop="@dimen/list_item_publicclue_LinearLayout_main_layout_marginTop"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_publicclue_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/list_item_myclue_gv_myclue_content_linespacing"
+            android:textColor="@color/comm_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <GridView
+            android:id="@+id/gv_publicclue_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_publicclue_grid_marginTop"
+            android:fadingEdge="none"
+            android:horizontalSpacing="@dimen/list_item_publicclue_grid_Spacing"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/list_item_publicclue_grid_Spacing" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_publicclue_location_marginTop"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_publicclue_location"
+                android:layout_width="@dimen/list_item_myclue_img_myclue_location_width"
+                android:layout_height="@dimen/list_item_myclue_img_myclue_location_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/tv_publicclue_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/list_item_publicclue_textview_marginRight"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_publicclue_textview_marginTop"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_publicclue_date"
+                android:layout_width="@dimen/list_item_myclue_img_myclue_location_width"
+                android:layout_height="@dimen/list_item_myclue_img_myclue_location_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_date" />
+
+            <TextView
+                android:id="@+id/tv_publicclue_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/list_item_publicclue_textview_marginRight"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_familydetail"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_familydetail"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_familydetail_LinearLayout_marginTop"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/family_detail_toplayout_height"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_familydetail_image"
+                    android:layout_width="@dimen/family_detail_image"
+                    android:layout_height="@dimen/family_detail_image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_familydetail_img_familydetail_image_marginLeft"
+                    android:src="@drawable/user" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_familydetail_LinearLayout_marginLeft"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_familydetail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/font_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_familydetail_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_familydetail_tv_familydetail_phone_marginTop"
+                        android:text=" "
+                        android:textColor="@color/comm_black_gray"
+                        android:textSize="@dimen/font_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/familydetail_remark_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_familydetail_familydetail_remark_LL_marginTop"
+            android:background="@drawable/remark_selector"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/family_detail_layout_height" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_familydetail_TextView_marginLeft"
+                    android:text="@string/activity_familydetail_tv_remark"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_viewclue_set_nickname"
+                    android:layout_width="@dimen/activity_familydetail_img_viewclue_set_nickname_width"
+                    android:layout_height="@dimen/activity_familydetail_img_viewclue_set_nickname_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_familydetail_img_viewclue_set_nickname_marginRight"
+                    android:src="@drawable/setting_item_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_familydetail_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_familydetail_tv_familydetail_nickname_marginRight"
+                    android:layout_toLeftOf="@+id/img_viewclue_set_nickname"
+                    android:text=" "
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_familydetail_LinearLayout_marginTop"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/family_detail_layout_height" >
+
+                <CheckBox
+                    android:id="@+id/cb_familydetail_allow"
+                    android:layout_width="@dimen/activity_familydetail_cb_familydetail_allow__width"
+                    android:layout_height="@dimen/activity_familydetail_cb_familydetail_allow_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_familydetail_cb_familydetail_allow_marginRight"
+                    android:button="@drawable/settings_item_checkbox_selector"
+                    android:checked="true"
+                    android:duplicateParentState="true"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:text="@string/activity_familydetail_tv_allow"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/callchart_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_familydetail_btn_familydetail_call_marginTop"
+            layout="@layout/layout_callchat" />
+
+        <Button
+            android:id="@+id/btn_familydetail_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_marginLeft="@dimen/activity_familydetail_btn_familydetail_delete_marginLeftRight"
+            android:layout_marginRight="@dimen/activity_familydetail_btn_familydetail_delete_marginLeftRight"
+            android:layout_marginTop="@dimen/activity_familydetail_LinearLayout_marginTop"
+            android:background="@drawable/button_red_selector"
+            android:gravity="center"
+            android:text="@string/activity_familydetail_btn_delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+</RelativeLayout>

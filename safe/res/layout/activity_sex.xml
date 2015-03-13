@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_nickname"
+        layout="@layout/comm_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/sexmanLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_sex_man"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/sex_manImg"
+            android:layout_width="38px"
+            android:layout_height="38px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sexbtn_radio_on" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dbdbdb" />
+
+    <RelativeLayout
+        android:id="@+id/sexwomanLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_sex_woman"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/sex_womanImg"
+            android:layout_width="38px"
+            android:layout_height="38px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sexbtn_radio_on"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dbdbdb" />
+
+</LinearLayout>

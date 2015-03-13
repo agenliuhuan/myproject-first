@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,NestedWeights"
+    android:background="@drawable/on_item_selected" >
+
+    <RelativeLayout
+        android:id="@+id/layout_item_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_contact_layout_item_contact_height"
+        android:layout_marginLeft="@dimen/comm_item_margin"
+        android:layout_marginRight="@dimen/comm_item_margin" >
+
+        <Button
+            android:id="@+id/btn_item_addinvite"
+            android:layout_width="@dimen/item_button_width"
+            android:layout_height="@dimen/item_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15" />
+
+        <LinearLayout
+            android:id="@+id/sendok_LL_item_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/list_item_contact_ImageView_width"
+                android:layout_height="@dimen/list_item_contact_ImageView_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/sendok" />
+
+            <TextView
+                android:id="@+id/sendok_tv_item_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/list_item_contact_tvmarginLeft"
+                android:gravity="center"
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_item_addinvite"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_item_status"
+                    android:layout_width="@dimen/list_item_contact_ImageView_width"
+                    android:layout_height="@dimen/list_item_contact_ImageView_height"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_item_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/list_item_contact_tv_item_desc_marginLeft"
+                    android:text=" "
+                    android:textColor="@color/comm_black_gray"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="@color/setting_item_border_color" >
+            </solid>
+        </shape>
+    </item>
+    <item
+
+        android:top="@dimen/setting_item_border_width">
+        <shape>
+            <solid android:color="@color/setting_item_background_hover_color" >
+            </solid>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/img_sentsos_tip"
+                android:layout_width="@dimen/activity_sentsos_img_sentsos_tip_1_layout_width"
+                android:layout_height="@dimen/activity_sentsos_img_sentsos_tip_2_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_sentsos_img_sentsos_tip_0_layout_marginTop"
+                android:src="@drawable/img_sent" />
+
+            <TextView
+                android:id="@+id/tv_sentsos_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_sentsos_tip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_sentsos_tv_sentsos_tip_3_layout_marginTop"
+                android:text="@string/activity_sentsos_tv_tip"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_18" />
+
+            <TextView
+                android:id="@+id/tv_sentsos_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sentsos_tip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_marginLeft="@dimen/activity_sentsos_tv_sentsos_target_4_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_sentsos_tv_sentsos_target_5_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_sentsos_tv_sentsos_target_6_layout_marginTop"
+                android:lineSpacingExtra="@dimen/activity_sentsos_tv_sentsos_target_7_lineSpacingExtra"
+                android:text="@string/activity_sentsos_tv_all"
+                android:textColor="@color/textview_check_nobody_text_color"
+                android:textSize="@dimen/font_size_16" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_below="@id/tv_sentsos_target"
+                android:layout_marginLeft="@dimen/activity_sentsos_LinearLayout_8_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_sentsos_LinearLayout_9_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_sentsos_LinearLayout_10_layout_marginTop" >
+
+                <Button
+                    android:id="@+id/btn_sentsos_know"
+                    android:layout_width="@dimen/activity_sentsos_btn_sentsos_know_12_layout_width"
+                    android:layout_height="@dimen/comm_button_height"
+                    android:layout_marginRight="@dimen/activity_sentsos_btn_sentsos_know_11_layout_marginRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_selector"
+                    android:text="@string/activity_sentsos_btn_know"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_18" />
+
+                <Button
+                    android:id="@+id/btn_sentsos_call_110"
+                    android:layout_width="@dimen/activity_sentsos_btn_sentsos_call_110_14_layout_width"
+                    android:layout_height="@dimen/comm_button_height"
+                    android:layout_marginLeft="@dimen/activity_sentsos_btn_sentsos_call_110_13_layout_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue_selector"
+                    android:text="@string/activity_sentsos_btn_call_110"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_18" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

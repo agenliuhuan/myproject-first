@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_familylocate_btn_familylocate_cancel_17_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_familylocate_btn_familylocate_call_15_layout_marginRight"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_common_call"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:background="@drawable/button_green_selector" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/activity_familylocate_imageView1_2_layout_width"
+                android:layout_height="@dimen/activity_familylocate_imageView1_3_layout_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/call_on_button" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_familylocate_tvcall_3_layout_left"
+                android:text="@string/activity_familylocate_pop_btn_call"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_familylocate_btn_familylocate_call_14_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_familylocate_btn_familylocate_cancel_18_layout_marginRight"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_common_entercom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:background="@drawable/button_green_selector" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/activity_familylocate_imageView2_5_layout_width"
+                android:layout_height="@dimen/activity_familylocate_imageView2_6_layout_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/voice_on_button" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_familylocate_tvchat_3_layout_left"
+                android:text="@string/enter_communication"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/titlebar_phone_1"
+            layout="@layout/comm_title_bar" />
+
+        <RelativeLayout
+            android:layout_width="900px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="34px" >
+
+            <EditText
+                android:id="@+id/edt_phone_1_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edt_general_normal"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/activity_phone_1_edt_password"
+                android:inputType="textVisiblePassword"
+                android:paddingLeft="48px"
+                android:textColor="#0ee38a"
+                android:textColorHint="#c7c7c7"
+                android:textSize="@dimen/font_size_17" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/edt_phone_1_password_img"
+                android:layout_width="76px"
+                android:layout_height="76px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16px"
+                android:background="@drawable/register_edit_imgbg_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="900px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14px" >
+
+            <EditText
+                android:id="@+id/edt_phone_1_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edt_general_normal"
+                android:hint="@string/activity_phone_1_edt_new"
+                android:inputType="number"
+                android:paddingLeft="48px"
+                android:textColor="#0ee38a"
+                android:textColorHint="#c7c7c7"
+                android:textSize="@dimen/font_size_17" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/edt_phone_1_password_img"
+                android:layout_width="76px"
+                android:layout_height="76px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16px"
+                android:background="@drawable/register_edit_imgbg_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_phone_1_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:layout_marginTop="38px"
+            android:lineSpacingExtra="10px"
+            android:text="@string/activity_phone_1_tv_tip_1"
+            android:textColor="#898989"
+            android:textSize="@dimen/font_size_12" />
+
+        <Button
+            android:id="@+id/btn_phone_1_next"
+            android:layout_width="900px"
+            android:layout_height="136px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80px"
+            android:background="@drawable/btn_green_selector"
+            android:text="@string/titlebar_button_tip_next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+</LinearLayout>

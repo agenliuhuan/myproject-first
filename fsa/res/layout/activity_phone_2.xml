@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_phone_2"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_phone_2_check"
+        style="@style/EditStyle"
+        android:layout_below="@+id/titlebar_phone_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_phone_2_edt_phone_2_check_0_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_phone_2_edt_phone_2_check_1_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_phone_2_edt_phone_2_check_2_layout_marginTop"
+        android:ems="10"
+        android:hint="@string/activity_phone_2_edt_check"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_phone_2_tip_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_phone_2_check"
+        android:layout_marginLeft="@dimen/activity_phone_2_tv_phone_2_tip_1_3_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_phone_2_tv_phone_2_tip_1_4_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_phone_2_tv_phone_2_tip_1_5_layout_marginTop"
+        android:text="@string/activity_phone_2_tv_tip_1"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_16" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone_2_tip_1"
+        android:layout_marginLeft="@dimen/activity_phone_2_RelativeLayout_6_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_phone_2_RelativeLayout_7_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_phone_2_RelativeLayout_8_layout_marginTop"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_phone_2_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_phone_2_tv_tip_2"
+            android:textColor="@color/setting_item_text_color"
+            android:textSize="@dimen/font_size_16" />
+
+        <Button
+            android:id="@+id/btn_phone_2_resend"
+            android:layout_width="@dimen/activity_phone_2_btn_phone_2_resend_0_layout_width"
+            android:layout_height="@dimen/activity_phone_2_btn_phone_2_resend_1_layout_height"
+            android:layout_toRightOf="@id/tv_phone_2_tip_2"
+            android:background="@drawable/button_resend_selector"
+            android:text="@string/activity_phone_2_tv_resend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_phone_2_btn_phone_2_resend_9_textSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

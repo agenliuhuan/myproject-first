@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#99000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+
+    <!-- 通用颜色值 -->
+    <color name="comm_green">#05b031</color>
+    <color name="comm_black">#333333</color>
+    <color name="comm_black_gray">#818181</color>
+    <color name="comm_gray">#b9b9b9</color>
+    <color name="comm_item_gray_bg">#f5f6f7</color>
+    <color name="comm_line_color">#dadada</color>
+    <color name="comm_text_press_color">#b4e7c1</color>
+
+    <!-- 等待对话框 -->
+    <color name="unified_loading_bg">#909090</color>
+    <color name="unified_loading_text">#575757</color>
+
+    <!-- 标题 -->
+    <color name="title_green_line">#49B556</color>
+
+    <!-- 通用界面背景 -->
+    <color name="comm_activity_title_background">#0bb689</color>
+    <color name="comm_activity_title_line_background">#199074</color>
+    <color name="comm_activity_background">#eeeeee</color>
+
+    <!-- 编辑框 -->
+    <color name="comm_edit_hint_color">#b1bcc1</color>
+
+    <!-- 通用黑色半透明背景 -->
+    <color name="comm_black_transparent_background">#70000000</color>
+    <color name="chatrl_transparent_background">#eecdcdcd</color>
+    <color name="image_click_color">#40000000</color>
+    <color name="checkin_textview_bg">#70000000</color>
+
+    <!-- sliding menu -->
+    <color name="slidingmenu_text_color">#C3C3C3</color>
+    <color name="slidingmenu_transparent_color">#1e1b1a</color>
+    <color name="slidingmenu_rlclick_color">#393f4f</color>
+
+    <!-- xlistview -->
+    <color name="xlistview_header_background">#f8f0e3</color>
+    <color name="xlistview_header_txt_color">#566b88</color>
+    <color name="xlistview_footer_background">#f8f0e3</color>
+    <color name="xlistview_footer_txt_color">#566b88</color>
+
+    <!-- 设置项 -->
+    <color name="setting_item_border_color">#e8e8e8</color>
+    <color name="setting_item_background_color">#ffffff</color>
+    <color name="setting_item_background_hover_color">#e8e8e8</color>
+    <color name="setting_item_background_disable_color">#E3E4E6</color>
+    <color name="setting_item_text_color">#333333</color>
+    <color name="setting_item_text_gray_color">#A1A1A1</color>
+    <color name="setting_item_text_color2">#646464</color>
+
+    <!-- line color -->
+    <color name="line_color">#E3E3E3</color>
+
+    <!-- 输入框提示文字 -->
+    <color name="textview_hint_color">#818181</color>
+
+    <!-- 输入框提示文字 -->
+    <color name="button_disable_text_color">#999999</color>
+
+    <!-- 绿色提示文字 -->
+    <color name="textview_green_text_color">#44b651</color>
+
+    <!-- 灰色提示文字（文字按钮按下时显示） -->
+    <color name="textview_gray_text_color">#C3C3C3</color>
+
+    <!-- 列表头提示文字 -->
+    <color name="listview_head_text_color">#7a7a7a</color>
+
+    <!-- 列表项名称文字 -->
+    <color name="listitem_name_text_color">#585a5c</color>
+
+    <!-- 列表项描述文字 -->
+    <color name="listitem_desc_text_color">#b0b0b0</color>
+
+    <!-- 列表项选中色 -->
+    <color name="listitem_press_color">#E8E8E8</color>
+
+    <!-- 关系文字 -->
+    <color name="textview_relation_text_color">#818181</color>
+
+    <!-- 发送文字 -->
+    <color name="textview_sending_text_color">#575757</color>
+
+    <!-- main_menu -->
+    <color name="main_menu_name_color">#bcbcbc</color>
+    <color name="main_menu_my_color">#9a9a9a</color>
+    <color name="main_menu_bg_color">#24211f</color>
+    <color name="main_menu_line_color">#1e1b1a</color>
+    <color name="main_menu_setting_color">#6e6e6e</color>
+    <color name="main_menu_click_color">#10ffffff</color>
+
+    <!-- dialog -->
+    <color name="dialog_bg_color">#e5f9ff</color>
+    <color name="dialog_background_color">#F5F5F5</color>
+    <color name="dialog_background_hover_color">#0c92df</color>
+    <color name="dialog_border_color">#b9b9b9</color>
+    <color name="dialog_title_color">#219d6a</color>
+    <color name="dialog_content_color">#333333</color>
+    <color name="dialog_btn_color">#0c92df</color>
+    <color name="dialog_btnpress_color">#ffffff</color>
+
+    <!-- activity splash -->
+    <color name="activity_splash_bg_color">#E7EDED</color>
+    <color name="activity_splash_copyright_color">#6c8188</color>
+
+    <!-- sos -->
+    <color name="activity_nearby_sos_line_color">#BACAC7</color>
+    <!-- activity warning -->
+    <color name="activity_safewarning_toptext_color">#a2acb9</color>
+    <color name="activity_safewarning_toptext_select_color">#11e18c</color>
+    <color name="activity_safewarning_maintext_color">#595959</color>
+    <color name="activity_safewarning_contactnotselect_color">#949494</color>
+    <color name="activity_safewarning_maintext_enable_color">#c7c7c7</color>
+    <color name="activity_safewarning_stopwarning_rlbg">#f007171e</color>
+    <color name="activity_safewarning_select_rlbg">#5007171e</color>
+    <color name="activity_safewarning_stopwarning_textbg">#7e97b3</color>
+
+    <!-- main fragment -->
+    <color name="mainfragment_bottomtext_color">#333333</color>
+    <color name="mainfragment_bottomtext_focus_color">#018fb8</color>
+    <color name="message_date_color">#d9d9d9</color>
+
+</resources>

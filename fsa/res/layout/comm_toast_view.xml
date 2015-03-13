@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xl_toast_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/button_gray"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="2"
+    android:minEms="8"
+    android:paddingBottom="@dimen/comm_toast_view_xl_toast_txt_3_paddingBottom"
+    android:paddingLeft="@dimen/comm_toast_view_xl_toast_txt_0_paddingLeft"
+    android:paddingRight="@dimen/comm_toast_view_xl_toast_txt_1_paddingRight"
+    android:paddingTop="@dimen/comm_toast_view_xl_toast_txt_2_paddingTop"
+    android:text="@string/app_name"
+    android:textColor="@color/white"
+    android:textSize="@dimen/comm_toast_view_xl_toast_txt_4_textSize" >
+
+</TextView>

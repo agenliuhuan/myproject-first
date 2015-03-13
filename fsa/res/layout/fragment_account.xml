@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_account"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_account"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_account_image"
+            style="@style/SettingItemBg"
+            android:layout_marginTop="@dimen/activity_account_layout_account_image_0_layout_marginTop"
+            android:background="@drawable/settings_item_center_bg_selector" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <ImageView
+                android:id="@+id/img_account_image_tip"
+                android:layout_width="@dimen/list_item_locations_img_locations_icon_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_icon_3_layout_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fragment_setting_btn_setting_logout_15_layout_marginLeft"
+                android:src="@drawable/setting_item_arrow" />
+
+            <ImageView
+                android:id="@+id/img_account_image"
+                android:layout_width="@dimen/activity_account_img_account_image_4_layout_width"
+                android:layout_height="@dimen/activity_account_img_account_image_5_layout_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_account_img_account_image_3_layout_marginRight"
+                android:layout_toLeftOf="@id/img_account_image_tip"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/tv_account_image"
+                style="@style/SettingItemText"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:text="@string/activity_account_tv_image" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/comm_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_account_name"
+            style="@style/SettingItemBg"
+            android:layout_marginTop="@dimen/activity_account_layout_account_name_6_layout_marginTop"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <ImageView
+                android:id="@+id/img_account_image_tip_2"
+                android:layout_width="@dimen/activity_account_img_account_image_tip_2_7_layout_width"
+                android:layout_height="@dimen/activity_account_img_account_image_tip_2_8_layout_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fragment_setting_btn_setting_logout_15_layout_marginLeft"
+                android:src="@drawable/setting_item_arrow"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_account_name"
+                style="@style/SettingItemText"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_account_tv_account_name_9_layout_marginRight"
+                android:layout_toLeftOf="@id/img_account_image_tip_2"
+                android:gravity="right|center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_account_name_tip"
+                style="@style/SettingItemText"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:text="@string/activity_account_tv_id" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/style_SettingItemBg_0_paddingLeft"
+                android:background="@color/comm_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_account_phone"
+            style="@style/SettingItemBg"
+            android:background="@drawable/settings_item_center_bg_selector" >
+
+            <ImageView
+                android:id="@+id/img_account_image_tip_3"
+                android:layout_width="@dimen/list_item_locations_img_locations_icon_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_icon_3_layout_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fragment_setting_btn_setting_logout_15_layout_marginLeft"
+                android:src="@drawable/setting_item_arrow" />
+
+            <TextView
+                android:id="@+id/tv_account_phone2"
+                style="@style/SettingItemText"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_account_tv_account_phone2_12_layout_marginRight"
+                android:layout_toLeftOf="@id/img_account_image_tip_3" />
+
+            <TextView
+                android:id="@+id/tv_account_phone"
+                style="@style/SettingItemText"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:text="@string/activity_account_tv_phone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/comm_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_account_nickname"
+            style="@style/SettingItemBg"
+            android:layout_marginTop="@dimen/activity_account_layout_account_nickname_13_layout_marginTop"
+            android:background="@drawable/settings_item_center_bg_selector" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <ImageView
+                android:id="@+id/img_account_nickname"
+                android:layout_width="@dimen/list_item_locations_img_locations_icon_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_icon_3_layout_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fragment_setting_btn_setting_logout_15_layout_marginLeft"
+                android:src="@drawable/setting_item_arrow" />
+
+            <TextView
+                android:id="@+id/tv_account_nickname"
+                style="@style/SettingItemText"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_account_tv_account_nickname_16_layout_marginRight"
+                android:layout_toLeftOf="@id/img_account_nickname"
+                android:layout_toRightOf="@+id/tv_account_nickname2"
+		        android:ellipsize="end"
+		        android:singleLine="true"                             
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/tv_account_nickname2"
+                style="@style/SettingItemText"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:text="@string/activity_account_tv_nickname" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/comm_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_account_newpassword"
+            style="@style/SettingItemBg"
+            android:layout_marginTop="@dimen/activity_account_layout_account_newpassword_17_layout_marginTop"
+            android:background="@drawable/settings_item_center_bg_selector" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:background="@color/comm_line_color" />
+
+            <ImageView
+                android:id="@+id/img_account_newpassword"
+                android:layout_width="@dimen/list_item_locations_img_locations_icon_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_icon_3_layout_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fragment_setting_btn_setting_logout_15_layout_marginLeft"
+                android:src="@drawable/setting_item_arrow" />
+
+            <TextView
+                android:id="@+id/tv_account_newpassword"
+                style="@style/SettingItemText"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:text="@string/activity_account_tv_password" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/comm_line_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_account_image_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="bottom|center_horizontal"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_account_image_pop_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_account_textView1_20_layout_height"
+                android:background="@color/textview_green_text_color" />
+
+            <TextView
+                android:id="@+id/tv_account_image_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_account_tv_account_image_tip_21_layout_marginTop"
+                android:text="@string/activity_account_tv_image_title"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_17" />
+
+            <Button
+                android:id="@+id/btn_account_image_snapshot"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_account_btn_account_image_snapshot_25_layout_height"
+                android:layout_marginLeft="@dimen/activity_account_btn_account_image_snapshot_22_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_account_btn_account_image_snapshot_23_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_account_btn_account_image_snapshot_24_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_account_btn_image_snapshot"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_account_image_album"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_account_btn_account_image_album_29_layout_height"
+                android:layout_marginLeft="@dimen/activity_account_btn_account_image_album_26_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_account_btn_account_image_album_27_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_account_btn_account_image_album_28_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_account_btn_image_album"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_account_image_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_account_btn_account_image_cancel_34_layout_height"
+                android:layout_marginBottom="@dimen/activity_account_btn_account_image_cancel_33_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_account_btn_account_image_cancel_30_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_account_btn_account_image_cancel_31_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_account_btn_account_image_cancel_32_layout_marginTop"
+                android:background="@drawable/button_red_selector"
+                android:text="@string/activity_account_btn_image_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

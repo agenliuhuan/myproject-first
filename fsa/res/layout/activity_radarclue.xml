@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/layout_main_title"
+        layout="@layout/layout_title_bar" />
+
+    <mobi.dlys.android.familysafer.ui.comm.xlistview.XListView
+        android:id="@+id/lv_radarclue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_main_title"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/comm_line_color"
+        android:dividerHeight="@dimen/comm_line_height"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </mobi.dlys.android.familysafer.ui.comm.xlistview.XListView>
+
+    <RelativeLayout
+        android:id="@+id/radarclue_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <include layout="@layout/radar_view" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/radarclue_loadingtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radarclue_loading"
+        android:layout_marginTop="@dimen/fragment_myclue_TextView_2_layout_marginTop"
+        android:gravity="center"
+        android:text="@string/activity_saferadar_loadingclue"
+        android:textColor="@color/textview_sending_text_color"
+        android:textSize="@dimen/font_size_17" />
+
+    <RelativeLayout
+        android:id="@+id/no_radarclue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_main_title"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_radarclue"
+            android:layout_width="@dimen/fragment_myclue_img_mynotifycation_0_layout_width"
+            android:layout_height="@dimen/fragment_myclue_img_mynotifycation_1_layout_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fragment_myclue_img_nofriend_marginTop"
+            android:src="@drawable/nonotification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_radarclue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fragment_myclue_TextView_2_layout_marginTop"
+            android:text="@string/activity_saferadar_noclue"
+            android:textColor="@color/textview_sending_text_color"
+            android:textSize="@dimen/font_size_17" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main_clue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_main_clue2"
+            android:layout_width="@dimen/fragment_main_layout_main_clue2_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_main_layout_main_clue2_marginTop"
+            android:background="@drawable/img_pop_bk"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/img_main_clue_tip"
+                    android:layout_width="@dimen/fragment_main_img_main_clue_tip_50_layout_width"
+                    android:layout_height="@dimen/fragment_main_img_main_clue_tip_51_layout_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fragment_main_img_main_clue_tip_layout_marginTop"
+                    android:src="@drawable/clue" />
+
+                <TextView
+                    android:id="@+id/tv_main_clue_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fragment_main_tv_main_clue_title_layout_marginTop"
+                    android:text="@string/activity_clue_pop_title"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_title_1" />
+
+                <TextView
+                    android:id="@+id/tv_main_clue_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/fragment_main_tv_main_clue_tip_52_layout_marginLeft"
+                    android:layout_marginRight="@dimen/fragment_main_tv_main_clue_tip_53_layout_marginRight"
+                    android:layout_marginTop="@dimen/fragment_main_tv_main_clue_tip_54_layout_marginTop"
+                    android:lineSpacingExtra="@dimen/fragment_main_tv_main_clue_tip_55_lineSpacingExtra"
+                    android:text="@string/fragment_main_clue_tv_first"
+                    android:textColor="@color/first_over_tip"
+                    android:textSize="@dimen/font_size_14" />
+
+                <Button
+                    android:id="@+id/btn_main_clue_know"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/comm_button_height"
+                    android:layout_below="@+id/tv_main_clue_tip"
+                    android:layout_margin="@dimen/fragment_main_btn_main_clue_know_56_layout_marginLeft"
+                    android:background="@drawable/button_green_selector"
+                    android:text="@string/fragment_main_clue_btn_know"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_18" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:layout_below="@+id/btn_main_clue_know" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

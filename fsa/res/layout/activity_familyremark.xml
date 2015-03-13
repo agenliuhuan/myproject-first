@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_familyremark"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_familyremark_remark_ed"
+        style="@style/EditStyle"
+        android:layout_below="@+id/titlebar_familyremark"
+        android:layout_marginLeft="@dimen/activity_familyremark_edt_familyremark_remark_ed_marginLeft"
+        android:layout_marginRight="@dimen/activity_familyremark_edt_familyremark_remark_ed_marginRight"
+        android:layout_marginTop="@dimen/activity_familyremark_edt_familyremark_remark_ed_marginTop"
+        android:hint="@string/activity_familyremark_edt_remark" >
+
+        <requestFocus />
+    </EditText>
+
+    <GridView
+        android:id="@+id/edt_familyremark_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_familyremark_remark_ed"
+        android:layout_marginLeft="@dimen/activity_familyremark_edt_familyremark_grid_3_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_familyremark_edt_familyremark_grid_4_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_familyremark_edt_familyremark_grid_5_layout_marginTop"
+        android:horizontalSpacing="@dimen/activity_familyremark_edt_familyremark_grid_0_horizontalSpacing"
+        android:listSelector="@drawable/on_item_selected"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/activity_familyremark_edt_familyremark_grid_1_verticalSpacing" >
+    </GridView>
+
+</RelativeLayout>

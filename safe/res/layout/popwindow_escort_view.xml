@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/escort_popView"
+        android:layout_width="175px"
+        android:layout_height="92px"
+        android:background="@drawable/escort_popllbg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="6px" >
+
+        <Button
+            android:id="@+id/escort_PosiBtn"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:background="@drawable/btn_escortposition_selector" />
+
+        <Button
+            android:id="@+id/escort_PhoneBtn"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_marginLeft="14px"
+            android:background="@drawable/btn_escortphone_selector" />
+    </LinearLayout>
+
+</LinearLayout>

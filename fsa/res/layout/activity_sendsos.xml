@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <TextView
+        android:id="@+id/tv_sendsos_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_sendsos_tv_sendsos_tip_0_layout_marginTop"
+        android:text="@string/activity_sendsos_tv_tip"
+        android:textColor="@color/textview_sending_text_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <ImageView
+        android:id="@+id/img_sendsos_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sendsos_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_sendsos_img_sendsos_tip_1_layout_marginTop"
+        android:background="@anim/img_sending" />
+
+</RelativeLayout>

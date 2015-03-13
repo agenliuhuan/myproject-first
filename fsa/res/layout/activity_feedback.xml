@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_feedback"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_feedback_content"
+        style="@style/EditStyle"
+        android:layout_height="@dimen/activity_feedback_edt_feedback_content_4_layout_height"
+        android:layout_below="@+id/titlebar_feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_feedback_edt_feedback_content_1_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_feedback_edt_feedback_content_2_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_feedback_edt_feedback_content_3_layout_marginTop"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="@string/activity_feedback_edt_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLength="200"
+        android:paddingTop="@dimen/activity_feedback_edt_feedback_content_0_paddingTop" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_feedback_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_feedback_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_feedback_tv_feedback_tip_5_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_feedback_tv_feedback_tip_6_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_feedback_tv_feedback_tip_7_layout_marginTop"
+        android:lineSpacingExtra="@dimen/activity_feedback_tv_feedback_tip_8_lineSpacingExtra"
+        android:text="@string/activity_feedback_tv_tip"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_16" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="540px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="29px"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="82px"
+                android:layout_height="82px"
+                android:background="@drawable/dialog_sos_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="22px"
+                android:text="@string/dialog_title_sos"
+                android:textColor="#ae2900"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="46px"
+            android:lineSpacingExtra="5px"
+            android:minHeight="80px"
+            android:text="@string/dialog_title_tip"
+            android:textColor="@color/dialog_content_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="36px"
+            android:background="#42bfe7" />
+
+        <Button
+            android:id="@+id/btn_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_dialog_bg_selector"
+            android:gravity="center"
+            android:text="@string/btn_confirm"
+            android:textColor="@drawable/btn_dialog_textcolor"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

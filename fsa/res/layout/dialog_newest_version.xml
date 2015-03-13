@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loading_background"
+    android:gravity="center"
+    android:minHeight="@dimen/dialog_newest_version_LinearLayout_1_minHeight"
+    android:minWidth="@dimen/dialog_newest_version_LinearLayout_0_minWidth"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="@dimen/dialog_newest_version_ImageView_2_layout_width"
+        android:layout_height="@dimen/dialog_newest_version_ImageView_3_layout_height"
+        android:src="@drawable/icon_newest_version" />
+
+    <TextView
+        android:id="@+id/unified_loading_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_newest_version_unified_loading_view_text_6_layout_marginTop"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dialog_newest_version_unified_loading_view_text_4_paddingLeft"
+        android:paddingRight="@dimen/dialog_newest_version_unified_loading_view_text_5_paddingRight"
+        android:singleLine="true"
+        android:text="@string/update_no_update_version"
+        android:textColor="@color/unified_loading_text"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

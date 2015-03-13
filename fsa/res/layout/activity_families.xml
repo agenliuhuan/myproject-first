@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_families"
+        layout="@layout/layout_title_bar" />
+
+    <Button
+        android:id="@+id/btn_families_send"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/comm_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_families_btn_families_send_3_layout_marginBottom"
+        android:layout_marginLeft="@dimen/activity_families_btn_families_send_0_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_families_btn_families_send_1_layout_marginRight"
+        android:background="@drawable/button_green_selector"
+        android:text="@string/activity_families_ttb_btn_right"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <ListView
+        android:id="@+id/lv_families"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_families_send"
+        android:layout_below="@+id/titlebar_families"
+        android:layout_marginBottom="@dimen/activity_families_btn_families_send_2_layout_marginTop"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/comm_line_color"
+        android:dividerHeight="@dimen/comm_line_height"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@color/transparent" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微士</string>
+    <string name="def_image_desc">图片默认描述</string>
+
+    <!-- 等待对话框 -->
+    <string name="default_unified_loading_text">请稍候&#8230;</string>
+    <string name="default_unified_loading_text2">正在创建资料 </string>
+
+    <!-- 对话框按钮 -->
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+
+    <!-- 下拉listview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载…</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 左侧菜单 -->
+    <string name="sliding_menu_home">主页</string>
+    <string name="sliding_menu_my_family">家人</string>
+    <string name="sliding_menu_my_sos">求救</string>
+    <string name="sliding_menu_family_request">家人请求</string>
+    <string name="sliding_menu_notification">通知</string>
+    <string name="sliding_menu_tidings">聊天</string>
+    <string name="sliding_menu_my_clue">证据</string>
+    <string name="sliding_menu_setting">设置</string>
+
+    <!-- 网络错误 -->
+    <string name="network_error">网络错误</string>
+
+    <!-- 迷路界面 -->
+    <string name="activity_lost_titlebar">提示</string>
+    <string name="activity_lost_msg">没有获取到当前位置</string>
+    <string name="activity_lost_tip1">暂时未获取到当前位置，导致无法继续求救，可能原因有：</string>
+    <string name="activity_lost_tip11">1.手机处于飞行模式</string>
+    <string name="activity_lost_tip12">2.所处环境网络环境差</string>
+    <string name="activity_lost_tip2">你可以尝试下面两种方法：</string>
+    <string name="activity_lost_tip3">1.重启APP可能会解决此问题</string>
+    <string name="activity_lost_tip4">2.反馈所遇到到问题，我们会及时帮你解决</string>
+    <string name="activity_lost_relocate">重新定位</string>
+
+    <!-- 启动界面 -->
+    <string name="activity_guide_btn_login">登录</string>
+    <string name="activity_guide_btn_register">注册</string>
+
+    <!-- 登录界面 -->
+    <string name="activity_login_ttb_title">登录</string>
+    <string name="activity_login_edt_phone">输入手机号</string>
+    <string name="activity_login_edt_password">输入密码</string>
+    <string name="activity_login_btn_login">登录</string>
+    <string name="activity_login_tv_forgot">忘记密码？</string>
+
+    <!-- 注册界面 -->
+    <!-- 1 -->
+    <string name="activity_register_1_ttb_title">输入手机号1/3</string>
+    <string name="activity_register_1_edt_phone">输入手机号</string>
+    <string name="activity_register_1_edt_password">输入密码</string>
+    <string name="activity_register_1_tv_tip_1">1.手机号用来接收验证码，注册后可用手机号登录</string>
+    <string name="activity_register_1_tv_tip_2">2.密码最少6位，最多15位，区分大小写</string>
+    <!-- 2 -->
+    <string name="activity_register_2_ttb_title">输入验证码2/3</string>
+    <string name="activity_register_2_edt_check">输入验证码</string>
+    <string name="activity_register_2_tv_tip_1">验证码已经发送到手机</string>
+    <string name="activity_register_2_tv_tip_2">若没有收到，</string>
+    <string name="activity_register_2_tv_tip_3">S后重发</string>
+    <string name="activity_register_2_tv_resend">重发验证码</string>
+    <!-- 3 -->
+    <string name="activity_register_3_ttb_title">输入资料3/3</string>
+    <string name="activity_register_3_tv_tip_1">设置头像</string>
+    <string name="activity_register_3_tv_tip_2">最好以本人照片作为头像，方便家人认出你</string>
+    <string name="activity_register_3_edt_nickname">输入昵称</string>
+    <string name="activity_register_3_image_tv_title">设置头像</string>
+    <string name="activity_register_3_image_btn_snapshot">拍照</string>
+    <string name="activity_register_3_image_btn_album">手机相册</string>
+    <string name="activity_register_3_image_btn_cancel">取消</string>
+    <!-- 4 -->
+    <string name="activity_registered_ttb_title">添加家人</string>
+    <string name="activity_registered_tv_tip_1">帐号创建成功</string>
+    <string name="activity_registered_tv_tip_2">欢迎使用微士，这是一款保护自己和家人的安全软件，至少添加一位家人方便更好使用，建议您同时添加父母/小孩/爱人。</string>
+    <string name="activity_registered_tv_tip_3">欢迎使用微士，这是一款保护自己和家人的安全软件，至少添加一个家人后您才能更好地使用APP，建议您同时添加父母/小孩/爱人。是否从手机通讯录中添加家人？</string>
+    <string name="activity_registered_btn_add">添加家人</string>
+    <string name="activity_registered_ckb_match">匹配通讯录，以便快速找到家人</string>
+    <!-- 5 -->
+    <string name="activity_addfamily_ttb_title">添加家人</string>
+    <string name="activity_addfamily_tv_tip_1">从中挑选家人并添加</string>
+    <string name="activity_addfamily_edit_tip">快速查找家人</string>
+    <string name="activity_addfamily_clear_text">取消</string>
+    <string name="activity_addfamily_tv_add">对方已开通微士帐号，添加为家人</string>
+    <string name="activity_addfamily_btn_add">添加</string>
+    <string name="activity_addfamily_itemtv_added">已发送</string>
+    <string name="activity_addfamily_tv_invite">对方尚未开通微士帐号，邀请其开通</string>
+    <string name="activity_addfamily_btn_invite">邀请</string>
+    <string name="activity_addfamily_tv_invited">已发送</string>
+    <string name="activity_addfamily_tv_added">已添加为家人</string>
+    <string name="activity_addfamily_dlg_title">请稍等</string>
+    <string name="activity_addfamily_dlg_message">正在读取通讯录</string>
+    <!-- 6 -->
+    <string name="activity_familyin_ttb_title">详细资料</string>
+    <string name="activity_familyin_tv_relation">关系</string>
+    <string name="activity_familyin_tv_contact">通讯录联系人：</string>
+    <string name="activity_familyin_tv_isnotcontact">非通讯录联系人</string>
+    <string name="activity_familyin_btn_add">加为家人</string>
+    <!-- 7 -->
+    <string name="activity_familyout_ttb_title">详细资料</string>
+    <string name="activity_familyout_tv_tip_1">对方尚未开通微士帐号，赶紧邀请吧</string>
+    <string name="activity_familyout_btn_invite">发送邀请</string>
+
+    <!-- 忘记密码界面 -->
+    <!-- 1 -->
+    <string name="activity_fogot_1_ttb_title">重置密码</string>
+    <string name="activity_fogot_1_edt_phone">输入注册手机号</string>
+    <!-- 2 -->
+    <string name="activity_fogot_2_ttb_title">重置密码</string>
+    <string name="activity_fogot_2_edt_check">输入验证码</string>
+    <string name="activity_fogot_2_tv_tip_1">验证码已发送到手机</string>
+    <string name="activity_fogot_2_tv_tip_2">若没有收到，</string>
+    <string name="activity_fogot_2_tv_tip_3">S后重发</string>
+    <string name="activity_fogot_2_tv_resend">重发验证码</string>
+
+    <!-- 3 -->
+    <string name="activity_fogot_3_ttb_title">重置密码</string>
+    <string name="activity_fogot_3_edt_password">输入新密码</string>
+    <string name="activity_fogot_3_tv_tip">密码最少6位，最多15位，区分大小写</string>
+
+    <!-- 主界面 -->
+    <!-- 首页界面 -->
+    <string name="fragment_main_ttb_title">微士</string>
+    <string name="fragment_main_tv_location">我的位置：</string>
+    <string name="fragment_main_tv_locating">正在获取位置...</string>
+    <string name="fragment_main_tv_location_fail">获取位置失败</string>
+    <string name="fragment_main_tv_familylocate">家人定位</string>
+    <string name="fragment_main_tv_checkin">平安到达</string>
+    <string name="fragment_main_tv_clue">拍照留证</string>
+    <string name="fragment_main_first_tv_tip">您正在使用语音求救，长按SOS不放，系统将会录制求救语音发送给你的家人。</string>
+    <string name="fragment_main_first_btn_know">知道了</string>
+    <string name="fragment_main_recode_tv_tip_1">您已录制</string>
+    <string name="fragment_main_recode_tv_tip_11">倒计时</string>
+    <string name="fragment_main_recode_tv_tip_2">松开发送给家人，上滑取消求救</string>
+    <string name="fragment_main_recode_tv_tip_3">松开取消求救</string>
+    <string name="fragment_main_families_tv_select">选择家人</string>
+    <string name="fragment_main_families_tv_add">添加家人</string>
+    <string name="fragment_main_families_btn_cancel">取消</string>
+    <string name="fragment_main_clue_tv_first">当碰到犯罪事件或疑似犯罪事件，如抢劫/偷盗/火灾等，请拍摄照片上传到社会视频专网，以便公安机关迅速侦破案件。</string>
+    <string name="fragment_main_clue_btn_know">知道了</string>
+    <string name="fragment_main_over_tv_tip">你刚才体验了普通求救功能，按住SOS按钮不放，开启语音求救功能，系统将录制求救语音发送给你的家人。</string>
+    <string name="fragment_main_over_btn_know">知道了</string>
+    <string name="fragment_main_recode_fail">手机无法录音</string>
+    <string name="fragment_main_first_guide">请务必添加几个家人，万一遇到危险，你可以长按SOS，发送求救语音和位置给向他们</string>
+    <string name="fragment_main_addfamily_title">点击添加家人</string>
+    <string name="fragment_main_addfamily_tip">想查看家人位置，快去添加TA吧</string>
+
+    <!-- 地图求救界面 -->
+    <string name="activity_mapsos_pop_tip">普通求救</string>
+    <string name="activity_mapsos_titlebar_tip">求救</string>
+    <!-- 1 -->
+    <string name="activity_mapsos_locating_tv_tip">正在快速定位</string>
+    <!-- 2 -->
+    <string name="activity_mapsos_located_tv_tip">正在搜寻附近SOS资源...</string>
+    <!-- 3 -->
+    <string name="activity_mapsos_polices_tv_tip_1">附近两公里内有</string>
+    <string name="activity_mapsos_polices_tv_tip_2">个派出所，最近的离你</string>
+    <string name="activity_mapsos_polices_tv_tip_3">米</string>
+    <string name="activity_mapsos_polices_btn_call">拨打电话</string>
+    <string name="activity_mapsos_polices_btn_cancel">取消</string>
+    <!-- 4 -->
+    <string name="activity_mapsos_call_police_tv_tip_1">附近2公里暂时没有派出所，建议直接拨打110</string>
+    <string name="activity_mapsos_call_110_btn">拨打110</string>
+
+    <!-- 语音求救界面 -->
+    <!-- 1 -->
+    <string name="activity_voicesos_pop_tip">语音求救</string>
+    <string name="activity_voicesos_tv_tip">求救语音</string>
+    <string name="activity_voicesos_btn_send">确定发送</string>
+    <string name="activity_voicesos_btn_cancel">取消发送</string>
+    <string name="activity_voicesos_dlg_cancel">家人将无法及时帮助你，确定要取消发送求救语音吗？</string>
+    <string name="activity_voicesos_dlg_yes">取消发送</string>
+    <string name="activity_voicesos_dlg_no">暂不取消</string>
+    <string name="activity_voicesos_dlg_nobody">你没有添加家人导致求救语音发送失败，是否立即添加家人？</string>
+    <string name="activity_voicesos_dlg_nobody_yes">添加家人</string>
+    <string name="activity_voicesos_dlg_nobody_no">以后再说</string>
+
+    <!-- 2 -->
+    <string name="activity_sendsos_tv_tip">正在发送求救语音和当前位置</string>
+    <string name="activity_sendsos_btn_cancel">取消</string>
+    <!-- 3 -->
+    <string name="activity_sentsos_tv_tip">发送成功</string>
+    <string name="activity_sentsos_tv_all">求救信息已发送给家人，一旦他们查看了求救信息，系统将第一时间通知你！在此期间，你还可以拨打110求救。</string>
+    <string name="activity_sentsos_btn_know">知道了</string>
+    <string name="activity_sentsos_btn_call_110">拨打110</string>
+    <!-- 无人界面 -->
+    <string name="activity_voicesos_none_ttb_title">提示</string>
+    <string name="activity_voicesos_none_tv_tip_1">语音求救</string>
+    <string name="activity_voicesos_none_tv_tip_2">此功能允许你录制求救语音发送给家人，您还没有添加家人，暂时无法使用此功能。建议你添加父母/子女/爱人。</string>
+    <string name="activity_voicesos_none_btn_add">添加家人</string>
+
+    <!-- 家人定位界面 -->
+    <!-- 1 -->
+    <string name="activity_familylocate_ttb_title">家人定位</string>
+    <string name="activity_familylocate_pop_btn_call">拨打电话</string>
+    <string name="activity_familylocate_pop_btn_cancel">取消</string>
+    <string name="activity_familylocate_loading">正在获取家人位置...</string>
+    <string name="activity_familylocate_hided">（已对家人隐藏位置）</string>
+    <!-- 无人界面 -->
+    <string name="activity_familylocate_none_ttb_title">提示</string>
+    <string name="activity_familylocate_none_tv_tip_1">家人定位</string>
+    <string name="activity_familylocate_none_tv_tip_2">家人定位帮助你随时查看家人位置，您还没有添加家人，暂时无法使用此功能。建议你添加父母/子女/爱人。</string>
+    <string name="activity_familylocate_none_btn_add">添加家人</string>
+
+    <!-- 获取位置失败 -->
+    <string name="activity_familylocations_none_ttb_title">提示</string>
+    <string name="activity_familylocations_none_tip">无法获取位置</string>
+    <string name="activity_familylocations_none_tip2">没有获取到位置</string>
+    <string name="activity_familylocations_none_desc_1">暂时未获取到</string>
+    <string name="activity_familylocations_none_desc_2">的位置，可能原因有:</string>
+    <string name="activity_familylocations_none_list_1">1.对方手机已经关机</string>
+    <string name="activity_familylocations_none_list_2">2.对方手机处于飞行模式</string>
+    <string name="activity_familylocations_none_list_3">3.对方所处环境网络环境差</string>
+    <string name="activity_familylocations_none_list_4">4.对方已经强行退出微士APP</string>
+    <string name="activity_familylocations_none_list_5">5.对方隐藏了自己的位置</string>
+    <string name="activity_familylocations_none_list_6">如果您有疑问，建议拨打对方手机。</string>
+
+    <!-- 到达通知界面 -->
+    <!-- 1 -->
+    <string name="activity_checkin_ttb_title">平安到达</string>
+    <string name="activity_checkin_tv_locatioin_1">您已到达“</string>
+    <string name="activity_checkin_tv_locatioin_2">通知家人让他们放心</string>
+    <string name="activity_checkin_btn_all">安全到达，通知家人</string>
+    <string name="activity_checkin_notify_family">告诉家人你平安到达了</string>
+    <string name="wo">我</string>
+    <string name="activity_checkin_notify_familyLLTip1">到家了</string>
+    <string name="activity_checkin_notify_familyLLTip2">到学校了</string>
+    <string name="activity_checkin_notify_familyLLTip3">到公司了</string>
+    <string name="activity_checkin_notify_familyLLTip4">到火车站了</string>
+    <string name="activity_checkin_notify_familyLLTip5">到机场了</string>
+    <string name="activity_checkin_notify_familyLLTip6">我到了</string>
+    <string name="activity_checkin_notify_familyLL_Tip6">到了</string>
+    <string name="activity_checkin_btn_one">通知某人</string>
+    <string name="activity_checkin_tip">我已到达</string>
+    <string name="activity_checkin_send">告诉他们</string>
+    <string name="activity_checkin_ttl">至少选择一个家人</string>
+    <string name="activity_checkin_addfamily">添加家人</string>
+    <string name="activity_checkin_addfamily_content">你还没有添加家人导致无法发送到达通知，是否立即添加家人？</string>
+    <string name="activity_checkin_addfamily_confirm">立即添加</string>
+    <string name="activity_checkin_addfamily_calcel">暂不添加</string>
+    <string name="activity_checkin_takemessage">捎句话</string>
+    <string name="activity_firstcheckin_dialog_title">提示</string>
+    <string name="activity_firstcheckin_twodialog_content">好累啊，终于到达目的地了，要不要给亲人报平安？</string>
+    <string name="activity_firstcheckin_twodialog_confirm">给亲人报平安</string>
+    <string name="activity_firstcheckin_twodialog_concancel">算了</string>
+    <string name="activity_firstcheckin_onedialog_content">亲人还在担心受怕，不如动动手指，给他们报下平安吧！</string>
+    <string name="activity_firstcheckin_onedialog_concancel">知道了</string>
+
+    <!-- 2 -->
+    <string name="activity_families_ttb_title">选择家人</string>
+    <string name="activity_families_ttb_btn_right">发送</string>
+    <!-- 3 -->
+    <string name="activity_sendcheck_tv_tip">正在发送通知</string>
+    <string name="activity_sendcheck_btn_cancel">取消</string>
+    <!-- 4 -->
+    <string name="activity_sentcheck_tv_tip_1">发送成功</string>
+    <string name="activity_sentcheck_tv_tip_2">到达通知已发送给家人，一旦他们查看了通知，系统将第一时间通知你！</string>
+    <string name="activity_sentcheck_btn_know">我知道了</string>
+    <!-- 无人界面 -->
+    <string name="activity_checkin_none_ttb_title">提示</string>
+    <string name="activity_checkin_none_tv_tip_3">到达通知</string>
+    <string name="activity_checkin_none_tv_tip_4">到达通知帮助你通知家人你已经到达目的地，您还没有添加家人，暂时无法使用此功能。建议你添加父母/子女/爱人。</string>
+    <string name="activity_checkin_none_btn_add">添加家人</string>
+
+    <!-- 拍线索界面 -->
+    <!-- 1 -->
+    <string name="activity_clue_pop_title">拍照上传</string>
+    <string name="activity_clue_ttb_title">保存照片</string>
+    <string name="activity_saferadar_ttb_title">安全雷达</string>
+    <string name="activity_saferadar_noclue">暂无事故</string>
+    <string name="activity_saferadar_loadingclue">正在扫描安全事故......</string>
+    <string name="activity_clue_edt_content">描述一下当前情况</string>
+    <string name="activity_clue_img_outof8">一次性不能超过8张照片</string>
+    <string name="activity_clue_notifyfamily_text">通知家人</string>
+    <string name="activity_clue_location_text">位置</string>
+    <string name="activity_clue_notifyfamily_dialog_content">关闭通知家人后，家人将无法及时帮助你，确定要关闭通知吗？</string>
+    <string name="activity_clue_notifyfamily_dialog_confirm">确定关闭</string>
+    <string name="activity_clue_notifyfamily_dialog_cancel">暂不关闭</string>
+    <string name="activity_sendclueok_tv_tip2">照片已作为证据保存在社会化视频专网，具备法律效应。在关键时刻，警察叔叔将从中调用破案线索！</string>
+    <string name="activity_sendclueok_tv_tip3">照片已发送给家人，并作为证据保存在社会化视频专网，具备法律效应。在关键时刻，警察叔叔将从中调用破案线索！</string>
+    <string name="activity_sendclueok_tv_tip1">保存成功</string>
+    <string name="activity_sendcluetv_tip">正在保存证据</string>
+    <string name="activity_clue_btn_upload">保存证据</string>
+    <string name="activity_clue_tv_tip">照片将作为证据保存在社会化视频专网，具备法律效应。在关键时刻，警察叔叔将从中调用破案线索！</string>
+    <string name="activity_clue_whasupload_tip">什么是拍照留证？</string>
+    <string name="activity_clue_tv_tip_1">1.社会视频专网属于公安部门管辖</string>
+    <string name="activity_clue_tv_tip_2">2.上传照片不会暴露你的隐私</string>
+    <string name="activity_clue_tv_tip_3">3.上传照片有利于公安机关侦破案件</string>
+    <string name="activity_sentclue_tv_tip_1">照片已成功发送到社会视频专网</string>
+    <string name="activity_sentclue_tv_tip_2">1.照片已上传，编号为</string>
+    <string name="activity_sentclue_tv_tip_3">2.拍摄时间：</string>
+    <string name="activity_sentclue_tv_tip_4">3.拍摄地址：</string>
+    <string name="activity_sentclue_tv_tip_5">4.拍摄设备：</string>
+    <string name="activity_sentclue_tv_tip_6">5.拍摄用户：已开启隐私保护</string>
+    <!-- 2 -->
+    <string name="activity_viewclue_ttb_title">查看照片</string>
+    <string name="activity_viewclue_user_name">匿名用户</string>
+
+    <!-- 我的家人界面 -->
+    <!-- 1 -->
+    <string name="fragment_myfamily_ttb_title">我的家人</string>
+    <string name="fragment_myfamily_nofriend">暂无家人</string>
+    <!-- 2 -->
+    <string name="activity_familyout_tv_tip_2">对方尚未加入APP，赶紧邀请吧</string>
+    <string name="activity_familyout_iscontact">通讯录联系人：</string>
+    <string name="activity_familyout_notcontact">非通讯录联系人</string>
+    <!-- 3 -->
+    <string name="activity_searchadd_ttb_title">输入手机号</string>
+    <string name="activity_searchadd_edt_phone">输入手机号</string>
+    <string name="btn_searchadd_search_text">搜索</string>
+
+    <!-- 4 -->
+    <string name="activity_familydetail_ttb_title">详细资料</string>
+    <string name="activity_familydetail_tv_remark">备注名</string>
+    <string name="activity_familydetail_tv_allow">允许对方查看我的地理位置</string>
+    <string name="activity_familydetail_btn_call">拨打电话</string>
+    <string name="activity_familydetail_btn_delete">删除家人</string>
+    <string name="activity_familydetail_tv_tip">删除家人后将无法查看对方位置，也无法向对方求救，确定删除吗？</string>
+    <!-- 5 -->
+    <string name="activity_familyremark_ttb_title">备注名</string>
+    <string name="activity_familyremark_edt_remark">输入备注名，以便识别</string>
+
+    <!-- 家人请求界面 -->
+    <!-- 1 -->
+    <string name="fragment_familyrequest_ttb_title">家人请求</string>
+    <string name="fragment_familyrequest_norequest">暂无请求</string>
+    <string name="fragment_familyrequest_tv_type_1">添加对方为家人</string>
+    <string name="fragment_familyrequest_tv_type_2">请求添加你为家人</string>
+    <string name="fragment_familyrequest_tv_result_1">待对方通过</string>
+    <string name="fragment_familyrequest_btn_accept">通过</string>
+    <string name="fragment_familyrequest_tv_result_2">已通过</string>
+    <string name="fragment_familyrequest_tv_result_3">已拒绝</string>
+    <!-- 2 -->
+    <string name="activity_familyin_btn_accept">通过验证</string>
+    <string name="activity_familyin_btn_reject">拒绝通过</string>
+
+    <!-- 通知界面 -->
+    <!-- 1 -->
+    <string name="fragment_mynotification_ttb_title">通知</string>
+    <string name="fragment_mynotification_tv_empty">暂无通知</string>
+    <string name="fragment_notification_sos">求救通知</string>
+    <string name="fragment_notification_sos_tip">家人发来的求救语音</string>
+    <string name="fragment_notification_in">到达通知</string>
+    <string name="fragment_notification_in_tip">家人发来的到达通知</string>
+    <string name="fragment_notification_tip">已查收提示</string>
+    <string name="fragment_notification_clue">照片证据</string>
+    <string name="fragment_notification_clue_tip">家人拍摄的照片证据，他可能有危险</string>
+    <string name="fragment_notification_clue_title">照片证据</string>
+    <string name="fragment_notification_tip_title">已查收</string>
+    <string name="fragment_notification_tip_tip">家人查收了我发送的求救语音和到达通知</string>
+    <string name="checknotify_tip">查收了这条通知</string>
+    <string name="checknotify_sos">快来救我，我在</string>
+    <string name="checknotify_in">我已到达</string>
+    <string name="checknotify_already_in1">我已经顺利到达了</string>
+    <string name="checknotify_already_in2">我已经顺利达到了</string>
+
+    <!-- 2 -->
+    <string name="activity_notificationdetail_1_ttb_title">求救通知</string>
+    <string name="activity_notificationdetail_1_tv_tip">发来求救语音</string>
+    <!-- 3 -->
+    <string name="activity_notificationdetail_2_ttb_title">到达通知</string>
+    <string name="activity_notificationdetail_2_tv_arrived">已经到达</string>
+    <string name="activity_notificationdetail_arrived_tip">我已经顺利到达了</string>
+    <string name="activity_notificationdetail_getarrived_tip">查收了你的到达通知</string>
+    <string name="activity_notificationdetail_getsos_tip">查收了你的语音求救</string>
+    <!-- 我的求救 -->
+    <string name="fragment_mysos_ttb_title">求救</string>
+    <string name="fragment_mysos_tv_empty">暂时还没有求救</string>
+
+    <!-- 我的线索界面 -->
+    <string name="fragment_myclue_ttb_title">我的证据</string>
+    <string name="fragment_myclue_tv_empty">暂无证据</string>
+
+    <!-- 消息界面 -->
+    <string name="fragment_tidings_ttb_title">消息</string>
+    <string name="fragment_tidings_tv_empty">暂无消息</string>
+    <string name="item_tiding_tip">语音</string>
+
+    <!-- 无线索界面 -->
+    <string name="activity_nomyclue_tv_tip">当你碰到犯罪事件或疑似犯罪事件，比如抢劫/偷盗/火灾等，请拍摄照片上传到公安联网监控中心，以便公安机关迅速侦破案件。</string>
+
+    <!-- 设置界面 -->
+    <string name="fragment_setting_ttb_title">设置</string>
+    <string name="fragment_setting_tv_account">我的帐号</string>
+    <string name="fragment_setting_tv_hide">隐藏我的地理位置</string>
+    <string name="fragment_setting_tv_send">SOS求救语音发送对象</string>
+    <string name="fragment_setting_tv_both">同时发送给附近警察和家人</string>
+    <string name="fragment_setting_tv_police">仅发送给附近警察</string>
+    <string name="fragment_setting_tv_guide">功能介绍</string>
+    <string name="fragment_setting_tv_feedback">联系反馈</string>
+    <string name="fragment_setting_tv_update">检查更新</string>
+    <string name="fragment_setting_btn_logout">退出当前帐号</string>
+    <string name="fragment_setting_dlg_title">提示</string>
+    <string name="fragment_setting_dlg_tip_1">求救时附近可能没有警察，是否继续设置为“仅发送给附近警察”？</string>
+    <string name="fragment_setting_dlg_tip_2">隐藏地理位置后，家人不能主动查看你的位置，但你仍可继续使用到达通知/SOS等其他需要地理位置的功能</string>
+    <string name="fragment_setting_dlg_check">正在检查</string>
+    <string name="fragment_setting_dlg_newest">你使用的已经是最新版了</string>
+    <string name="fragment_setting_dlg_btn_update">立即更新</string>
+    <string name="fragment_setting_dlg_btn_notnow">暂不更新</string>
+
+    <!-- 我的帐号界面 -->
+    <string name="activity_account_ttb_title">我的帐号</string>
+    <string name="activity_account_tv_image">头像</string>
+    <string name="activity_account_tv_id">帐号</string>
+    <string name="activity_account_tv_phone">手机号</string>
+    <string name="activity_account_tv_nickname">昵称</string>
+    <string name="activity_account_tv_password">修改密码</string>
+    <string name="activity_account_tv_image_title">设置头像</string>
+    <string name="activity_account_btn_image_snapshot">拍照</string>
+    <string name="activity_account_btn_image_album">手机相册</string>
+    <string name="activity_account_btn_image_cancel">取消</string>
+
+    <!-- 修改手机号界面 -->
+    <!-- 1 -->
+    <string name="activity_phone_1_ttb_title">手机号</string>
+    <string name="activity_phone_1_tv_tip_1">当前手机号为</string>
+    <string name="activity_phone_1_tv_tip_2">，如果此手机号不再使用了，请及时更改手机号。更改成功后，下次登录可以使用新手机号登录。</string>
+    <string name="activity_phone_1_edt_new">输入新手机号</string>
+    <string name="activity_phone_1_edt_password">输入当前密码</string>
+    <!-- 2 -->
+    <string name="activity_phone_2_ttb_title">输入验证码</string>
+    <string name="activity_phone_2_edt_check">输入验证码</string>
+    <string name="activity_phone_2_tv_tip_1">验证码已经发送到手机</string>
+    <string name="activity_phone_2_tv_tip_2">若没有收到，</string>
+    <string name="activity_phone_2_tv_resend">S后重发</string>
+
+    <!-- 修改密码界面 -->
+    <string name="activity_password_ttb_title">修改密码</string>
+    <string name="activity_password_edt_old">输入旧密码</string>
+    <string name="activity_password_edt_new">输入新密码</string>
+    <string name="activity_password_tv_tip">密码最少6位，最多15位，区分大小写</string>
+
+    <!-- 修改昵称界面 -->
+    <string name="activity_nickname_ttb_title">修改昵称</string>
+
+    <!-- 联系反馈界面 -->
+    <string name="activity_feedback_ttb_title">联系反馈</string>
+    <string name="activity_feedback_edt_content">输入你想说的话，不超过200字</string>
+    <string name="activity_feedback_tv_tip">为了更清晰地了解反馈内容，我们可能会联系提供反馈的用户，一旦提交即表示您同意我们联系你。</string>
+
+    <!-- 提示 -->
+    <string name="toast_phone_format_error">请输入正确手机号码</string>
+    <string name="toast_phone_length_error">请输入11位手机号码</string>
+    <string name="toast_phone_length_out">手机号码不能超过11位</string>
+    <string name="toast_phone_notnew_error">你输入的不是新手机号</string>
+    <string name="toast_phone_registered_error">该手机号已被注册</string>
+    <string name="toast_phone_unregister_error">该手机号尚未注册</string>
+    <string name="toast_check_code_error">验证码错误</string>
+    <string name="toast_password_min_error">密码不能少于6位</string>
+    <string name="toast_password_max_error">密码不能超过15位</string>
+    <string name="toast_nickname_max_error">昵称不能超过10位</string>
+    <string name="toast_takemessage_max_error">不能超过16位</string>
+    <string name="toast_remark_max_error">备注不能超过10位</string>
+    <string name="toast_password_format_error">密码格式错误</string>
+    <string name="toast_phone_modify_succeed">手机号修改成功</string>
+    <string name="toast_nickname_modify_succeed">呢称修改成功</string>
+    <string name="toast_remarkname_modify_succeed">备注名修改成功</string>
+    <string name="toast_password_modify_succeed">密码修改成功</string>
+    <string name="toast_avatar_modify_succeed">头像修改成功</string>
+    <string name="toast_avatar_modify_failed">头像修改失败</string>
+    <string name="toast_location_error1">暂未获取到</string>
+    <string name="toast_location_error2">的位置，对方可能已经关机或退出微士APP，如果有疑问，建议拨打对方手机或发语音。</string>
+    <string name="toast_clue_snapshot_max_error">一次性不能超过8张照片</string>
+    <string name="toast_feedback_max_error">不能超过200字</string>
+    <string name="toast_update_version_succeed">你使用的已经是最新版了</string>
+    <string name="toast_get_contacts_failed">获取联系人失败</string>
+    <string name="toast_send_add_friend_success">添加请求已发送，请等待对方通过</string>
+    <string name="toast_agree_friend_success">已通过家人请求</string>
+    <string name="toast_refuse_friend_success">已拒绝家人请求</string>
+    <string name="toast_del_friend_success">已删除家人成功</string>
+    <string name="toast_send_voice_sos_failled">发送语音求救失败</string>
+    <string name="toast_avatar_upload_failed">头像上传失败</string>
+    <string name="toast_clue_image_upload_failed">图片上传失败</string>
+    <string name="toast_clue_edit_length_error">不能超过200字</string>
+    <string name="toast_sos_voice_upload_failled">语音上传失败</string>
+    <string name="toast_sos_voice_canceled">语音求救已取消</string>
+    <string name="toast_sos_voice_fail">时间太短，语音录制失败</string>
+    <string name="toast_exit_app">再按一次将退出软件</string>
+    <string name="toast_no_more_data">没有更多了哦</string>
+    <string name="toast_sms_uploading">正在上传...</string>
+    <string name="toast_sms_upload_failed">上传语音失败</string>
+    <string name="toast_map_zoomin_min">地图已缩到最小</string>
+    <string name="toast_map_zoomout_max">地图已放到最大</string>
+    <!-- 提示 -->
+    <string name="titlebar_button_tip_next">下一步</string>
+    <string name="titlebar_button_tip_over">完成</string>
+    <string name="titlebar_button_tip_skip">跳过</string>
+    <string name="titlebar_button_tip_delete">删除</string>
+    <string name="titlebar_button_tip_add">添加</string>
+    <string name="titlebar_button_tip_commit">提交</string>
+
+    <!-- 版本更新 -->
+    <string name="update_title">版本更新</string>
+    <string name="update_no_update_version">您使用的已经是最新版了</string>
+
+    <!-- 对话框 -->
+    <string name="dialog_title_tip">提示</string>
+    <string name="dialog_confim_check">查看</string>
+    <string name="dialog_content_arrivte">已顺利到达</string>
+    <string name="dialog_content_clue">拍摄了照片证据，他可能有危险，请确认他是否安全</string>
+    <string name="dialog_content_arrivte_confim">已经查收了你的到达通知</string>
+    <string name="dialog_content_getsos_confim">已经查收了你的求救通知</string>
+    <string name="dialog_content_getsos">发来求救语音，请抓紧处理！</string>
+    <string name="dialog_editclue_content">确定放弃此次编辑吗？</string>
+    <string name="dialog_editclue_yes">放弃</string>
+    <string name="dialog_editclue_no">不放弃</string>
+    <string name="dialog_logout_content">退出帐号后将无法收到家人发来的求救语音和到达通知，确认退出吗？</string>
+    <string name="dialog_logout_yes">退出</string>
+    <string name="dialog_logout_no">暂不退出</string>
+    <string name="dialog_hide_content">隐藏地理位置后，家人不能查看你的位置，但你仍可继续使用到达通知/SOS等需要地理位置的功能</string>
+    <string name="dialog_hide_yes">立即隐藏</string>
+    <string name="dialog_hide_no">暂不隐藏</string>
+
+    <!-- 邀请短信内容 -->
+    <string name="sms_invite1">微士是一款家庭安全助手软件，查附近派出所和医院，查看家人位置，遇到危险时还可以一键向家人发送求救语音和位置信息，下载地址</string>
+    <string name="sms_invite2">，安装后输入手机号就能找到我，记得加我啊。</string>
+
+    <!-- 消息栏通知 -->
+    <string name="notification_tip_first">已启动，开始保护你的安全</string>
+    <string name="notification_tip">继续保护你的安全</string>
+    <string name="notification_tip_msg">你有%0$s条新的消息</string>
+
+    <!-- 语音对话 -->
+    <string name="enter_communication">发送语音</string>
+    <string name="communication_clicklong_tip">长按可以说话</string>
+    <string name="communication_voice_tip1">您已经录制</string>
+    <string name="communication_voice_tip2">松开发送，上滑取消</string>
+    <string name="communication_voice_tip3">松开取消录音</string>
+    <string name="yesterday">昨天</string>
+    <string name="yue">月</string>
+    <string name="ri">日</string>
+    <string name="sheng">省</string>
+    <string name="shi">市</string>
+
+    <!-- 捎句话 -->
+    <string name="takemessage_tip1">不要担心了</string>
+    <string name="takemessage_tip2">路上很顺利</string>
+    <string name="takemessage_tip3">一切都很好</string>
+    <string name="takemessage_tip4">我在朋友家</string>
+    <string name="takemessage_tip5">么么哒，我很好</string>
+    <string name="takemessage_tip6">安好，勿念</string>
+
+    <!-- 拍照提示 -->
+    <string name="firstclueviewtext1">一个人坐出租车，小黑巷被人尾随，被小偷盯上……一旦发现自己可能有危险，请立即拍现场照片，作为证据保存，家人将第一时间收到通知。</string>
+    <string name="firstclueviewtext2">保存证据时，系统将自动播放提示语音：照片已作为证据保存，警告那些心怀歹意的犯罪份子，将其犯罪念头扼杀在萌芽阶段。</string>
+    <string name="firstclueviewtext3">照片将作为证据保存在社会化视频专网，具备法律效应。在关键时刻，警察叔叔将从中调用破案线索！</string>
+
+</resources>

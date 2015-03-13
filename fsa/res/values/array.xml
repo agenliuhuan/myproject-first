@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_names">
+        <item>@string/sliding_menu_home</item>
+        <item>@string/sliding_menu_my_family</item>
+        <item>@string/sliding_menu_family_request</item>
+        <item>@string/sliding_menu_notification</item>
+        <item>@string/sliding_menu_my_clue</item>
+        <item>@string/sliding_menu_setting</item>
+    </string-array>
+    <string-array name="activity_familyremark_tip">
+        <item>老爸</item>
+        <item>老妈</item>
+        <item>儿子</item>
+        <item>老婆</item>
+        <item>女儿</item>
+        <item>宝宝</item>
+        <item>宝贝</item>
+        <item>亲爱的</item>
+        <item>baby</item>
+        <item>丫头</item>
+        <item>爱人</item>
+        <item>darling</item>
+    </string-array>
+
+</resources>

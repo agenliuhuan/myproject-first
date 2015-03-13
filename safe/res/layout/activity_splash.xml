@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0cb0df" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="670px"
+            android:layout_height="600px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33px"
+            android:background="@drawable/splash_logo" />
+
+        <ImageView
+            android:id="@+id/img_app_name"
+            android:layout_width="206px"
+            android:layout_height="88px"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerInParent="true"
+            android:background="@drawable/splash_app_name" />
+
+        <ImageView
+            android:id="@+id/img_slogon"
+            android:layout_width="308px"
+            android:layout_height="64px"
+            android:layout_below="@+id/img_app_name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/splash_slogon" />
+
+        <TextView
+            android:id="@+id/txt_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58px"
+            android:text="@string/copyright"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/comm_item_height_small"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@drawable/on_item_selected" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_item_height_small" >
+
+        <ImageView
+            android:id="@+id/img_families_image"
+            android:layout_width="@dimen/comm_image_width_small"
+            android:layout_height="@dimen/comm_image_height_small"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comm_item_margin"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/tv_families_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/list_item_families_tv_families_name_marginLeft"
+            android:layout_toLeftOf="@+id/ckb_families_check"
+            android:layout_toRightOf="@+id/img_families_image"
+            android:textColor="@color/comm_black" 
+            android:textSize="@dimen/font_size_normal"/>
+
+        <CheckBox
+            android:id="@+id/ckb_families_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            android:text=" " />
+    </RelativeLayout>
+
+</LinearLayout>

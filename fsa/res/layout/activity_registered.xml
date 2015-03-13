@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/titlebar_registered"
+        layout="@layout/layout_title_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_below="@+id/titlebar_registered">
+
+            <TextView
+                android:id="@+id/tv_registered_tip_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_registered_image"
+                android:layout_centerHorizontal="false"
+                android:layout_marginRight="@dimen/activity_registered_img_registered_image_11_layout_marginLeft"
+                android:layout_marginTop="@dimen/activity_registered_tv_registered_tip_1_0_layout_marginTop"
+                android:gravity="center_horizontal"
+                android:text="@string/activity_registered_tv_tip_1"
+                android:textColor="@color/comm_green"
+                android:textSize="@dimen/font_size_16" />
+
+            <Button
+                android:id="@+id/btn_registered_add"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_below="@+id/tv_registered_tip_2"
+                android:layout_marginLeft="@dimen/activity_registered_btn_registered_add_1_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_registered_btn_registered_add_2_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_registered_btn_registered_add_3_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_registered_btn_add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <CheckBox
+                android:id="@+id/ckb_registered_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_registered_add"
+                android:layout_marginLeft="@dimen/activity_registered_ckb_registered_contact_4_layout_marginLeft"
+                android:layout_marginTop="@dimen/activity_registered_ckb_registered_contact_6_layout_marginTop"
+                android:button="@drawable/checkbox_selector"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/tv_registered_tip_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_registered_tip_1"
+                android:layout_marginLeft="@dimen/activity_registered_tv_registered_tip_2_7_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_registered_tv_registered_tip_2_8_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_registered_tv_registered_tip_2_9_layout_marginTop"
+                android:lineSpacingExtra="@dimen/activity_registered_tv_registered_tip_2_10_lineSpacingExtra"
+                android:text="@string/activity_registered_tv_tip_2"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_16" />
+
+            <ImageView
+                android:id="@+id/img_registered_image"
+                android:layout_width="@dimen/activity_registered_img_registered_image_12_layout_width"
+                android:layout_height="@dimen/activity_registered_img_registered_image_13_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_registered_img_registered_image_11_layout_marginTop"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ckb_registered_contact"
+                android:layout_alignBottom="@+id/ckb_registered_contact"
+                android:layout_alignRight="@+id/btn_registered_add"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_registered_tv_registered_tip_2_7_layout_pd"
+                android:layout_toRightOf="@+id/ckb_registered_contact"
+                android:text="@string/activity_registered_ckb_match"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_16" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

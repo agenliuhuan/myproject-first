@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_checkin_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/tv_checkin_location"
+            android:layout_width="@dimen/layout_avatatat_pop_tv_checkin_location_0_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/avatar_pop"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:id="@+id/img_checkin_avatar"
+            android:layout_width="@dimen/layout_avatatat_pop_img_checkin_avatar_1_layout_width"
+            android:layout_height="@dimen/layout_avatatat_pop_img_checkin_avatar_2_layout_height"
+            android:layout_below="@+id/tv_checkin_location"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_avatatat_pop_img_checkin_avatar_2_layout_marginTop"
+            android:background="@android:color/transparent"
+            android:cropToPadding="false" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/layout_avatatat_pop_img_checkin_avatar_frame_layout_width"
+            android:layout_height="@dimen/layout_avatatat_pop_img_checkin_avatar_frame_layout_height"
+            android:layout_below="@+id/tv_checkin_location"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/avatar" />
+    </RelativeLayout>
+
+</RelativeLayout>

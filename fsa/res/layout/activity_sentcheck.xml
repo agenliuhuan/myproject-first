@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <ImageView
+        android:id="@+id/img_sentcheck_tip"
+        android:layout_width="@dimen/activity_sentcheck_img_sentcheck_tip_1_layout_width"
+        android:layout_height="@dimen/activity_sentcheck_img_sentcheck_tip_2_layout_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_sentcheck_img_sentcheck_tip_0_layout_marginTop"
+        android:src="@drawable/img_sent" />
+
+    <Button
+        android:id="@+id/btn_sentcheck_know"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/comm_button_height"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/tv_sentcheck_target"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_sentcheck_btn_sentcheck_know_3_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_sentcheck_btn_sentcheck_know_4_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_sentcheck_btn_sentcheck_know_5_layout_marginTop"
+        android:background="@drawable/button_green_selector"
+        android:text="@string/activity_sentcheck_btn_know"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+        android:id="@+id/tv_sentcheck_target"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sentcheck_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_sentcheck_tv_sentcheck_target_6_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_sentcheck_tv_sentcheck_target_7_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_sentcheck_tv_sentcheck_target_8_layout_marginTop"
+        android:lineSpacingExtra="@dimen/activity_sentcheck_tv_sentcheck_target_9_lineSpacingExtra"
+        android:text="@string/activity_sentcheck_tv_tip_2"
+        android:textColor="@color/textview_check_nobody_text_color"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@+id/tv_sentcheck_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_sentcheck_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_sentcheck_tv_sentcheck_tip_10_layout_marginTop"
+        android:text="@string/activity_sentcheck_tv_tip_1"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_18" />
+
+</RelativeLayout>

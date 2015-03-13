@@ -1,0 +1,1399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- 分辨率 600 -->
+<resources>
+
+    <dimen name="checkin_pop_bk_w">500px</dimen>
+    <dimen name="checkin_pop_bk_h">112px</dimen>
+    <dimen name="checkin_pop_title_x">100px</dimen>
+    <dimen name="checkin_pop_title_y">20px</dimen>
+    <dimen name="checkin_pop_title_r">458px</dimen>
+    <dimen name="checkin_pop_title_b">44px</dimen>
+    <dimen name="checkin_pop_desc_b">88px</dimen>
+    <dimen name="mapbar_layout_marginBottom">15px</dimen>
+    <dimen name="mapbar_layout_marginLeft">6px</dimen>
+    <dimen name="mapbar_layout_marginRight">6px</dimen>
+    <dimen name="call_voice_image_marginLeft">53px</dimen>
+    <dimen name="call_voice_button_paddingLeft">103px</dimen>
+    <dimen name="avatar_round_radius">30px</dimen>
+    <dimen name="recode_ani_w">600px</dimen>
+    <dimen name="recode_ani_h">104px</dimen>
+
+    <!-- 图片宽度 -->
+    <dimen name="one_image_width">300px</dimen>
+    <!-- 图片高度 -->
+    <dimen name="one_image_height">458px</dimen>
+
+    <!-- 录音键长度 -->
+    <dimen name="record_base_width">133px</dimen>
+    <dimen name="record_increase_width">183px</dimen>
+
+    <!-- 图片间距 -->
+    <dimen name="image_margin">8px</dimen>
+
+    <!-- 通用控件 -->
+    <dimen name="comm_image_width_big">83px</dimen>
+    <dimen name="comm_image_height_big">83px</dimen>
+    <dimen name="comm_item_height_big">116px</dimen>
+    <dimen name="comm_item_height_small">100px</dimen>
+    <dimen name="comm_image_width_small">66px</dimen>
+    <dimen name="comm_image_height_small">66px</dimen>
+    <dimen name="comm_item_margin">20px</dimen>
+    <dimen name="comm_btn_margin">25px</dimen>
+    <dimen name="comm_line_height">1px</dimen>
+    <dimen name="title_bar_height">88px</dimen>
+    <dimen name="comm_button_height">75px</dimen>
+    <dimen name="comm_edit_height">75px</dimen>
+    <dimen name="item_button_height">51px</dimen>
+    <dimen name="item_button_width">85px</dimen>
+    <dimen name="item_image_width">60px</dimen>
+    <dimen name="item_image_height">60px</dimen>
+    <dimen name="comm_listitem_height">100px</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="font_size_normal">17sp</dimen>
+    <dimen name="font_size_midle">14sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_title_1">19sp</dimen>
+    <dimen name="font_size_for_edit">16sp</dimen>
+    <dimen name="font_size_23">23sp</dimen>
+    <dimen name="font_size_19">19sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_17">17sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_title_button">16sp</dimen>
+    <dimen name="font_size_setting_item_name">16sp</dimen>
+    <dimen name="font_size_setting_item_name_small">13sp</dimen>
+    <dimen name="font_size_setting_button_text">18sp</dimen>
+
+    <!-- SlidingMenu -->
+    <dimen name="slidingmenu_offset">145px</dimen>
+    <dimen name="slidingmenu_shadow_width">8px</dimen>
+    <dimen name="slidingmenu_item_height">123px</dimen>
+
+    <!-- xlistview 列表顶部 -->
+    <dimen name="xlistview_header_txt_msg_font_size">16px</dimen>
+    <dimen name="xlistview_header_txt_datetime_font_size">13px</dimen>
+    <dimen name="xlistview_header_height">95px</dimen>
+    <dimen name="xlistview_header_height2">240px</dimen>
+    <dimen name="xlistview_header_txt_divider_height">10px</dimen>
+    <dimen name="xlistview_header_txt_top_margin">18px</dimen>
+    <dimen name="xlistview_header_txt_bottom_margin">18px</dimen>
+    <dimen name="xlistview_header_progressbar_width">25px</dimen>
+    <dimen name="xlistview_header_img_arrow_width">26px</dimen>
+    <dimen name="xlistview_header_img_arrow_height">65px</dimen>
+    <dimen name="xlistview_header_img_top_margin">15px</dimen>
+    <dimen name="xlistview_header_img_bottom_margin">15px</dimen>
+    <dimen name="xlistview_header_img_right_margin">28px</dimen>
+    <!-- xlistview 列表底部 -->
+    <dimen name="xlistview_footer_txt_msg_font_size">16px</dimen>
+    <dimen name="xlistview_footer_height">73px</dimen>
+    <dimen name="xlistview_footer_txt_msg_top_margin">28px</dimen>
+    <dimen name="xlistview_footer_progressbar_width">25px</dimen>
+    <dimen name="xlistview_footer_progressbar_left_margin">40px</dimen>
+
+    <!-- Seekbar -->
+    <dimen name="seekbar_width">96px</dimen>
+    <dimen name="seekbar_height">35px</dimen>
+    <dimen name="seekbar_thumb_width">35px</dimen>
+
+    <!-- 设置项 -->
+    <dimen name="setting_item_border_width">1px</dimen>
+    <dimen name="setting_item_height">80px</dimen>
+    <dimen name="setting_item_firstheight">93px</dimen>
+
+    <!-- 地图头像大小 -->
+    <dimen name="map_user_avatar_width">60px</dimen>
+
+    <!-- 用户详情界面 -->
+    <dimen name="family_detail_toplayout_height">125px</dimen>
+    <dimen name="family_detail_layout_height">80px</dimen>
+    <dimen name="family_detail_image">91px</dimen>
+
+    <!-- unified_loading_bg.xml -->
+    <dimen name="unified_loading_bg_0_radius">13px</dimen>
+
+    <!-- style.xml -->
+    <dimen name="style_SettingItemBg_0_paddingLeft">25px</dimen>
+    <dimen name="style_SettingItemBg_1_paddingRight">16px</dimen>
+    <dimen name="style_EditStyle_2_paddingLeft">25px</dimen>
+    <dimen name="style_EditStyle_3_paddingRight">25px</dimen>
+
+    <!-- button_dialog_bg_hover.xml -->
+    <dimen name="button_dialog_bg_hover_corners_0_bottomLeftRadius">10px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_1_bottomRightRadius">10px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_2_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_3_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_4_bottomLeftRadius">10px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_5_bottomRightRadius">10px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_6_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_bg_hover_corners_7_topRightRadius">1px</dimen>
+
+    <!-- button_dialog_bg.xml -->
+    <dimen name="button_dialog_bg_corners_0_bottomLeftRadius">10px</dimen>
+    <dimen name="button_dialog_bg_corners_1_bottomRightRadius">10px</dimen>
+    <dimen name="button_dialog_bg_corners_2_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_bg_corners_3_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_bg_corners_4_bottomLeftRadius">10px</dimen>
+    <dimen name="button_dialog_bg_corners_5_bottomRightRadius">10px</dimen>
+    <dimen name="button_dialog_bg_corners_6_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_bg_corners_7_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_bg_corners_Radius">10px</dimen>
+
+    <!-- button_dialog_left_bg_hover.xml -->
+    <dimen name="button_dialog_left_bg_hover_corners_0_bottomLeftRadius">80px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_1_bottomRightRadius">80px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_2_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_3_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_4_bottomLeftRadius">10px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_5_bottomRightRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_6_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_hover_corners_7_topRightRadius">1px</dimen>
+
+    <!-- button_dialog_left_bg.xml -->
+    <dimen name="button_dialog_left_bg_corners_0_bottomLeftRadius">80px</dimen>
+    <dimen name="button_dialog_left_bg_corners_1_bottomRightRadius">80px</dimen>
+    <dimen name="button_dialog_left_bg_corners_2_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_corners_3_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_corners_4_bottomLeftRadius">10px</dimen>
+    <dimen name="button_dialog_left_bg_corners_5_bottomRightRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_corners_6_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_left_bg_corners_7_topRightRadius">1px</dimen>
+
+    <!-- button_dialog_right_bg_hover.xml -->
+    <dimen name="button_dialog_right_bg_hover_corners_0_bottomLeftRadius">80px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_1_bottomRightRadius">80px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_2_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_3_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_4_bottomLeftRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_5_bottomRightRadius">10px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_6_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_hover_corners_7_topRightRadius">1px</dimen>
+
+    <!-- button_dialog_right_bg.xml -->
+    <dimen name="button_dialog_right_bg_corners_0_bottomLeftRadius">80px</dimen>
+    <dimen name="button_dialog_right_bg_corners_1_bottomRightRadius">80px</dimen>
+    <dimen name="button_dialog_right_bg_corners_2_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_corners_3_topRightRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_corners_4_bottomLeftRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_corners_5_bottomRightRadius">10px</dimen>
+    <dimen name="button_dialog_right_bg_corners_6_topLeftRadius">1px</dimen>
+    <dimen name="button_dialog_right_bg_corners_7_topRightRadius">1px</dimen>
+
+    <!-- activity_account.xml -->
+    <dimen name="activity_account_layout_textView2_0_layout_height">1px</dimen>
+    <dimen name="activity_account_layout_account_image_0_layout_marginTop">33px</dimen>
+    <dimen name="activity_account_img_account_image_tip_1_layout_width">36px</dimen>
+    <dimen name="activity_account_img_account_image_tip_2_layout_height">36px</dimen>
+    <dimen name="activity_account_img_account_image_3_layout_marginRight">16px</dimen>
+    <dimen name="activity_account_img_account_image_4_layout_width">60px</dimen>
+    <dimen name="activity_account_img_account_image_5_layout_height">60px</dimen>
+    <dimen name="activity_account_layout_account_name_6_layout_marginTop">33px</dimen>
+    <dimen name="activity_account_img_account_image_tip_2_7_layout_width">36px</dimen>
+    <dimen name="activity_account_img_account_image_tip_2_8_layout_height">36px</dimen>
+    <dimen name="activity_account_tv_account_name_9_layout_marginRight">16px</dimen>
+    <dimen name="activity_account_img_account_image_tip_3_10_layout_width">36px</dimen>
+    <dimen name="activity_account_img_account_image_tip_3_11_layout_height">36px</dimen>
+    <dimen name="activity_account_tv_account_phone2_12_layout_marginRight">16px</dimen>
+    <dimen name="activity_account_layout_account_nickname_13_layout_marginTop">33px</dimen>
+    <dimen name="activity_account_img_account_nickname_14_layout_width">36px</dimen>
+    <dimen name="activity_account_img_account_nickname_15_layout_height">36px</dimen>
+    <dimen name="activity_account_tv_account_nickname_16_layout_marginRight">16px</dimen>
+    <dimen name="activity_account_layout_account_newpassword_17_layout_marginTop">33px</dimen>
+    <dimen name="activity_account_img_account_newpassword_18_layout_width">36px</dimen>
+    <dimen name="activity_account_img_account_newpassword_19_layout_height">36px</dimen>
+    <dimen name="activity_account_textView1_20_layout_height">1px</dimen>
+    <dimen name="activity_account_tv_account_image_tip_21_layout_marginTop">23px</dimen>
+    <dimen name="activity_account_btn_account_image_snapshot_22_layout_marginLeft">33px</dimen>
+    <dimen name="activity_account_btn_account_image_snapshot_23_layout_marginRight">33px</dimen>
+    <dimen name="activity_account_btn_account_image_snapshot_24_layout_marginTop">20px</dimen>
+    <dimen name="activity_account_btn_account_image_snapshot_25_layout_height">75px</dimen>
+    <dimen name="activity_account_btn_account_image_album_26_layout_marginLeft">33px</dimen>
+    <dimen name="activity_account_btn_account_image_album_27_layout_marginRight">33px</dimen>
+    <dimen name="activity_account_btn_account_image_album_28_layout_marginTop">20px</dimen>
+    <dimen name="activity_account_btn_account_image_album_29_layout_height">75px</dimen>
+    <dimen name="activity_account_btn_account_image_cancel_30_layout_marginLeft">33px</dimen>
+    <dimen name="activity_account_btn_account_image_cancel_31_layout_marginRight">33px</dimen>
+    <dimen name="activity_account_btn_account_image_cancel_32_layout_marginTop">20px</dimen>
+    <dimen name="activity_account_btn_account_image_cancel_33_layout_marginBottom">23px</dimen>
+    <dimen name="activity_account_btn_account_image_cancel_34_layout_height">75px</dimen>
+
+    <!-- activity_addfamily.xml -->
+    <dimen name="activity_addfamily_textView1_0_layout_height">70px</dimen>
+    <dimen name="activity_addfamily_lv_addfamily_marginTop">25px</dimen>
+    <dimen name="activity_addfamily_lv_addfamily_btn_marginright">41px</dimen>
+
+    <!-- activity_checkin.xml -->
+    <dimen name="activity_checkin_textView2_0_layout_height">1px</dimen>
+    <dimen name="activity_checkin_LinearLayout_1_layout_marginLeft">13px</dimen>
+    <dimen name="activity_checkin_LinearLayout_2_layout_marginRight">13px</dimen>
+    <dimen name="activity_checkin_LinearLayout_3_layout_marginTop">6px</dimen>
+    <dimen name="activity_checkin_LinearLayout_4_layout_marginBottom">6px</dimen>
+    <dimen name="activity_checkin_btn_checkin_all_5_layout_marginRight">6px</dimen>
+    <dimen name="activity_checkin_btn_checkin_all_6_layout_width">260px</dimen>
+    <dimen name="activity_checkin_btn_checkin_one_7_layout_marginLeft">6px</dimen>
+    <dimen name="activity_checkin_btn_checkin_one_8_layout_width">260px</dimen>
+
+    <!-- activity_checkin_none.xml -->
+    <dimen name="activity_checkin_none_tv_checkin_none_tip_1_0_layout_marginTop">33px</dimen>
+    <dimen name="activity_checkin_none_img_checkin_none_image_1_layout_marginTop">33px</dimen>
+    <dimen name="activity_checkin_none_img_checkin_none_image_2_layout_width">170px</dimen>
+    <dimen name="activity_checkin_none_img_checkin_none_image_3_layout_height">170px</dimen>
+    <dimen name="activity_checkin_none_tv_checkin_none_tip_2_4_layout_marginLeft">25px</dimen>
+    <dimen name="activity_checkin_none_tv_checkin_none_tip_2_5_layout_marginRight">25px</dimen>
+    <dimen name="activity_checkin_none_tv_checkin_none_tip_2_6_layout_marginTop">33px</dimen>
+    <dimen name="activity_checkin_none_tv_checkin_none_tip_2_7_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_checkin_none_btn_checkin_none_add_8_layout_marginLeft">25px</dimen>
+    <dimen name="activity_checkin_none_btn_checkin_none_add_9_layout_marginRight">25px</dimen>
+    <dimen name="activity_checkin_none_btn_checkin_none_add_10_layout_marginTop">33px</dimen>
+    <dimen name="activity_checkin_none_btn_checkin_none_add_11_layout_marginBottom">33px</dimen>
+
+    <!-- activity_clue.xml -->
+    <dimen name="activity_clue_LinearLayout_0_layout_marginTop">33px</dimen>
+    <dimen name="activity_clue_View_1_layout_height">1px</dimen>
+    <dimen name="activity_clue_gv_clue_images_2_layout_height">250px</dimen>
+    <dimen name="activity_clue_View_3_layout_height">1px</dimen>
+    <dimen name="activity_clue_clue_loca_LL_4_layout_marginTop">16px</dimen>
+    <dimen name="activity_clue_ImageView_5_layout_marginLeft">16px</dimen>
+    <dimen name="activity_clue_ImageView_6_layout_width">26px</dimen>
+    <dimen name="activity_clue_ImageView_7_layout_height">26px</dimen>
+    <dimen name="activity_clue_tv_clue_location_8_layout_marginLeft">8px</dimen>
+    <dimen name="activity_clue_tv_clue_location_9_layout_marginRight">33px</dimen>
+    <dimen name="activity_clue_edt_clue_content_padding">16px</dimen>
+    <dimen name="activity_clue_edt_clue_content_13_layout_marginTop">33px</dimen>
+    <dimen name="activity_clue_LinearLayout_14_textmarginTop">8px</dimen>
+    <dimen name="activity_clue_gv_clue_images_0_layout_margin">16px</dimen>
+    <dimen name="activity_clue_gv_clue_images_1_horizontalSpacing">8px</dimen>
+    <dimen name="activity_clue_gv_clue_images_2_verticalSpacing">8px</dimen>
+    <dimen name="activity_clue_btn_clue_upload_3_layout_margin">41px</dimen>
+
+    <!-- activity_families.xml -->
+    <dimen name="activity_families_btn_families_send_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_families_btn_families_send_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_families_btn_families_send_2_layout_marginTop">33px</dimen>
+    <dimen name="activity_families_btn_families_send_3_layout_marginBottom">25px</dimen>
+
+    <!-- activity_familydetail.xml -->
+    <dimen name="activity_familydetail_LinearLayout_marginTop">33px</dimen>
+    <dimen name="activity_familydetail_img_familydetail_image_marginLeft">25px</dimen>
+    <dimen name="activity_familydetail_LinearLayout_marginLeft">16px</dimen>
+    <dimen name="activity_familydetail_tv_familydetail_phone_marginTop">8px</dimen>
+    <dimen name="activity_familydetail_familydetail_remark_LL_marginTop">33px</dimen>
+    <dimen name="activity_familydetail_TextView_marginLeft">25px</dimen>
+    <dimen name="activity_familydetail_img_viewclue_set_nickname_marginRight">16px</dimen>
+    <dimen name="activity_familydetail_img_viewclue_set_nickname_width">36px</dimen>
+    <dimen name="activity_familydetail_img_viewclue_set_nickname_height">36px</dimen>
+    <dimen name="activity_familydetail_tv_familydetail_nickname_marginRight">16px</dimen>
+    <dimen name="activity_familydetail_cb_familydetail_allow_marginRight">16px</dimen>
+    <dimen name="activity_familydetail_cb_familydetail_allow__width">88px</dimen>
+    <dimen name="activity_familydetail_cb_familydetail_allow_height">60px</dimen>
+    <dimen name="activity_familydetail_btn_familydetail_call_marginLeftRight">6px</dimen>
+    <dimen name="activity_familydetail_btn_familydetail_call_marginTop">66px</dimen>
+    <dimen name="activity_familydetail_btn_familydetail_delete_marginLeftRight">25px</dimen>
+    <dimen name="activity_familydetail_btn_familydetail_left_call_padding">101px</dimen>
+    <dimen name="activity_familydetail_btn_familydetail_right_call_padding">95px</dimen>
+    <dimen name="activity_familydetail_left_ImageView_panding">70px</dimen>
+    <dimen name="activity_familydetail_right_ImageView_panding">46px</dimen>
+
+    <!-- activity_familyin.xml -->
+    <dimen name="activity_familyin_LinearLayout_marginTop">33px</dimen>
+    <dimen name="activity_familyin_img_familyin_image_marginLeft">25px</dimen>
+    <dimen name="activity_familyin_tv_familyin_nickname_marginLeft">16px</dimen>
+    <dimen name="activity_familyin_TextView_marginLeft">25px</dimen>
+    <dimen name="activity_familyin_tv_familyin_name_marginRight">25px</dimen>
+    <dimen name="activity_familyin_LinearLayout_btn_marginTop">63px</dimen>
+
+    <!-- activity_familylocate.xml -->
+    <dimen name="activity_familylocate_textView2_0_layout_height">1px</dimen>
+    <dimen name="activity_familylocate_RelativeLayout_1_layout_marginTop">18px</dimen>
+    <dimen name="activity_familylocate_RelativeLayout_2_layout_marginBottom">11px</dimen>
+    <dimen name="activity_familylocate_img_familylocate_image_3_layout_marginLeft">33px</dimen>
+    <dimen name="activity_familylocate_img_familylocate_image_4_layout_width">30px</dimen>
+    <dimen name="activity_familylocate_img_familylocate_image_5_layout_height">30px</dimen>
+    <dimen name="activity_familylocate_tv_familylocate_name_6_layout_marginLeft">10px</dimen>
+    <dimen name="activity_familylocate_tv_familylocate_name_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_familylocate_RelativeLayout_8_layout_marginBottom">20px</dimen>
+    <dimen name="activity_familylocate_img_familylocate_location_9_layout_marginLeft">33px</dimen>
+    <dimen name="activity_familylocate_img_familylocate_location_10_layout_width">30px</dimen>
+    <dimen name="activity_familylocate_img_familylocate_location_11_layout_height">30px</dimen>
+    <dimen name="activity_familylocate_tv_familylocate_location_12_layout_marginLeft">10px</dimen>
+    <dimen name="activity_familylocate_btn_familylocate_call_14_layout_marginLeft">6px</dimen>
+    <dimen name="activity_familylocate_btn_familylocate_call_15_layout_marginRight">6px</dimen>
+    <dimen name="activity_familylocate_btn_familylocate_call_16_layout_marginBottom">20px</dimen>
+    <dimen name="activity_familylocate_btn_familylocate_cancel_17_layout_marginLeft">25px</dimen>
+    <dimen name="activity_familylocate_btn_familylocate_cancel_18_layout_marginRight">25px</dimen>
+    <dimen name="activity_familylocate_btn_familylocate_cancel_19_layout_marginBottom">13px</dimen>
+    <dimen name="activity_familylocate_layout_familylocate_families_20_layout_height">135px</dimen>
+    <dimen name="activity_familylocate_textView1_21_layout_height">1px</dimen>
+    <dimen name="activity_familylocate_lv_familylocate_families_22_layout_marginLeft">16px</dimen>
+    <dimen name="activity_familylocate_lv_familylocate_families_23_layout_marginRight">16px</dimen>
+    <dimen name="activity_familylocate_lv_familylocate_families_24_layout_height">116px</dimen>
+    <dimen name="activity_familylocate_HorizontalScrollView_25_layout_Left">8px</dimen>
+    <dimen name="activity_familylocate_HorizontalScrollView_26_layout_Right">8px</dimen>
+    <dimen name="activity_familylocate_HorizontalScrollView_25_layout_Bottom">8px</dimen>
+    <dimen name="activity_familylocate_HorizontalScrollView_26_layout_Top">10px</dimen>
+
+    <!-- activity_familylocate_none.xml -->
+    <dimen name="activity_familylocate_none_tv_familylocate_none_tip_1_0_layout_marginTop">33px</dimen>
+    <dimen name="activity_familylocate_none_img_familylocate_none_image_1_layout_marginTop">33px</dimen>
+    <dimen name="activity_familylocate_none_img_familylocate_none_image_2_layout_width">170px</dimen>
+    <dimen name="activity_familylocate_none_img_familylocate_none_image_3_layout_height">170px</dimen>
+    <dimen name="activity_familylocate_none_tv_familylocate_none_tip_2_4_layout_marginLeft">25px</dimen>
+    <dimen name="activity_familylocate_none_tv_familylocate_none_tip_2_5_layout_marginRight">25px</dimen>
+    <dimen name="activity_familylocate_none_tv_familylocate_none_tip_2_6_layout_marginTop">33px</dimen>
+    <dimen name="activity_familylocate_none_tv_familylocate_none_tip_2_7_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_familylocate_none_btn_familylocate_none_add_8_layout_marginLeft">25px</dimen>
+    <dimen name="activity_familylocate_none_btn_familylocate_none_add_9_layout_marginRight">25px</dimen>
+    <dimen name="activity_familylocate_none_btn_familylocate_none_add_10_layout_marginTop">33px</dimen>
+
+    <!-- activity_familyout.xml -->
+    <dimen name="activity_familyout_LinearLayout_marginTop">33px</dimen>
+    <dimen name="activity_familyout_img_familyout_image_marginLeft">25px</dimen>
+    <dimen name="activity_familyout_LinearLayout_marginLeft">25px</dimen>
+    <dimen name="activity_familyout_tv_familyout_phone_marginTop">8px</dimen>
+    <dimen name="activity_familyout_tv_familyout_tip_marginLeft">50px</dimen>
+    <dimen name="activity_familyout_tv_familyout_tip_marginRight">50px</dimen>
+    <dimen name="activity_familyout_tv_familyout_tip_marginTop">50px</dimen>
+    <dimen name="activity_familyout_View_marginLeft">50px</dimen>
+    <dimen name="activity_familyout_View_marginRight">50px</dimen>
+    <dimen name="activity_familyout_View_marginTop">16px</dimen>
+    <dimen name="activity_familyout_btn_familyout_invite_marginTop">83px</dimen>
+
+    <!-- activity_familyremark.xml -->
+    <dimen name="activity_familyremark_edt_familyremark_remark_ed_marginLeft">25px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_remark_ed_marginRight">25px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_remark_ed_marginTop">33px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_grid_3_layout_marginLeft">30px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_grid_4_layout_marginRight">30px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_grid_5_layout_marginTop">30px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_grid_0_horizontalSpacing">33px</dimen>
+    <dimen name="activity_familyremark_edt_familyremark_grid_1_verticalSpacing">16px</dimen>
+
+    <!-- activity_feedback.xml -->
+    <dimen name="activity_feedback_edt_feedback_content_0_paddingTop">16px</dimen>
+    <dimen name="activity_feedback_edt_feedback_content_1_layout_marginLeft">25px</dimen>
+    <dimen name="activity_feedback_edt_feedback_content_2_layout_marginRight">25px</dimen>
+    <dimen name="activity_feedback_edt_feedback_content_3_layout_marginTop">36px</dimen>
+    <dimen name="activity_feedback_edt_feedback_content_4_layout_height">246px</dimen>
+    <dimen name="activity_feedback_tv_feedback_tip_5_layout_marginLeft">40px</dimen>
+    <dimen name="activity_feedback_tv_feedback_tip_6_layout_marginRight">40px</dimen>
+    <dimen name="activity_feedback_tv_feedback_tip_7_layout_marginTop">23px</dimen>
+    <dimen name="activity_feedback_tv_feedback_tip_8_lineSpacingExtra">6px</dimen>
+
+    <!-- activity_fogot_1.xml -->
+    <dimen name="activity_fogot_1_edt_fogot_1_phone_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_fogot_1_edt_fogot_1_phone_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_fogot_1_edt_fogot_1_phone_2_layout_marginTop">41px</dimen>
+
+    <!-- activity_fogot_2.xml -->
+    <dimen name="activity_fogot_2_edt_fogot_2_check_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_fogot_2_edt_fogot_2_check_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_fogot_2_edt_fogot_2_check_2_layout_marginTop">41px</dimen>
+    <dimen name="activity_fogot_2_tv_fogot_2_tip_1_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_fogot_2_tv_fogot_2_tip_1_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_fogot_2_tv_fogot_2_tip_1_5_layout_marginTop">20px</dimen>
+    <dimen name="activity_fogot_2_RelativeLayout_6_layout_marginTop">15px</dimen>
+    <dimen name="activity_fogot_2_btn_fogot_2_resend_0_layout_width">153px</dimen>
+    <dimen name="activity_fogot_2_btn_fogot_2_resend_1_layout_height">51px</dimen>
+
+    <!-- activity_fogot_3.xml -->
+    <dimen name="activity_fogot_3_edt_fogot_3_newpassword_2_layout_marginLeft">25px</dimen>
+    <dimen name="activity_fogot_3_edt_fogot_3_newpassword_3_layout_marginRight">25px</dimen>
+    <dimen name="activity_fogot_3_edt_fogot_3_newpassword_4_layout_marginTop">41px</dimen>
+    <dimen name="activity_fogot_3_tv_fogot_3_tip_5_layout_marginTop">20px</dimen>
+
+    <!-- activity_guide.xml -->
+    <dimen name="activity_guide_layout_guide_0_layout_height">276px</dimen>
+    <dimen name="activity_guide_layout_four_p_1_layout_marginTop">18px</dimen>
+    <dimen name="activity_guide_img_guide_first_2_layout_marginRight">20px</dimen>
+    <dimen name="activity_guide_img_guide_first_3_layout_width">15px</dimen>
+    <dimen name="activity_guide_img_guide_first_4_layout_height">15px</dimen>
+    <dimen name="activity_guide_img_guide_second_5_layout_marginRight">20px</dimen>
+    <dimen name="activity_guide_img_guide_second_6_layout_width">15px</dimen>
+    <dimen name="activity_guide_img_guide_second_7_layout_height">15px</dimen>
+    <dimen name="activity_guide_img_guide_third_8_layout_marginRight">20px</dimen>
+    <dimen name="activity_guide_img_guide_third_9_layout_width">15px</dimen>
+    <dimen name="activity_guide_img_guide_third_10_layout_height">15px</dimen>
+    <dimen name="activity_guide_img_guide_fourth_11_layout_width">15px</dimen>
+    <dimen name="activity_guide_img_guide_fourth_12_layout_height">15px</dimen>
+    <dimen name="activity_guide_linearLayout1_13_layout_marginLeft">28px</dimen>
+    <dimen name="activity_guide_linearLayout1_14_layout_marginRight">28px</dimen>
+    <dimen name="activity_guide_linearLayout1_15_layout_marginBottom">37px</dimen>
+    <dimen name="activity_guide_btn_guide_register_16_layout_marginLeft">23px</dimen>
+    <dimen name="activity_guide_img_guide_tip_17_layout_marginTop">25px</dimen>
+    <dimen name="activity_guide_img_guide_tip_18_layout_width">365px</dimen>
+    <dimen name="activity_guide_img_guide_tip_19_layout_height">96px</dimen>
+    <dimen name="activity_guide_btn_guide_login_0_layout_width">218px</dimen>
+    <dimen name="activity_guide_btn_guide_register_1_layout_width">218px</dimen>
+
+    <!-- activity_login.xml -->
+    <dimen name="activity_login_edt_login_phone_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_login_edt_login_phone_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_login_edt_login_phone_2_layout_marginTop">41px</dimen>
+    <dimen name="activity_login_edt_login_password_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_login_edt_login_password_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_login_edt_login_password_5_layout_marginTop">20px</dimen>
+    <dimen name="activity_login_btn_login_login_6_layout_marginLeft">25px</dimen>
+    <dimen name="activity_login_btn_login_login_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_login_btn_login_login_8_layout_marginTop">108px</dimen>
+    <dimen name="activity_login_tv_login_fogot_9_layout_marginRight">25px</dimen>
+    <dimen name="activity_login_tv_login_fogot_10_layout_marginTop">25px</dimen>
+
+    <!-- activity_main.xml -->
+
+
+    <!-- activity_mapsos.xml -->
+
+    <dimen name="activity_mapsos_img_mapsos_locate_3_layout_marginTop">11px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_locate_4_layout_width">40px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_locate_5_layout_height">40px</dimen>
+    <dimen name="activity_mapsos_tv_mapsos_locate_6_layout_marginTop">60px</dimen>
+    <dimen name="activity_mapsos_tv_mapsos_locate_7_layout_marginBottom">11px</dimen>
+    <dimen name="activity_mapsos_textView1_8_layout_height">1px</dimen>
+    <dimen name="activity_mapsos_btn_call_110_9_layout_marginLeft">8px</dimen>
+    <dimen name="activity_mapsos_btn_call_110_10_layout_marginRight">8px</dimen>
+    <dimen name="activity_mapsos_btn_call_110_11_layout_marginTop">6px</dimen>
+    <dimen name="activity_mapsos_btn_call_110_12_layout_marginBottom">6px</dimen>
+    <dimen name="activity_mapsos_textView2_13_layout_height">1px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_image_16_layout_marginLeft">36px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_rl_18_layout_height">96px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_image_17_layout_width">26px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_image_18_layout_height">26px</dimen>
+    <dimen name="activity_mapsos_tv_mapsos_name_19_layout_marginLeft">15px</dimen>
+    <dimen name="activity_mapsos_tv_mapsos_name_20_layout_marginRight">36px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_location_22_layout_marginLeft">36px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_location_23_layout_width">26px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_location_24_layout_height">26px</dimen>
+    <dimen name="activity_mapsos_tv_mapsos_location_25_layout_marginLeft">15px</dimen>
+    <dimen name="activity_mapsos_tv_mapsos_location_26_layout_marginRight">36px</dimen>
+    <dimen name="activity_mapsos_btn_mapsos_call_27_layout_marginLeft">25px</dimen>
+    <dimen name="activity_mapsos_btn_mapsos_call_28_layout_marginRight">25px</dimen>
+    <dimen name="activity_mapsos_btn_mapsos_call_29_layout_marginBottom">20px</dimen>
+    <dimen name="activity_mapsos_btn_mapsos_cancel_30_layout_marginLeft">25px</dimen>
+    <dimen name="activity_mapsos_btn_mapsos_cancel_31_layout_marginRight">25px</dimen>
+    <dimen name="activity_mapsos_btn_mapsos_cancel_32_layout_marginBottom">13px</dimen>
+
+    <!-- activity_nickname.xml -->
+    <dimen name="activity_nickname_edt_nickname_new_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_nickname_edt_nickname_new_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_nickname_edt_nickname_new_2_layout_marginTop">41px</dimen>
+
+    <!-- activity_nomyclue.xml -->
+    <dimen name="activity_nomyclue_img_nomyclue_tip_0_layout_marginTop">130px</dimen>
+    <dimen name="activity_nomyclue_tv_nomyclue_tip_1_layout_marginTop">86px</dimen>
+
+    <!-- activity_notificationdetail_1.xml -->
+    <dimen name="activity_notificationdetail_1_notificationdetail_RL_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_RL_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_RL_2_layout_marginTop">33px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_RL_3_layout_height">288px</dimen>
+    <dimen name="activity_notificationdetail_1_btn_notificationdetail_play_4_layout_marginTop">91px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_tip1_5_layout_marginBottom">55px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_RL_2_6_layout_marginLeft">25px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_RL_2_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_notificationdetail_1_img_notificationdetail_1_map_8_layout_marginLeft">6px</dimen>
+    <dimen name="activity_notificationdetail_1_img_notificationdetail_1_map_9_layout_marginRight">6px</dimen>
+    <dimen name="activity_notificationdetail_1_img_notificationdetail_1_map_10_layout_marginTop">6px</dimen>
+    <dimen name="activity_notificationdetail_1_img_notificationdetail_1_map_11_layout_height">313px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_LL_12_layout_marginRight">25px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_LL_13_layout_marginTop">16px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_14_layout_marginLeft">8px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_15_layout_width">26px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_16_layout_height">26px</dimen>
+    <dimen name="activity_notificationdetail_1_notificationdetail_location_tv_17_layout_marginLeft">8px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_18_paddingLeft">16px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_19_layout_marginTop">16px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_19_layout_marginLeft">16px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_19_layout_marginRight">16px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_19_layout_padding">8px</dimen>
+    <dimen name="activity_notificationdetail_1_btn_notificationdetail_play_0_layout_width">100px</dimen>
+    <dimen name="activity_notificationdetail_1_btn_notificationdetail_play_1_layout_height">100px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_2_layout_width">258px</dimen>
+    <dimen name="activity_notificationdetail_1_tv_notificationdetail_call_3_layout_height">58px</dimen>
+
+    <!-- activity_notificationdetail_2.xml -->
+    <dimen name="activity_notificationdetail_2_img_notificationdetail_2_map_0_layout_marginTop">166px</dimen>
+    <dimen name="activity_notificationdetail_2_img_notificationdetail_2_map_1_layout_height">313px</dimen>
+    <dimen name="activity_notificationdetail_2_tv_notificationdetail_2_arrived_2_layout_marginLeft">25px</dimen>
+    <dimen name="activity_notificationdetail_2_tv_notificationdetail_2_arrived_3_layout_marginRight">25px</dimen>
+    <dimen name="activity_notificationdetail_2_tv_notificationdetail_2_arrived_3_layout_padding">6px</dimen>
+    <dimen name="activity_notificationdetail_2_img_notificationdetail_2_map_0_layout_margin">50px</dimen>
+
+    <!-- activity_password.xml -->
+    <dimen name="activity_password_edt_password_old_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_password_edt_password_old_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_password_edt_password_old_2_layout_marginTop">41px</dimen>
+    <dimen name="activity_password_edt_password_new_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_password_edt_password_new_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_password_edt_password_new_5_layout_marginTop">25px</dimen>
+    <dimen name="activity_password_tv_password_tip_6_layout_marginTop">20px</dimen>
+
+    <!-- activity_phone_1.xml -->
+    <dimen name="activity_phone_1_img_phone_1_image_0_layout_marginTop">65px</dimen>
+    <dimen name="activity_phone_1_img_phone_1_image_1_layout_width">151px</dimen>
+    <dimen name="activity_phone_1_img_phone_1_image_2_layout_height">151px</dimen>
+    <dimen name="activity_phone_1_tv_phone_1_tip_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_phone_1_tv_phone_1_tip_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_phone_1_tv_phone_1_tip_5_layout_marginTop">41px</dimen>
+    <dimen name="activity_phone_1_edt_phone_1_number_6_layout_marginLeft">25px</dimen>
+    <dimen name="activity_phone_1_edt_phone_1_number_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_phone_1_edt_phone_1_number_8_layout_marginTop">41px</dimen>
+    <dimen name="activity_phone_1_edt_phone_1_password_9_layout_marginLeft">25px</dimen>
+    <dimen name="activity_phone_1_edt_phone_1_password_10_layout_marginRight">25px</dimen>
+    <dimen name="activity_phone_1_edt_phone_1_password_11_layout_marginTop">25px</dimen>
+
+    <!-- activity_phone_2.xml -->
+    <dimen name="activity_phone_2_edt_phone_2_check_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_phone_2_edt_phone_2_check_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_phone_2_edt_phone_2_check_2_layout_marginTop">41px</dimen>
+    <dimen name="activity_phone_2_tv_phone_2_tip_1_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_phone_2_tv_phone_2_tip_1_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_phone_2_tv_phone_2_tip_1_5_layout_marginTop">20px</dimen>
+    <dimen name="activity_phone_2_RelativeLayout_6_layout_marginLeft">25px</dimen>
+    <dimen name="activity_phone_2_RelativeLayout_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_phone_2_RelativeLayout_8_layout_marginTop">6px</dimen>
+    <dimen name="activity_phone_2_btn_phone_2_resend_9_textSize">18sp</dimen>
+    <dimen name="activity_phone_2_btn_phone_2_resend_0_layout_width">153px</dimen>
+    <dimen name="activity_phone_2_btn_phone_2_resend_1_layout_height">51px</dimen>
+
+    <!-- activity_register_1.xml -->
+    <dimen name="activity_register_1_edt_register_1_phone_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_1_edt_register_1_phone_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_1_edt_register_1_phone_2_layout_marginTop">41px</dimen>
+    <dimen name="activity_register_1_edt_register_1_password_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_1_edt_register_1_password_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_1_edt_register_1_password_5_layout_marginTop">20px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_1_6_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_1_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_1_8_layout_marginTop">20px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_1_9_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_2_10_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_2_11_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_2_12_layout_marginTop">6px</dimen>
+    <dimen name="activity_register_1_tv_register_1_tip_2_13_lineSpacingExtra">6px</dimen>
+
+    <!-- activity_register_2.xml -->
+    <dimen name="activity_register_2_edt_register_2_check_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_2_edt_register_2_check_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_2_edt_register_2_check_2_layout_marginTop">41px</dimen>
+    <dimen name="activity_register_2_tv_register_2_tip_1_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_2_tv_register_2_tip_1_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_2_tv_register_2_tip_1_5_layout_marginTop">20px</dimen>
+    <dimen name="activity_register_2_RelativeLayout_6_layout_marginTop">6px</dimen>
+    <dimen name="activity_register_2_btn_register_2_resend_0_layout_width">153px</dimen>
+    <dimen name="activity_register_2_btn_register_2_resend_1_layout_height">51px</dimen>
+
+    <!-- activity_register_3.xml -->
+    <dimen name="activity_register_3_img_register_3_image_0_layout_marginTop">46px</dimen>
+    <dimen name="activity_register_3_img_register_3_image_1_layout_width">175px</dimen>
+    <dimen name="activity_register_3_img_register_3_image_2_layout_height">175px</dimen>
+    <dimen name="activity_register_3_tv_register_3_tip_2_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_3_tv_register_3_tip_2_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_3_tv_register_3_tip_2_5_layout_marginTop">28px</dimen>
+    <dimen name="activity_register_3_tv_register_3_tip_2_6_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_register_3_edt_register_3_nickname_7_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_3_edt_register_3_nickname_8_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_3_edt_register_3_nickname_9_layout_marginTop">35px</dimen>
+    <dimen name="activity_register_3_textView1_10_layout_height">1px</dimen>
+    <dimen name="activity_register_3_tv_image_tip_11_layout_marginTop">23px</dimen>
+    <dimen name="activity_register_3_btn_image_snapshot_12_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_3_btn_image_snapshot_13_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_3_btn_image_snapshot_14_layout_marginTop">20px</dimen>
+    <dimen name="activity_register_3_btn_image_snapshot_15_layout_height">75px</dimen>
+    <dimen name="activity_register_3_btn_image_album_16_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_3_btn_image_album_17_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_3_btn_image_album_18_layout_marginTop">20px</dimen>
+    <dimen name="activity_register_3_btn_image_album_19_layout_height">75px</dimen>
+    <dimen name="activity_register_3_btn_image_cancel_20_layout_marginLeft">25px</dimen>
+    <dimen name="activity_register_3_btn_image_cancel_21_layout_marginRight">25px</dimen>
+    <dimen name="activity_register_3_btn_image_cancel_22_layout_marginTop">28px</dimen>
+    <dimen name="activity_register_3_btn_image_cancel_23_layout_marginBottom">23px</dimen>
+    <dimen name="activity_register_3_btn_image_cancel_24_layout_height">75px</dimen>
+
+    <!-- activity_registered.xml -->
+    <dimen name="activity_registered_tv_registered_tip_1_0_layout_marginTop">18px</dimen>
+    <dimen name="activity_registered_btn_registered_add_1_layout_marginLeft">25px</dimen>
+    <dimen name="activity_registered_btn_registered_add_2_layout_marginRight">25px</dimen>
+    <dimen name="activity_registered_btn_registered_add_3_layout_marginTop">50px</dimen>
+    <dimen name="activity_registered_ckb_registered_contact_4_layout_marginLeft">25px</dimen>
+    <dimen name="activity_registered_ckb_registered_contact_5_layout_marginRight">25px</dimen>
+    <dimen name="activity_registered_ckb_registered_contact_6_layout_marginTop">16px</dimen>
+    <dimen name="activity_registered_tv_registered_tip_2_7_layout_pd">6px</dimen>
+    <dimen name="activity_registered_tv_registered_tip_2_7_layout_marginLeft">25px</dimen>
+    <dimen name="activity_registered_tv_registered_tip_2_8_layout_marginRight">25px</dimen>
+    <dimen name="activity_registered_tv_registered_tip_2_9_layout_marginTop">35px</dimen>
+    <dimen name="activity_registered_tv_registered_tip_2_10_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_registered_img_registered_image_11_layout_marginLeft">9px</dimen>
+    <dimen name="activity_registered_img_registered_image_11_layout_marginTop">63px</dimen>
+    <dimen name="activity_registered_img_registered_image_12_layout_width">175px</dimen>
+    <dimen name="activity_registered_img_registered_image_13_layout_height">175px</dimen>
+
+    <!-- activity_searchadd.xml -->
+    <dimen name="activity_searchadd_edt_searchadd_padding">25px</dimen>
+    <dimen name="activity_searchadd_edt_searchadd_marginRight">13px</dimen>
+    <dimen name="activity_searchadd_RelativeLayout_marginTop">33px</dimen>
+    <dimen name="activity_searchadd_RelativeLayout_marginLeftRight">25px</dimen>
+    <dimen name="activity_searchadd_RelativeLayout_btn_width">116px</dimen>
+    <dimen name="activity_searchadd_RelativeLayout_btn_height">73px</dimen>
+    <dimen name="activity_searchadd_edt_height">75px</dimen>
+
+    <!-- activity_sendcheck.xml -->
+    <dimen name="activity_sendcheck_tv_sendcheck_tip_0_layout_marginTop">248px</dimen>
+    <dimen name="activity_sendcheck_img_sendcheck_tip_1_layout_marginTop">111px</dimen>
+
+    <!-- activity_sendsos.xml -->
+    <dimen name="activity_sendsos_tv_sendsos_tip_0_layout_marginTop">245px</dimen>
+    <dimen name="activity_sendsos_img_sendsos_tip_1_layout_marginTop">111px</dimen>
+
+    <!-- activity_sentcheck.xml -->
+    <dimen name="activity_sentcheck_img_sentcheck_tip_0_layout_marginTop">91px</dimen>
+    <dimen name="activity_sentcheck_img_sentcheck_tip_1_layout_width">166px</dimen>
+    <dimen name="activity_sentcheck_img_sentcheck_tip_2_layout_height">166px</dimen>
+    <dimen name="activity_sentcheck_btn_sentcheck_know_3_layout_marginLeft">25px</dimen>
+    <dimen name="activity_sentcheck_btn_sentcheck_know_4_layout_marginRight">25px</dimen>
+    <dimen name="activity_sentcheck_btn_sentcheck_know_5_layout_marginTop">248px</dimen>
+    <dimen name="activity_sentcheck_tv_sentcheck_target_6_layout_marginLeft">25px</dimen>
+    <dimen name="activity_sentcheck_tv_sentcheck_target_7_layout_marginRight">25px</dimen>
+    <dimen name="activity_sentcheck_tv_sentcheck_target_8_layout_marginTop">80px</dimen>
+    <dimen name="activity_sentcheck_tv_sentcheck_target_9_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_sentcheck_tv_sentcheck_tip_10_layout_marginTop">50px</dimen>
+
+    <!-- activity_sentclue.xml -->
+    <dimen name="activity_sentclue_img_sentclue_map_height">471px</dimen>
+    <dimen name="activity_sentclue_tv_sentclue_tip_1_marginTop">30px</dimen>
+    <dimen name="activity_sentclue_LinearLayout_marginTop">83px</dimen>
+    <dimen name="activity_sentclue_img_sentclue_sendok_width">25px</dimen>
+    <dimen name="activity_sentclue_img_sentclue_sendok_height">25px</dimen>
+
+    <!-- activity_sentsos.xml -->
+    <dimen name="activity_sentsos_img_sentsos_tip_0_layout_marginTop">91px</dimen>
+    <dimen name="activity_sentsos_img_sentsos_tip_1_layout_width">166px</dimen>
+    <dimen name="activity_sentsos_img_sentsos_tip_2_layout_height">166px</dimen>
+    <dimen name="activity_sentsos_tv_sentsos_tip_3_layout_marginTop">50px</dimen>
+    <dimen name="activity_sentsos_tv_sentsos_target_4_layout_marginLeft">25px</dimen>
+    <dimen name="activity_sentsos_tv_sentsos_target_5_layout_marginRight">25px</dimen>
+    <dimen name="activity_sentsos_tv_sentsos_target_6_layout_marginTop">80px</dimen>
+    <dimen name="activity_sentsos_tv_sentsos_target_7_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_sentsos_LinearLayout_8_layout_marginLeft">25px</dimen>
+    <dimen name="activity_sentsos_LinearLayout_9_layout_marginRight">25px</dimen>
+    <dimen name="activity_sentsos_LinearLayout_10_layout_marginTop">158px</dimen>
+    <dimen name="activity_sentsos_btn_sentsos_know_11_layout_marginRight">6px</dimen>
+    <dimen name="activity_sentsos_btn_sentsos_know_12_layout_width">260px</dimen>
+    <dimen name="activity_sentsos_btn_sentsos_call_110_13_layout_marginLeft">6px</dimen>
+    <dimen name="activity_sentsos_btn_sentsos_call_110_14_layout_width">260px</dimen>
+
+    <!-- activity_viewclue.xml -->
+    <dimen name="activity_viewclue_img_viewclue_user_image_width">66px</dimen>
+    <dimen name="activity_viewclue_img_viewclue_user_image_height">66px</dimen>
+    <dimen name="activity_viewclue_tv_viewclue_content_marginTop">8px</dimen>
+    <dimen name="activity_viewclue_img_viewclue_location_width">26px</dimen>
+    <dimen name="activity_viewclue_img_viewclue_location_height">26px</dimen>
+    <dimen name="activity_viewclue_LinearLayout_marginTop">8px</dimen>
+
+    <!-- activity_viewer.xml -->
+
+
+    <!-- activity_voicesos.xml -->
+    <dimen name="activity_voicesos_relativeLayout1_0_layout_marginLeft">25px</dimen>
+    <dimen name="activity_voicesos_relativeLayout1_1_layout_marginRight">25px</dimen>
+    <dimen name="activity_voicesos_relativeLayout1_2_layout_marginTop">98px</dimen>
+    <dimen name="activity_voicesos_relativeLayout1_3_layout_height">288px</dimen>
+    <dimen name="activity_voicesos_img_voicesos_play_4_layout_marginTop">91px</dimen>
+    <dimen name="activity_voicesos_img_voicesos_play_5_layout_width">100px</dimen>
+    <dimen name="activity_voicesos_img_voicesos_play_6_layout_height">100px</dimen>
+    <dimen name="activity_voicesos_tv_voicesos_tip_7_layout_marginBottom">55px</dimen>
+    <dimen name="activity_voicesos_relativeLayout2_8_layout_marginLeft">25px</dimen>
+    <dimen name="activity_voicesos_relativeLayout2_9_layout_marginRight">25px</dimen>
+    <dimen name="activity_voicesos_imageView4_10_layout_marginLeft">8px</dimen>
+    <dimen name="activity_voicesos_imageView4_12_layout_width">26px</dimen>
+    <dimen name="activity_voicesos_imageView4_13_layout_height">26px</dimen>
+    <dimen name="activity_voicesos_tv_voicesos_loc_14_layout_marginLeft">8px</dimen>
+    <dimen name="activity_voicesos_rl_13_layout_height">30px</dimen>
+    <dimen name="activity_voicesos_rl_13_layout_top">6px</dimen>
+    <dimen name="activity_voicesos_layout_voicesos_map_15_layout_marginLeft">6px</dimen>
+    <dimen name="activity_voicesos_layout_voicesos_map_16_layout_marginRight">6px</dimen>
+    <dimen name="activity_voicesos_layout_voicesos_map_17_layout_marginTop">6px</dimen>
+    <dimen name="activity_voicesos_layout_voicesos_map_18_layout_height">313px</dimen>
+    <dimen name="activity_voicesos_LinearLayout_19_layout_marginLeft">25px</dimen>
+    <dimen name="activity_voicesos_LinearLayout_20_layout_marginRight">25px</dimen>
+    <dimen name="activity_voicesos_LinearLayout_21_layout_marginTop">36px</dimen>
+    <dimen name="activity_voicesos_btn_voicesos_cancel_22_layout_marginRight">6px</dimen>
+    <dimen name="activity_voicesos_btn_voicesos_cancel_23_layout_width">260px</dimen>
+    <dimen name="activity_voicesos_btn_voicesos_send_24_layout_marginLeft">6px</dimen>
+    <dimen name="activity_voicesos_btn_voicesos_send_25_layout_width">260px</dimen>
+
+    <!-- activity_voicesos_none.xml -->
+    <dimen name="activity_voicesos_none_tv_voicesos_none_tip_1_0_layout_marginTop">16px</dimen>
+    <dimen name="activity_voicesos_none_img_voicesos_none_image_1_layout_marginTop">16px</dimen>
+    <dimen name="activity_voicesos_none_img_voicesos_none_image_2_layout_width">400px</dimen>
+    <dimen name="activity_voicesos_none_img_voicesos_none_image_3_layout_height">400px</dimen>
+    <dimen name="activity_voicesos_none_tv_voicesos_none_tip_2_4_layout_marginLeft">25px</dimen>
+    <dimen name="activity_voicesos_none_tv_voicesos_none_tip_2_5_layout_marginRight">25px</dimen>
+    <dimen name="activity_voicesos_none_tv_voicesos_none_tip_2_6_layout_marginTop">33px</dimen>
+    <dimen name="activity_voicesos_none_tv_voicesos_none_tip_2_7_lineSpacingExtra">6px</dimen>
+    <dimen name="activity_voicesos_none_btn_voicesos_none_add_8_layout_marginLeft">25px</dimen>
+    <dimen name="activity_voicesos_none_btn_voicesos_none_add_9_layout_marginRight">25px</dimen>
+    <dimen name="activity_voicesos_none_btn_voicesos_none_add_10_layout_marginTop">33px</dimen>
+    <dimen name="activity_voicesos_none_btn_voicesos_none_add_11_layout_marginBottom">33px</dimen>
+
+    <!-- comm_toast_view.xml -->
+    <dimen name="comm_toast_view_xl_toast_txt_0_paddingLeft">16px</dimen>
+    <dimen name="comm_toast_view_xl_toast_txt_1_paddingRight">16px</dimen>
+    <dimen name="comm_toast_view_xl_toast_txt_2_paddingTop">16px</dimen>
+    <dimen name="comm_toast_view_xl_toast_txt_3_paddingBottom">16px</dimen>
+    <dimen name="comm_toast_view_xl_toast_txt_4_textSize">15sp</dimen>
+
+    <!-- dialog_newest_version.xml -->
+    <dimen name="dialog_newest_version_LinearLayout_0_minWidth">375px</dimen>
+    <dimen name="dialog_newest_version_LinearLayout_1_minHeight">225px</dimen>
+    <dimen name="dialog_newest_version_ImageView_2_layout_width">95px</dimen>
+    <dimen name="dialog_newest_version_ImageView_3_layout_height">95px</dimen>
+    <dimen name="dialog_newest_version_unified_loading_view_text_4_paddingLeft">8px</dimen>
+    <dimen name="dialog_newest_version_unified_loading_view_text_5_paddingRight">8px</dimen>
+    <dimen name="dialog_newest_version_unified_loading_view_text_6_layout_marginTop">33px</dimen>
+
+    <!-- dialog_one_button.xml -->
+    <dimen name="dialog_one_button_LinearLayout_0_layout_marginLeft">41px</dimen>
+    <dimen name="dialog_one_button_LinearLayout_1_layout_marginRight">41px</dimen>
+    <dimen name="dialog_one_button_LinearLayout_2_minWidth">516px</dimen>
+    <dimen name="dialog_one_button_LinearLayout_3_minHeight">300px</dimen>
+    <dimen name="dialog_one_button_LinearLayout_4_layout_height">33px</dimen>
+    <dimen name="dialog_one_button_ImageView_5_layout_marginLeft">16px</dimen>
+    <dimen name="dialog_one_button_ImageView_6_layout_width">31px</dimen>
+    <dimen name="dialog_one_button_ImageView_7_layout_height">31px</dimen>
+    <dimen name="dialog_one_button_txt_dialog_title_8_layout_marginLeft">10px</dimen>
+    <dimen name="dialog_one_button_TextView_9_layout_height">1px</dimen>
+    <dimen name="dialog_one_button_LinearLayout_10_layout_height">169px</dimen>
+    <dimen name="dialog_one_button_txt_dialog_content_11_layout_marginLeft">50px</dimen>
+    <dimen name="dialog_one_button_txt_dialog_content_12_layout_marginRight">50px</dimen>
+    <dimen name="dialog_one_button_txt_dialog_content_13_layout_marginTop">33px</dimen>
+    <dimen name="dialog_one_button_txt_dialog_content_14_layout_marginBottom">37px</dimen>
+    <dimen name="dialog_one_button_txt_dialog_content_15_lineSpacingExtra">11px</dimen>
+    <dimen name="dialog_one_button_btn_dialog_confirm_16_layout_height">75px</dimen>
+
+    <!-- dialog_two_button.xml -->
+    <dimen name="dialog_two_button_LinearLayout_0_layout_marginLeft">41px</dimen>
+    <dimen name="dialog_two_button_LinearLayout_1_layout_marginRight">41px</dimen>
+    <dimen name="dialog_two_button_LinearLayout_2_minWidth">516px</dimen>
+    <dimen name="dialog_two_button_LinearLayout_3_minHeight">300px</dimen>
+    <dimen name="dialog_two_button_LinearLayout_4_layout_height">33px</dimen>
+    <dimen name="dialog_two_button_LinearLayout_10_layout_height">169px</dimen>
+    <dimen name="dialog_two_button_txt_dialog_content_11_layout_marginLeft">50px</dimen>
+    <dimen name="dialog_two_button_txt_dialog_content_12_layout_marginRight">50px</dimen>
+    <dimen name="dialog_two_button_txt_dialog_content_13_layout_marginTop">33px</dimen>
+    <dimen name="dialog_two_button_txt_dialog_content_14_layout_marginBottom">37px</dimen>
+    <dimen name="dialog_two_button_txt_dialog_content_15_lineSpacingExtra">11px</dimen>
+    <dimen name="dialog_two_button_btn_dialog_confirm_16_layout_width">1px</dimen>
+    <dimen name="dialog_two_button_btn_dialog_confirm_17_layout_height">75px</dimen>
+    <dimen name="dialog_two_button_TextView_18_layout_width">1px</dimen>
+    <dimen name="dialog_two_button_btn_dialog_cancel_19_layout_width">1px</dimen>
+    <dimen name="dialog_two_button_btn_dialog_cancel_20_layout_height">75px</dimen>
+
+    <!-- fragment_familyrequest.xml -->
+    <dimen name="fragment_familyrequest_img_nofriend_0_layout_width">266px</dimen>
+    <dimen name="fragment_familyrequest_img_nofriend_1_layout_height">266px</dimen>
+    <dimen name="fragment_familyrequest_TextView_2_layout_marginTop">65px</dimen>
+    <dimen name="fragment_familyrequest_img_nofriend_marginTop">125px</dimen>
+
+    <!-- fragment_main.xml -->
+    <dimen name="fragment_main_layout2_layout_marginBottom">306px</dimen>
+    <dimen name="fragment_main_layout_location_0_layout_marginLeft">8px</dimen>
+    <dimen name="fragment_main_layout_location_0_layout_marginRight">8px</dimen>
+    <dimen name="fragment_main_layout_location_0_layout_marginTop">38px</dimen>
+    <dimen name="fragment_main_layout_main_location_1_layout_marginLeft">50px</dimen>
+    <dimen name="fragment_main_layout_main_location_2_layout_marginRight">50px</dimen>
+    <dimen name="fragment_main_img_main_location_3_layout_width">26px</dimen>
+    <dimen name="fragment_main_img_main_location_4_layout_height">26px</dimen>
+    <dimen name="fragment_main_img_main_location_4_layout_marginRight">8px</dimen>
+    <dimen name="fragment_main_layout_main_sos_5_layout_height">178px</dimen>
+    <dimen name="fragment_main_layout_main_sos2_6_layout_height">400px</dimen>
+    <dimen name="fragment_main_layout_main_sos_red_7_layout_height">400px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_big_8_layout_width">375px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_big_9_layout_height">375px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_medium_10_layout_width">375px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_medium_11_layout_height">375px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_small_12_layout_width">400px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_small_13_layout_height">400px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_14_layout_width">263px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_15_layout_height">263px</dimen>
+    <dimen name="fragment_main_img_main_sos_text_15_layout_width">158px</dimen>
+    <dimen name="fragment_main_img_main_sos_text_15_layout_height">57px</dimen>
+    <dimen name="fragment_main_linearLayout2_16_layout_marginTop">83px</dimen>
+    <dimen name="fragment_main_linearLayout2_16_layout_marginButtom">73px</dimen>
+    <dimen name="fragment_main_img_main_familylocate_17_layout_width">108px</dimen>
+    <dimen name="fragment_main_img_main_familylocate_18_layout_height">108px</dimen>
+    <dimen name="fragment_main_tv_main_familylocate_19_layout_marginTop">16px</dimen>
+    <dimen name="fragment_main_img_main_checkin_20_layout_width">108px</dimen>
+    <dimen name="fragment_main_img_main_checkin_21_layout_height">108px</dimen>
+    <dimen name="fragment_main_tv_main_checkin_22_layout_marginTop">16px</dimen>
+    <dimen name="fragment_main_img_main_clue_23_layout_width">108px</dimen>
+    <dimen name="fragment_main_img_main_clue_24_layout_height">108px</dimen>
+    <dimen name="fragment_main_tv_main_clue_25_layout_marginTop">16px</dimen>
+    <dimen name="fragment_main_RelativeLayout_26_layout_height">426px</dimen>
+    <dimen name="fragment_main_img_main_first_tip_27_layout_width">471px</dimen>
+    <dimen name="fragment_main_img_main_first_tip_28_layout_height">308px</dimen>
+    <dimen name="fragment_main_tv_main_first_tip_29_layout_marginLeft">66px</dimen>
+    <dimen name="fragment_main_tv_main_first_tip_30_layout_marginRight">66px</dimen>
+    <dimen name="fragment_main_tv_main_first_tip_31_layout_marginTop">33px</dimen>
+    <dimen name="fragment_main_tv_main_first_tip_32_lineSpacingExtra">15px</dimen>
+    <dimen name="fragment_main_btn_main_first_know_33_layout_marginLeft">63px</dimen>
+    <dimen name="fragment_main_btn_main_first_know_34_layout_marginRight">63px</dimen>
+    <dimen name="fragment_main_btn_main_first_know_35_layout_marginTop">45px</dimen>
+    <dimen name="fragment_main_btn_main_first_know_36_layout_marginBottom">31px</dimen>
+    <dimen name="fragment_main_layout_main_families_view_37_layout_height">308px</dimen>
+    <dimen name="fragment_main_textView1_38_layout_marginBottom">16px</dimen>
+    <dimen name="fragment_main_textView1_39_layout_height">1px</dimen>
+    <dimen name="fragment_main_tv_main_families_select_40_layout_marginTop">21px</dimen>
+    <dimen name="fragment_main_tv_main_families_select_41_layout_marginBottom">23px</dimen>
+    <dimen name="fragment_main_lv_main_families_all_42_layout_marginLeft">16px</dimen>
+    <dimen name="fragment_main_lv_main_families_all_43_layout_marginRight">16px</dimen>
+    <dimen name="fragment_main_lv_main_families_all_44_layout_marginBottom">25px</dimen>
+    <dimen name="fragment_main_lv_main_families_all_45_layout_height">116px</dimen>
+    <dimen name="fragment_main_btn_main_families_cancel_46_layout_marginLeft">33px</dimen>
+    <dimen name="fragment_main_btn_main_families_cancel_47_layout_marginRight">33px</dimen>
+    <dimen name="fragment_main_btn_main_families_cancel_48_layout_marginBottom">25px</dimen>
+    <dimen name="fragment_main_RelativeLayout_49_layout_height">426px</dimen>
+    <dimen name="fragment_main_layout_main_clue2_layout_width">525px</dimen>
+    <dimen name="fragment_main_layout_main_clue2_layout_height">525px</dimen>
+    <dimen name="fragment_main_layout_main_clue2_marginTop">248px</dimen>
+    <dimen name="fragment_main_img_main_clue_tip_layout_marginTop">33px</dimen>
+    <dimen name="fragment_main_tv_main_clue_title_layout_marginTop">231px</dimen>
+    <dimen name="fragment_main_img_main_clue_tip_50_layout_width">168px</dimen>
+    <dimen name="fragment_main_img_main_clue_tip_51_layout_height">168px</dimen>
+    <dimen name="fragment_main_tv_main_clue_tip_52_layout_marginLeft">41px</dimen>
+    <dimen name="fragment_main_tv_main_clue_tip_53_layout_marginRight">41px</dimen>
+    <dimen name="fragment_main_tv_main_clue_tip_54_layout_marginTop">15px</dimen>
+    <dimen name="fragment_main_tv_main_clue_tip_55_lineSpacingExtra">6px</dimen>
+    <dimen name="fragment_main_btn_main_clue_know_56_layout_marginLeft">33px</dimen>
+    <dimen name="fragment_main_btn_main_clue_know_57_layout_marginRight">33px</dimen>
+    <dimen name="fragment_main_btn_main_clue_know_58_layout_marginTop">12px</dimen>
+    <dimen name="fragment_main_btn_main_clue_know_59_layout_marginBottom">31px</dimen>
+    <dimen name="fragment_main_RelativeLayout_60_layout_height">426px</dimen>
+    <dimen name="fragment_main_img_main_over_tip_61_layout_width">471px</dimen>
+    <dimen name="fragment_main_img_main_over_tip_62_layout_height">308px</dimen>
+    <dimen name="fragment_main_tv_main_over_tip_63_layout_marginLeft">66px</dimen>
+    <dimen name="fragment_main_tv_main_over_tip_64_layout_marginRight">66px</dimen>
+    <dimen name="fragment_main_tv_main_over_tip_65_layout_marginTop">33px</dimen>
+    <dimen name="fragment_main_tv_main_over_tip_66_lineSpacingExtra">15px</dimen>
+    <dimen name="fragment_main_btn_main_over_know_67_layout_marginLeft">63px</dimen>
+    <dimen name="fragment_main_btn_main_over_know_68_layout_marginRight">63px</dimen>
+    <dimen name="fragment_main_btn_main_over_know_69_layout_marginTop">45px</dimen>
+    <dimen name="fragment_main_btn_main_over_know_70_layout_marginBottom">31px</dimen>
+    <dimen name="fragment_main_img_main_recode_tip_71_layout_marginTop">8px</dimen>
+    <dimen name="fragment_main_tv_main_recode_tip_1_72_layout_marginTop">3px</dimen>
+    <dimen name="fragment_main_tv_main_recode_tip_2_73_layout_marginTop">3px</dimen>
+    <dimen name="fragment_main_LinearLayout_74_layout_height">16px</dimen>
+    <dimen name="fragment_main_img_main_recode_height">264px</dimen>
+
+    <!-- fragment_myclue.xml -->
+    <dimen name="fragment_myclue_img_mynotifycation_0_layout_width">266px</dimen>
+    <dimen name="fragment_myclue_img_mynotifycation_1_layout_height">266px</dimen>
+    <dimen name="fragment_myclue_TextView_2_layout_marginTop">65px</dimen>
+    <dimen name="fragment_myclue_img_nofriend_marginTop">125px</dimen>
+
+    <!-- fragment_myfamily.xml -->
+    <dimen name="fragment_myfamily_img_nofriend_0_layout_width">266px</dimen>
+    <dimen name="fragment_myfamily_img_nofriend_1_layout_height">266px</dimen>
+    <dimen name="fragment_myfamily_img_nofriend_marginTop">125px</dimen>
+    <dimen name="fragment_myfamily_TextView_2_layout_marginTop">65px</dimen>
+
+    <!-- fragment_mynotification.xml -->
+    <dimen name="fragment_mynotification_img_mynotifycation_0_layout_width">266px</dimen>
+    <dimen name="fragment_mynotification_img_mynotifycation_1_layout_height">266px</dimen>
+    <dimen name="fragment_mynotification_img_nofriend_marginTop">125px</dimen>
+    <dimen name="fragment_mynotification_TextView_2_layout_marginTop">65px</dimen>
+    <dimen name="fragment_mynotification_lv_mynotifycation_0_dividerHeight">1px</dimen>
+
+    <!-- fragment_setting.xml -->
+    <dimen name="fragment_setting_layout_setting_account_0_layout_marginTop">33px</dimen>
+    <dimen name="fragment_setting_img_setting_account_1_layout_width">36px</dimen>
+    <dimen name="fragment_setting_img_setting_account_2_layout_height">36px</dimen>
+    <dimen name="fragment_setting_layout_setting_hide_3_layout_marginTop">33px</dimen>
+    <dimen name="fragment_setting_cb_setting_hide_4_layout_width">88px</dimen>
+    <dimen name="fragment_setting_cb_setting_hide_5_layout_height">60px</dimen>
+    <dimen name="fragment_setting_TextView_6_marginTop">16px</dimen>
+    <dimen name="fragment_setting_TextView_6_paddingLeft">25px</dimen>
+    <dimen name="fragment_setting_TextView_7_paddingRight">25px</dimen>
+    <dimen name="fragment_setting_layout_setting_guide_8_layout_marginTop">33px</dimen>
+    <dimen name="fragment_setting_img_setting_guide_9_layout_width">36px</dimen>
+    <dimen name="fragment_setting_img_setting_guide_10_layout_height">36px</dimen>
+    <dimen name="fragment_setting_textview1_layout_height">1px</dimen>
+    <dimen name="fragment_setting_img_setting_feedback_11_layout_width">36px</dimen>
+    <dimen name="fragment_setting_img_setting_feedback_12_layout_height">36px</dimen>
+    <dimen name="fragment_setting_img_setting_update_13_layout_width">36px</dimen>
+    <dimen name="fragment_setting_img_setting_update_14_layout_height">36px</dimen>
+    <dimen name="fragment_setting_btn_setting_logout_15_layout_marginLeft">16px</dimen>
+    <dimen name="fragment_setting_btn_setting_logout_16_layout_marginRight">16px</dimen>
+    <dimen name="fragment_setting_btn_setting_logout_17_layout_marginTop">33px</dimen>
+    <dimen name="fragment_setting_btn_setting_logout_18_layout_marginBottom">25px</dimen>
+    <dimen name="fragment_setting_btn_setting_logout_19_layout_height">75px</dimen>
+
+    <!-- grid_item_images.xml -->
+    <dimen name="grid_item_images_img_grid_image_0_layout_width">116px</dimen>
+    <dimen name="grid_item_images_img_grid_image_1_layout_height">116px</dimen>
+
+    <!-- grid_item_textview.xml -->
+
+
+    <!-- layout_avatatat_pop.xml -->
+    <dimen name="layout_avatatat_pop_tv_checkin_location_0_layout_width">500px</dimen>
+    <dimen name="layout_avatatat_pop_img_checkin_avatar_1_layout_width">60px</dimen>
+    <dimen name="layout_avatatat_pop_img_checkin_avatar_2_layout_height">60px</dimen>
+    <dimen name="layout_avatatat_pop_img_checkin_avatar_2_layout_marginTop">4px</dimen>
+    <dimen name="layout_avatatat_pop_img_checkin_avatar_frame_layout_width">86px</dimen>
+    <dimen name="layout_avatatat_pop_img_checkin_avatar_frame_layout_height">103px</dimen>
+
+    <!-- layout_guide_1.xml -->
+
+
+    <!-- layout_guide_2.xml -->
+
+
+    <!-- layout_guide_3.xml -->
+
+
+    <!-- layout_guide_4.xml -->
+
+
+    <!-- layout_menu_item.xml -->
+    <dimen name="layout_menu_item_img_menu_item_icon_0_layout_marginLeft">75px</dimen>
+    <dimen name="layout_menu_item_menu_item_txt_name_1_layout_marginLeft">26px</dimen>
+    <dimen name="layout_menu_item_RelativeLayout_2_layout_marginLeft">33px</dimen>
+    <dimen name="layout_menu_item_RelativeLayout_3_layout_marginTop">25px</dimen>
+    <dimen name="layout_menu_item_txt_menu_item_status_text_4_layout_width">35px</dimen>
+    <dimen name="layout_menu_item_txt_menu_item_status_text_5_layout_height">35px</dimen>
+    <dimen name="layout_menu_item_txt_menu_item_status_text_6_layout_width_height">21px</dimen>
+
+    <!-- layout_slidingmenu.xml -->
+
+
+    <!-- layout_statusbar_notification.xml -->
+    <dimen name="layout_statusbar_notification_ImageView_0_layout_marginLeft">26px</dimen>
+    <dimen name="layout_statusbar_notification_ImageView_1_layout_marginRight">26px</dimen>
+    <dimen name="layout_statusbar_notification_ImageView_2_layout_width">80px</dimen>
+    <dimen name="layout_statusbar_notification_ImageView_3_layout_height">80px</dimen>
+    <dimen name="layout_statusbar_notification_LinearLayout_4_layout_width">1px</dimen>
+    <dimen name="layout_statusbar_notification_txt_notify_device_5_layout_height">53px</dimen>
+    <dimen name="layout_statusbar_notification_txt_notify_res_name_6_paddingTop">5px</dimen>
+    <dimen name="layout_statusbar_notification_txt_notify_res_name_7_layout_height">53px</dimen>
+
+    <!-- layout_title_bar.xml -->
+    <dimen name="layout_title_bar_img_title_shadow_0_layout_height">3px</dimen>
+    <dimen name="layout_title_bar_txt_title_center_1_layout_marginLeft">100px</dimen>
+    <dimen name="layout_title_bar_txt_title_center_2_layout_marginRight">100px</dimen>
+    <dimen name="layout_title_bar_btn_title_right_3_layout_marginRight">16px</dimen>
+    <dimen name="layout_title_bar_textView1_4_layout_height">1px</dimen>
+    <dimen name="layout_title_bar_btn_title_left_0_layout_width">80px</dimen>
+    <dimen name="layout_title_bar_btn_title_left_1_layout_height">80px</dimen>
+    <dimen name="layout_title_bar_txt_tip_layout_width">30px</dimen>
+    <dimen name="layout_title_bar_txt_tip_layout_height">30px</dimen>
+    <dimen name="layout_title_bar_btn_title_right_marginRight">16px</dimen>
+    <dimen name="layout_title_bar_textView1_height">1px</dimen>
+    <dimen name="layout_title_bar_txt_title_tip_width">21px</dimen>
+    <dimen name="layout_title_bar_txt_title_tip_height">21px</dimen>
+    <dimen name="layout_title_bar_txt_title_tip_text_width">35px</dimen>
+    <dimen name="layout_title_bar_txt_title_tip_text_height">35px</dimen>
+    <dimen name="layout_title_bar_btn_title_left_width">80px</dimen>
+    <dimen name="layout_title_bar_btn_title_left_height">80px</dimen>
+    <dimen name="layout_title_bar_txt_tip_layout_marginLeft">50px</dimen>
+    <dimen name="layout_title_bar_txt_tip_layout_marginTop">8px</dimen>
+
+    <!-- list_item_contact.xml -->
+    <dimen name="list_item_contact_layout_item_contact_height">116px</dimen>
+    <dimen name="list_item_contact_tv_item_desc_marginLeft">8px</dimen>
+
+    <!-- list_item_families.xml -->
+    <dimen name="list_item_families_tv_families_name_marginLeft">16px</dimen>
+
+    <!-- list_item_image.xml -->
+    <dimen name="list_item_image_img_image_family_2_layout_marginLeft">11px</dimen>
+    <dimen name="list_item_image_img_image_family_3_layout_marginRight">11px</dimen>
+    <dimen name="list_item_image_img_image_family_4_layout_marginTop">3px</dimen>
+    <dimen name="list_item_image_img_image_family_5_layout_marginBottom">3px</dimen>
+    <dimen name="list_item_image_img_image_family_6_layout_width">100px</dimen>
+    <dimen name="list_item_image_img_image_family_7_layout_height">100px</dimen>
+    <dimen name="list_item_image_img_image_kuang_8_layout_marginLeft">8px</dimen>
+    <dimen name="list_item_image_img_image_kuang_9_layout_marginRight">8px</dimen>
+    <dimen name="list_item_image_img_image_kuang_10_layout_width">106px</dimen>
+    <dimen name="list_item_image_img_image_kuang_11_layout_height">106px</dimen>
+
+    <!-- list_item_myclue.xml -->
+    <dimen name="list_item_myclue_LinearLayout_margin">16px</dimen>
+    <dimen name="list_item_myclue_tv_myclue_content_marginTop">16px</dimen>
+    <dimen name="list_item_myclue_gv_myclue_content_linespacing">4px</dimen>
+    <dimen name="list_item_myclue_img_myclue_location_width">26px</dimen>
+    <dimen name="list_item_myclue_img_myclue_location_height">26px</dimen>
+    <dimen name="list_item_myclue_tv_myclue_location_marginRight">33px</dimen>
+    <dimen name="list_item_myclue_LinearLayout_marginTop">3px</dimen>
+    <dimen name="list_item_myclue_img_myclue_user_margin">16px</dimen>
+    <dimen name="list_item_myclue_gv_myclue_images_horizontalSpacing">8px</dimen>
+    <dimen name="list_item_myclue_gv_myclue_images_verticalSpacing">8px</dimen>
+
+    <!-- list_item_publicclue.xml -->
+    <dimen name="list_item_publicclue_LinearLayout_main_layout_marginBottom">20px</dimen>
+    <dimen name="list_item_publicclue_LinearLayout_main_layout_marginTop">25px</dimen>
+    <dimen name="list_item_publicclue_content_linespacing">8px</dimen>
+    <dimen name="list_item_publicclue_grid_marginTop">25px</dimen>
+    <dimen name="list_item_publicclue_grid_Spacing">6px</dimen>
+    <dimen name="list_item_publicclue_location_marginTop">16px</dimen>
+    <dimen name="list_item_publicclue_textview_marginRight">33px</dimen>
+    <dimen name="list_item_publicclue_textview_marginTop">3px</dimen>
+
+    <!-- list_item_myfamily.xml -->
+    <dimen name="list_item_myfamily_name_marginLeft">16px</dimen>
+
+    <!-- list_item_notification.xml -->
+
+    <dimen name="list_item_notification_item_notification_record_layout_height">66px</dimen>
+    <dimen name="list_item_notification_layout_notification_sos_confirm_layout_marginLeft">8px</dimen>
+    <dimen name="list_item_notification_layout_notification_sos_confirm_layout_marginTop">16px</dimen>
+    <dimen name="list_item_notification_ImageView_layout_width">26px</dimen>
+    <dimen name="list_item_notification_ImageView_layout_height">26px</dimen>
+    <dimen name="list_item_notification_item_notification_content_marginLeft">10px</dimen>
+    <dimen name="list_item_notification_item_notification_record_marginLeft">6px</dimen>
+    <dimen name="list_item_notification_notify_go_layout_width">23px</dimen>
+    <dimen name="list_item_notification_notify_go_layout_height">23px</dimen>
+
+    <!-- list_item_request.xml -->
+    <dimen name="list_item_request_LinearLayout_layout_margin">16px</dimen>
+    <dimen name="list_item_request_textview_tip_marginTop">3px</dimen>
+    <dimen name="list_item_request_status_textview_marginleft">6px</dimen>
+
+    <!-- list_main_menu.xml -->
+    <dimen name="list_main_menu_list_0_dividerHeight">1px</dimen>
+
+    <!-- sliding_menu_main.xml -->
+
+
+    <!-- unified_loading_view.xml -->
+    <dimen name="unified_loading_view_LinearLayout_0_minWidth">375px</dimen>
+    <dimen name="unified_loading_view_LinearLayout_1_minHeight">225px</dimen>
+    <dimen name="unified_loading_view_unified_loading_view_circle_2_layout_width">86px</dimen>
+    <dimen name="unified_loading_view_unified_loading_view_circle_3_layout_height">86px</dimen>
+    <dimen name="unified_loading_view_unified_loading_view_text_4_paddingLeft">8px</dimen>
+    <dimen name="unified_loading_view_unified_loading_view_text_5_paddingRight">8px</dimen>
+    <dimen name="unified_loading_view_unified_loading_view_text_6_layout_marginTop">33px</dimen>
+
+    <!-- item_communication -->
+    <dimen name="item_communication_image_width">66px</dimen>
+    <dimen name="item_communication_image_height">66px</dimen>
+    <dimen name="item_communication_time_marginTop">66px</dimen>
+    <dimen name="item_communication_time_marginBottom">66px</dimen>
+    <dimen name="item_communication_RLmarginleftright">10px</dimen>
+
+    <!-- activity_communication -->
+    <dimen name="communication_voice_contentLLpadding">16px</dimen>
+    <dimen name="communication_voice_button_marginLeftRight">20px</dimen>
+    <dimen name="communication_voice_button_image">40px</dimen>
+    <dimen name="communication_voice_button_image_marginLeft">200px</dimen>
+    <dimen name="communication_voice_button_text_marginLeft">250px</dimen>
+
+    <!-- activity_checkin.xml -->
+    <dimen name="activity_checkin_layout_addr2_0_layout_height">333px</dimen>
+
+    <!-- activity_familydetail.xml -->
+    <dimen name="activity_familydetail_RelativeLayout_width">1px</dimen>
+    <dimen name="activity_familydetail_ImageView_1_layout_width">40px</dimen>
+    <dimen name="activity_familydetail_ImageView_2_layout_height">40px</dimen>
+    <dimen name="activity_familydetail_ImageView_4_layout_width">40px</dimen>
+    <dimen name="activity_familydetail_ImageView_5_layout_height">40px</dimen>
+
+    <!-- activity_familylocate.xml -->
+    <dimen name="activity_familylocate_tv_lasttime_0_layout_marginRight">25px</dimen>
+    <dimen name="activity_familylocate_imageView1_2_layout_width">40px</dimen>
+    <dimen name="activity_familylocate_imageView1_3_layout_height">40px</dimen>
+    <dimen name="activity_familylocate_tvcall_3_layout_left">7px</dimen>
+    <dimen name="activity_familylocate_tvchat_3_layout_left">5px</dimen>
+    <dimen name="activity_familylocate_imageView2_5_layout_width">40px</dimen>
+    <dimen name="activity_familylocate_imageView2_6_layout_height">40px</dimen>
+
+    <!-- activity_locations.xml -->
+    <dimen name="activity_locations_layout_locations_loading_0_layout_marginTop">191px</dimen>
+
+    <!-- activity_locations_none.xml -->
+    <dimen name="activity_locations_none_img_locations_none_image_0_layout_marginTop">75px</dimen>
+    <dimen name="activity_locations_none_tv_locations_none_tip_1_1_layout_marginTop">50px</dimen>
+    <dimen name="activity_locations_none_layout_locations_none_2_layout_marginTop">80px</dimen>
+    <dimen name="activity_locations_none_RelativeLayout_3_layout_marginTop">6px</dimen>
+    <dimen name="activity_locations_none_RelativeLayout_4_layout_marginTop">6px</dimen>
+    <dimen name="activity_locations_none_RelativeLayout_5_layout_marginTop">6px</dimen>
+    <dimen name="activity_locations_none_RelativeLayout_6_layout_marginTop">6px</dimen>
+    <dimen name="activity_locations_none_RelativeLayout_7_layout_marginTop">6px</dimen>
+    <dimen name="activity_locations_none_RelativeLayout_8_layout_marginTop">6px</dimen>
+    <dimen name="activity_locations_none_LinearLayout_9_layout_marginTop">100px</dimen>
+    <dimen name="activity_locations_none_btn_locations_none_call_10_layout_marginLeft">13px</dimen>
+    <dimen name="activity_locations_none_btn_locations_none_call_11_layout_marginRight">6px</dimen>
+    <dimen name="activity_locations_none_imageView1_12_layout_marginLeft">53px</dimen>
+    <dimen name="activity_locations_none_imageView1_13_layout_width">40px</dimen>
+    <dimen name="activity_locations_none_imageView1_14_layout_height">40px</dimen>
+    <dimen name="activity_locations_none_btn_locations_none_voice_15_layout_marginLeft">6px</dimen>
+    <dimen name="activity_locations_none_btn_locations_none_voice_16_layout_marginRight">13px</dimen>
+    <dimen name="activity_locations_none_imageView2_17_layout_marginLeft">53px</dimen>
+    <dimen name="activity_locations_none_imageView2_18_layout_width">40px</dimen>
+    <dimen name="activity_locations_none_imageView2_19_layout_height">40px</dimen>
+
+    <!-- activity_mapsos.xml -->
+    <dimen name="activity_mapsos_imageView1_0_layout_marginLeft">187px</dimen>
+    <dimen name="activity_mapsos_imageView1_1_layout_width">40px</dimen>
+    <dimen name="activity_mapsos_imageView1_2_layout_height">40px</dimen>
+    <dimen name="activity_mapsos_tv_call110_2_layout_left">7px</dimen>
+    <dimen name="activity_mapsos_layout_mapsos_list2_3_layout_width">500px</dimen>
+    <dimen name="activity_mapsos_img_mapsos_locate_4_layout_marginTop">191px</dimen>
+
+    <!-- activity_notificationdetail_1.xml -->
+    <dimen name="activity_notificationdetail_1_RelativeLayout_0_layout_width">1px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_1_layout_width">40px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_2_layout_height">40px</dimen>
+    <dimen name="activity_notificationdetail_1_RelativeLayout_3_layout_width">1px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_4_layout_width">40px</dimen>
+    <dimen name="activity_notificationdetail_1_ImageView_5_layout_height">40px</dimen>
+
+    <!-- activity_notificationdetail_2.xml -->
+    <dimen name="activity_notificationdetail_2_RelativeLayout_0_layout_width">280px</dimen>
+    <dimen name="activity_notificationdetail_2_ImageView_1_layout_width">40px</dimen>
+    <dimen name="activity_notificationdetail_2_ImageView_2_layout_height">40px</dimen>
+    <dimen name="activity_notificationdetail_2_RelativeLayout_3_layout_width">280px</dimen>
+    <dimen name="activity_notificationdetail_2_ImageView_4_layout_width">40px</dimen>
+    <dimen name="activity_notificationdetail_2_ImageView_5_layout_height">40px</dimen>
+
+    <!-- fragment_main.xml -->
+    <dimen name="fragment_main_imageView1_0_layout_height">510px</dimen>
+
+    <!-- layout_avatatar_pop2.xml -->
+    <dimen name="layout_avatatar_pop2_layout_title_0_layout_height">111px</dimen>
+    <dimen name="layout_avatatar_pop2_layout_location_1_layout_marginLeft">113px</dimen>
+    <dimen name="layout_avatatar_pop2_layout_location_2_layout_marginRight">40px</dimen>
+    <dimen name="layout_avatatar_pop2_layout_location_3_layout_height">88px</dimen>
+    <dimen name="layout_avatatar_pop2_layout_location2_4_layout_marginLeft">113px</dimen>
+    <dimen name="layout_avatatar_pop2_layout_location2_5_layout_marginRight">40px</dimen>
+    <dimen name="layout_avatatar_pop2_layout_location2_6_layout_height">88px</dimen>
+
+    <!-- layout_mapbar.xml -->
+    <dimen name="layout_mapbar_img_mapsos_mine_0_layout_width">76px</dimen>
+    <dimen name="layout_mapbar_img_mapsos_mine_1_layout_height">76px</dimen>
+    <dimen name="layout_mapbar_img_mapsos_zoomin_2_layout_width">76px</dimen>
+    <dimen name="layout_mapbar_img_mapsos_zoomin_3_layout_height">76px</dimen>
+    <dimen name="layout_mapbar_img_mapsos_zoomout_4_layout_width">76px</dimen>
+    <dimen name="layout_mapbar_img_mapsos_zoomout_5_layout_height">76px</dimen>
+
+    <!-- list_item_addr.xml -->
+    <dimen name="list_item_addr_RelativeLayout_0_layout_marginLeft">16px</dimen>
+    <dimen name="list_item_addr_RelativeLayout_1_layout_marginRight">28px</dimen>
+    <dimen name="list_item_addr_RelativeLayout_2_layout_height">100px</dimen>
+    <dimen name="list_item_addr_img_pick_3_layout_width">46px</dimen>
+    <dimen name="list_item_addr_img_pick_4_layout_height">46px</dimen>
+
+    <!-- list_item_contact.xml -->
+    <dimen name="list_item_contact_ImageView_width">25px</dimen>
+    <dimen name="list_item_contact_ImageView_height">25px</dimen>
+    <dimen name="list_item_contact_tvmarginLeft">6px</dimen>
+
+    <!-- list_item_locations.xml -->
+    <dimen name="list_item_locations_LinearLayout_0_layout_marginTop">11px</dimen>
+    <dimen name="list_item_locations_LinearLayout_1_layout_marginBottom">11px</dimen>
+    <dimen name="list_item_locations_img_locations_icon_2_layout_width">13px</dimen>
+    <dimen name="list_item_locations_img_locations_icon_3_layout_height">22px</dimen>
+    <dimen name="list_item_locations_img_locations_hide_2_layout_width">53px</dimen>
+    <dimen name="list_item_locations_img_locations_hide_3_layout_height">51px</dimen>   
+
+    <!-- list_item_pois.xml -->
+    <dimen name="list_item_pois_RelativeLayout_0_layout_marginLeft">23px</dimen>
+    <dimen name="list_item_pois_RelativeLayout_1_layout_marginRight">6px</dimen>
+    <dimen name="list_item_pois_RelativeLayout_2_layout_marginTop">20px</dimen>
+    <dimen name="list_item_pois_RelativeLayout_3_layout_marginBottom">15px</dimen>
+    <dimen name="list_item_pois_LinearLayout_4_layout_marginRight">25px</dimen>
+    <dimen name="list_item_pois_tv_name_5_textSize">16sp</dimen>
+    <dimen name="list_item_pois_tv_howfar_6_textSize">12sp</dimen>
+    <dimen name="list_item_pois_tv_addr_7_textSize">12sp</dimen>
+    <dimen name="list_item_pois_tv_phone_8_textSize">12sp</dimen>
+    <dimen name="list_item_pois_img_call_9_layout_width">80px</dimen>
+    <dimen name="list_item_pois_img_call_10_layout_height">80px</dimen>
+
+    <!-- radar_view.xml -->
+    <dimen name="radar_view_FrameLayout_0_layout_width">316px</dimen>
+    <dimen name="radar_view_FrameLayout_1_layout_height">316px</dimen>
+    <dimen name="radar_view_ImageView_2_layout_width">316px</dimen>
+    <dimen name="radar_view_ImageView_3_layout_height">316px</dimen>
+    <dimen name="radar_view_im_scan_4_layout_width">316px</dimen>
+    <dimen name="radar_view_im_scan_5_layout_height">316px</dimen>
+    <dimen name="radar_view_im_dian1_6_layout_marginLeft">133px</dimen>
+    <dimen name="radar_view_im_dian1_7_layout_marginTop">50px</dimen>
+    <dimen name="radar_view_im_dian1_8_layout_width">8px</dimen>
+    <dimen name="radar_view_im_dian1_9_layout_height">8px</dimen>
+    <dimen name="radar_view_im_dian2_10_layout_marginLeft">66px</dimen>
+    <dimen name="radar_view_im_dian2_11_layout_marginTop">233px</dimen>
+    <dimen name="radar_view_im_dian2_12_layout_width">8px</dimen>
+    <dimen name="radar_view_im_dian2_13_layout_height">8px</dimen>
+    <dimen name="radar_view_im_dian3_14_layout_marginLeft">166px</dimen>
+    <dimen name="radar_view_im_dian3_15_layout_marginTop">200px</dimen>
+    <dimen name="radar_view_im_dian3_16_layout_width">8px</dimen>
+    <dimen name="radar_view_im_dian3_17_layout_height">8px</dimen>
+    <dimen name="radar_view_im_dian4_18_layout_marginLeft">250px</dimen>
+    <dimen name="radar_view_im_dian4_19_layout_marginTop">116px</dimen>
+    <dimen name="radar_view_im_dian4_20_layout_width">8px</dimen>
+    <dimen name="radar_view_im_dian4_21_layout_height">8px</dimen>
+
+    <!-- xlistview_footer.xml -->
+    <dimen name="xlistview_footer_xlistview_footer_content_0_padding">16px</dimen>
+
+    <!-- xlistview_header.xml -->
+    <dimen name="xlistview_header_xlistview_header_hint_textview_0_textSize">12sp</dimen>
+
+    <!-- activity_splash.xml -->
+    <dimen name="activity_splash_icon_width">253px</dimen>
+    <dimen name="activity_splash_icon_height">403px</dimen>
+    <dimen name="activity_splash_icon_margin_top">212px</dimen>
+
+    <!-- list_main_menu.xml -->
+    <dimen name="list_main_menu_topHeight">385px</dimen>
+    <dimen name="list_main_menu_arrowWidth">13px</dimen>
+    <dimen name="list_main_menu_arrowHeight">23px</dimen>
+    <dimen name="list_main_menu_numWidth">35px</dimen>
+    <dimen name="list_main_menu_numHeight">35px</dimen>
+    <dimen name="list_main_menu_numMarginright">100px</dimen>
+    <dimen name="list_main_menu_marginleft">25px</dimen>
+    <dimen name="list_main_menu_user_margintop">51px</dimen>
+    <dimen name="list_main_menu_myLL_margintop">50px</dimen>
+    <dimen name="list_main_menu_userimg_width">133px</dimen>
+    <dimen name="list_main_menu_userimg_height">133px</dimen>
+    <dimen name="list_main_menu_my_width">88px</dimen>
+    <dimen name="list_main_menu_my_height">88px</dimen>
+    <dimen name="list_main_menu_myimg_width">53px</dimen>
+    <dimen name="list_main_menu_myimg_height">38px</dimen>
+    <dimen name="list_main_menu_myfamily_marginleft">41px</dimen>
+    <dimen name="list_main_menu_myfamily_paddingleftRight">16px</dimen>
+    <dimen name="list_main_menu_myfamily_paddingTop">8px</dimen>
+    <dimen name="list_main_menu_mysos_marginleft">53px</dimen>
+    <dimen name="list_main_menu_home_margintop">13px</dimen>
+    <dimen name="list_main_menu_home_height">83px</dimen>
+    <dimen name="list_main_menu_home_imgheight">41px</dimen>
+    <dimen name="list_main_menu_home_imgwidth">41px</dimen>
+    <dimen name="list_main_menu_home_marginLeft">33px</dimen>
+    <dimen name="list_main_menu_home_text_marginLeft">8px</dimen>
+    <dimen name="list_main_menu_home_arrow_marginRight">66px</dimen>
+    <dimen name="list_main_menu_setting_marginLeft">21px</dimen>
+    <dimen name="list_main_menu_setting_imgwidth">31px</dimen>
+    <dimen name="list_main_menu_setting_imgheight">31px</dimen>
+    <dimen name="list_main_menu_click_radius">6px</dimen>
+
+    <!-- list_item_mysos.xml -->
+
+    <dimen name="list_item_mysos_map_width">483px</dimen>
+    <dimen name="list_item_mysos_map_height">258px</dimen>
+    <dimen name="list_item_mysos_content_height">287px</dimen>
+    <dimen name="item_mysos_status_LL_marginLeft">16px</dimen>
+    <dimen name="item_mysos_status_LL_marginRight">30px</dimen>
+    <dimen name="item_mysos_status_imgWidth">30px</dimen>
+    <dimen name="item_mysos_status_imgHeight">30px</dimen>
+    <dimen name="item_mysos_date_marginTop">41px</dimen>
+    <dimen name="item_mysos_date_marginBottom">16px</dimen>
+    <dimen name="item_mysos_voice_marginLeft">25px</dimen>
+    <dimen name="item_mysos_status_tv_marginleft">8px</dimen>
+
+    <!-- list_item_checknotify.xml -->
+    <dimen name="item_checknotify_user_imagewidth">66px</dimen>
+    <dimen name="item_checknotify_user_imageheight">66px</dimen>
+    <dimen name="item_checknotify_height">195px</dimen>
+    <dimen name="item_checknotify_LL_marginLeft">16px</dimen>
+    <dimen name="item_checknotify_LL_marginTop">33px</dimen>
+    <dimen name="item_checknotify_status_imgWidth">60px</dimen>
+    <dimen name="item_checknotify_status_imgHeight">60px</dimen>
+    <dimen name="item_checknotify_status_imgmarginleft">16px</dimen>
+    <dimen name="item_checknotify_status_rlHeight">93px</dimen>
+    <dimen name="item_checknotify_status_rlmarginTop">13px</dimen>
+    <dimen name="item_checknotify_status_llmarginLeft">10px</dimen>
+    <dimen name="item_checknotify_status_tvmarginTop">3px</dimen>
+
+    <!-- fragment_notification.xml -->
+    <dimen name="fragment_notification_rlHeight">120px</dimen>
+    <dimen name="fragment_notification_imagewidth">80px</dimen>
+    <dimen name="fragment_notification_imageHeight">80px</dimen>
+    <dimen name="fragment_notification_imagemarginLeft">20px</dimen>
+    <dimen name="fragment_notification_LLmarginLeft">15px</dimen>
+    <dimen name="fragment_notification_nummarginLeft">38px</dimen>
+    <dimen name="fragment_notification_numWidth">20px</dimen>
+    <dimen name="fragment_notification_numHeight">20px</dimen>
+    <dimen name="fragment_notification_arrowWidth">13px</dimen>
+    <dimen name="fragment_notification_arrowHeight">23px</dimen>
+
+    <!-- checkin -->
+    <dimen name="activity_checkin_LinearLayout_11_layout_marginLeft">20px</dimen>
+    <dimen name="activity_checkin_LinearLayout_22_layout_marginRight">20px</dimen>
+    <dimen name="activity_checkin_LinearLayout_44_layout_marginBottom">16px</dimen>
+    <dimen name="activity_checkin_LinearLayout_444_layout_marginBottom">275px</dimen>
+    <dimen name="activity_familylocate_HorizontalScrollView_266_layout_Top">55px</dimen>
+    <dimen name="activity_familylocate_HorizontalScrollView_255_layout_Bottom">20px</dimen>
+    <dimen name="list_item_image_img_image_family_66_layout_width">73px</dimen>
+    <dimen name="list_item_image_img_image_family_77_layout_height">73px</dimen>
+    <dimen name="list_item_image_img_image_kuang_100_layout_width">76px</dimen>
+    <dimen name="list_item_image_img_image_kuang_111_layout_height">76px</dimen>
+    <dimen name="list_item_image_img_image_kuang_1111_layout_height">6px</dimen>
+
+    <!-- fragment_main.xml -->
+    <dimen name="title_bar_height2">88px</dimen>
+    <dimen name="fragment_main_textView1_39_layout_height2">2px</dimen>
+    <dimen name="fragment_main_img_main_sos_bk_left">33px</dimen>
+    <dimen name="fragment_main_img_main_sos_bk_top">51px</dimen>
+    <dimen name="fragment_main_layout_location_layout_height">56px</dimen>
+    <dimen name="fragment_main_tv_main_located_layout_marginLeft">15px</dimen>
+    <dimen name="fragment_main_layout_main_sos2_layout_marginTop">160px</dimen>
+    <dimen name="fragment_main_linearLayout2_layout_height">180px</dimen>
+    <dimen name="fragment_main_layout_clue_layout_width">200px</dimen>
+    <dimen name="fragment_main_tv_main_clue_layout_marginBottom">28px</dimen>
+    <dimen name="fragment_main_tv_main_recode_tip_2_paddingBottom">9px</dimen>
+    <dimen name="fragment_main_img_just_sos_layout_marginTop">256px</dimen>
+    <dimen name="fragment_main_img_main_sos_red_big_8_layout_height2">472px</dimen>
+    <dimen name="fragment_setting_img_logo_top">96px</dimen>
+    <dimen name="fragment_setting_lyt_setting_top">417px</dimen>
+
+    <!-- activity_checkin.xml -->
+    <dimen name="activity_checkin_LinearLayout_img_width">90px</dimen>
+    <dimen name="activity_checkin_LinearLayout_img_height">61px</dimen>
+    <dimen name="activity_checkin_LinearLayout_title_height">68px</dimen>
+    <dimen name="activity_checkin_LinearLayout_height">188px</dimen>
+    <dimen name="activity_checkin_LinearLayout_tv_margintop">12px</dimen>
+    <dimen name="activity_checkin_popLL_margintop">26px</dimen>
+    <dimen name="activity_checkin_popHorizontalScrollView_margintop">38px</dimen>
+    <dimen name="activity_checkin_popTV_marginTop">8px</dimen>
+    <dimen name="activity_checkin_takemessage_img_width">125px</dimen>
+    <dimen name="activity_checkin_takemessage_img_height">80px</dimen>
+
+    <!-- activity_takemessage.xml -->
+    <dimen name="activity_takemessage_marginTop">21px</dimen>
+    <dimen name="activity_takemessage_edit_marginLeftRight">16px</dimen>
+    <dimen name="activity_takemessage_ll_marginLeft">25px</dimen>
+    <dimen name="activity_takemessage_ll_height">91px</dimen>
+    <dimen name="activity_takemessage_tv_marginLeft">13px</dimen>
+    <dimen name="activity_takemessage_img_width">20px</dimen>
+    <dimen name="activity_takemessage_img_height">20px</dimen>
+
+    <!-- activity_clue.xml -->
+    <dimen name="activity_clue_cluegrid_marginTop">15px</dimen>
+    <dimen name="activity_clue_locationLL_marginTop">33px</dimen>
+    <dimen name="activity_clue_btn_clue_upload_btn_margintop">28px</dimen>
+    <dimen name="activity_clue_tiptv_marginTop">20px</dimen>
+    <dimen name="activity_clue_whasupload_marginTop">43px</dimen>
+    <dimen name="activity_clue_location_LLHeight">83px</dimen>
+    
+    <!-- firstclueview.xml -->
+    <dimen name="firstclueview_image_width">413px</dimen>
+    <dimen name="firstclueview_image_height">435px</dimen>
+    <dimen name="firstclueview_image_marginTop">125px</dimen>
+    <dimen name="firstclueview_text_marginTop">70px</dimen>
+    <dimen name="firstclueview_text_marginleftRight">25px</dimen>
+    <dimen name="firstclueview_LL_marginTop">93px</dimen>
+    <dimen name="firstclueview_LLimg_margin">8px</dimen>
+    <dimen name="firstclueview_LLimg_width">15px</dimen>
+    <dimen name="firstclueview_LLimg_height">15px</dimen>
+
+    <dimen name="layout_titlebar2_logo_width">125px</dimen>
+    <dimen name="layout_titlebar2_logo_height">49px</dimen>
+    <dimen name="fragmentmain_bk_width">520px</dimen>
+    <dimen name="fragmentmain_bk_height">752px</dimen>
+    <dimen name="fragmentmain_1ksos_width">95px</dimen>
+    <dimen name="fragmentmain_1ksos_height">24px</dimen>    
+</resources>

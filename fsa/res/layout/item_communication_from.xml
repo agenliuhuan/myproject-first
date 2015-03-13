@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_communication_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/item_communication_time_marginBottom"
+        android:layout_marginTop="@dimen/item_communication_time_marginTop"
+        android:background="@drawable/notification_item_timebg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/item_communication_image"
+            android:layout_width="@dimen/item_communication_image_width"
+            android:layout_height="@dimen/item_communication_image_height"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/comm_item_margin"
+            android:layout_marginLeft="@dimen/comm_item_margin"
+            android:layout_marginTop="@dimen/comm_item_margin" />
+
+        <RelativeLayout
+            android:id="@+id/item_communication_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_communication_RLmarginleftright"
+            android:layout_toRightOf="@+id/item_communication_image"
+            android:background="@drawable/item_communication_white_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/item_communication_LL_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comm_item_margin"
+                android:background="@anim/voicefrom" />
+
+            <TextView
+                android:id="@+id/item_communication_LL_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/comm_item_margin"
+                android:gravity="right"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_17" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/item_communication_status_btn"
+            android:layout_width="@dimen/fragment_main_img_main_location_3_layout_width"
+            android:layout_height="@dimen/fragment_main_img_main_location_3_layout_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comm_item_margin"
+            android:layout_toRightOf="@+id/item_communication_RL" />
+    </RelativeLayout>
+
+</LinearLayout>

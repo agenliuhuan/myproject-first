@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_lost"
+        layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_lost" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/img_lost_image"
+                android:layout_width="@dimen/activity_checkin_none_img_checkin_none_image_2_layout_width"
+                android:layout_height="@dimen/activity_checkin_none_img_checkin_none_image_3_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_checkin_none_img_checkin_none_image_1_layout_marginTop"
+                android:src="@drawable/img_checkin" />
+
+            <TextView
+                android:id="@+id/tv_lost_tip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_lost_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="@dimen/activity_checkin_none_tv_checkin_none_tip_1_0_layout_marginTop"
+                android:ellipsize="none"
+                android:text="@string/activity_lost_msg"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/layout_lost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_lost_tip_1" >
+
+                <TextView
+                    android:id="@+id/tv_lost_tip_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginTop="@dimen/activity_checkin_none_img_checkin_none_image_1_layout_marginTop"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:layout_marginRight="@dimen/comm_btn_margin"
+                    android:ellipsize="none"
+                    android:enabled="false"
+                    android:scrollHorizontally="false"
+                    android:text="@string/activity_lost_tip1"
+                    android:textColor="@color/textview_check_nobody_text_color"
+                    android:textSize="@dimen/font_size_16" />
+                
+                <TextView
+                    android:id="@+id/tv_lost_tip_41"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lost_tip_2"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:layout_marginRight="@dimen/comm_btn_margin"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_3_layout_marginTop"
+                    android:ellipsize="none"
+                    android:text="@string/activity_lost_tip11"
+                    android:textColor="@color/textview_check_nobody_text_color"
+                    android:textSize="@dimen/font_size_16" />
+                
+                <TextView
+                    android:id="@+id/tv_lost_tip_42"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lost_tip_41"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:layout_marginRight="@dimen/comm_btn_margin"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_3_layout_marginTop"
+                    android:ellipsize="none"
+                    android:text="@string/activity_lost_tip12"
+                    android:textColor="@color/textview_check_nobody_text_color"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_lost_tip_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lost_tip_42"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:layout_marginRight="@dimen/comm_btn_margin"
+                    android:layout_marginTop="@dimen/activity_checkin_none_img_checkin_none_image_1_layout_marginTop"
+                    android:ellipsize="none"
+                    android:text="@string/activity_lost_tip2"
+                    android:textColor="@color/textview_check_nobody_text_color"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_lost_tip_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lost_tip_3"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:layout_marginRight="@dimen/comm_btn_margin"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_3_layout_marginTop"
+                    android:ellipsize="none"
+                    android:text="@string/activity_lost_tip3"
+                    android:textColor="@color/textview_check_nobody_text_color"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_lost_tip_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lost_tip_4"
+                    android:layout_marginLeft="@dimen/comm_btn_margin"
+                    android:layout_marginRight="@dimen/comm_btn_margin"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_3_layout_marginTop"
+                    android:ellipsize="none"
+                    android:freezesText="false"
+                    android:text="@string/activity_lost_tip4"
+                    android:textColor="@color/textview_check_nobody_text_color"
+                    android:textSize="@dimen/font_size_16" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_lost_call"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/layout_lost"
+                android:layout_centerHorizontal="false"
+                android:layout_marginBottom="@dimen/activity_checkin_none_btn_checkin_none_add_11_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_checkin_none_btn_checkin_none_add_8_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_checkin_none_btn_checkin_none_add_9_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_checkin_none_btn_checkin_none_add_10_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_lost_relocate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

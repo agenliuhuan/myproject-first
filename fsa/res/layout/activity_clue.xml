@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_clue"
+        layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_clue"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_clue_cluegrid_marginTop"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:background="@color/comm_line_color" />
+
+                <GridView
+                    android:id="@+id/gv_clue_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_clue_gv_clue_images_2_layout_height"
+                    android:layout_margin="@dimen/activity_clue_gv_clue_images_0_layout_margin"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="@dimen/activity_clue_gv_clue_images_1_horizontalSpacing"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/activity_clue_gv_clue_images_2_verticalSpacing" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:background="@color/comm_line_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_clue_locationLL_marginTop"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:background="@color/comm_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/clue_loca_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_clue_location_LLHeight"
+                    android:layout_marginLeft="@dimen/activity_clue_ImageView_5_layout_marginLeft"
+                    android:layout_marginRight="@dimen/activity_clue_tv_clue_location_9_layout_marginRight" >
+
+                    <TextView
+                        android:id="@+id/clue_loca_tip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activity_clue_location_text"
+                        android:textColor="@color/setting_item_text_color"
+                        android:textSize="@dimen/font_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_clue_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_clue_tv_clue_location_9_layout_marginRight"
+                        android:layout_toRightOf="@id/clue_loca_tip_tv"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/comm_black_gray"
+                        android:textSize="@dimen/font_size_14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:layout_marginLeft="@dimen/activity_clue_ImageView_5_layout_marginLeft"
+                    android:background="@color/comm_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/clue_notifyfamily_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_clue_location_LLHeight"
+                    android:layout_marginLeft="@dimen/activity_clue_ImageView_5_layout_marginLeft"
+                    android:layout_marginRight="@dimen/activity_clue_tv_clue_location_9_layout_marginRight" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activity_clue_notifyfamily_text"
+                        android:textColor="@color/setting_item_text_color"
+                        android:textSize="@dimen/font_size_17" />
+
+                    <CheckBox
+                        android:id="@+id/clue_notifyfamily_checkBox"
+                        android:layout_width="@dimen/activity_familydetail_cb_familydetail_allow__width"
+                        android:layout_height="@dimen/activity_familydetail_cb_familydetail_allow_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/settings_item_checkbox_selector"
+                        android:checked="true"
+                        android:duplicateParentState="true" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:background="@color/comm_line_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_clue_edt_clue_content_13_layout_marginTop"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:background="@color/comm_line_color" />
+
+                <EditText
+                    android:id="@+id/edt_clue_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_clue_location_LLHeight"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/activity_clue_edt_content"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:padding="@dimen/activity_clue_edt_clue_content_padding"
+                    android:textColor="@color/comm_black"
+                    android:textColorHint="@color/comm_black_gray"
+                    android:textSize="@dimen/font_size_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_line_height"
+                    android:background="@color/comm_line_color" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_clue_upload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:layout_marginRight="@dimen/comm_btn_margin"
+                android:layout_marginTop="@dimen/activity_clue_btn_clue_upload_btn_margintop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_clue_btn_upload"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_19" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_btn_margin"
+                android:layout_marginRight="@dimen/comm_btn_margin"
+                android:layout_marginTop="@dimen/activity_clue_tiptv_marginTop"
+                android:text="@string/activity_clue_tv_tip"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/activity_clue_whats_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_clue_whasupload_marginTop"
+                android:gravity="center"
+                android:text="@string/activity_clue_whasupload_tip"
+                android:textColor="@drawable/button_text_color_selector"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_main_title"
+        layout="@layout/layout_title_bar" />
+
+    <mobi.dlys.android.familysafer.ui.comm.xlistview.XListView
+        android:id="@+id/lv_familyrequest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/comm_line_color"
+        android:dividerHeight="@dimen/comm_line_height"
+        android:fastScrollEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@drawable/on_item_selected"
+        android:scrollbars="none"
+        android:visibility="invisible" >
+    </mobi.dlys.android.familysafer.ui.comm.xlistview.XListView>
+
+    <RelativeLayout
+        android:id="@+id/no_requestRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img_nofriend"
+            android:layout_width="@dimen/fragment_familyrequest_img_nofriend_0_layout_width"
+            android:layout_height="@dimen/fragment_familyrequest_img_nofriend_1_layout_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fragment_familyrequest_img_nofriend_marginTop"
+            android:src="@drawable/nonotification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_nofriend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fragment_familyrequest_TextView_2_layout_marginTop"
+            android:text="@string/fragment_familyrequest_norequest"
+            android:textColor="@color/textview_sending_text_color"
+            android:textSize="@dimen/font_size_17" />
+    </RelativeLayout>
+
+</LinearLayout>

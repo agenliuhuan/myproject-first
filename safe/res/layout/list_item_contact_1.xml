@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/on_item_selected"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,NestedWeights" >
+
+    <RelativeLayout
+        android:id="@+id/layout_item_contact"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px" >
+
+        <Button
+            android:id="@+id/btn_item_addinvite"
+            android:layout_width="98px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15" />
+
+        <LinearLayout
+            android:id="@+id/sendok_LL_item_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/sendok_tv_item_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_item_addinvite"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_17" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_item_status"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_item_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" "
+                    android:textColor="@color/comm_black_gray"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

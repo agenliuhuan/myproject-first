@@ -1,0 +1,60 @@
+﻿<resources>
+
+    <!-- 字体大小 -->
+    <dimen name="font_size_48">48sp</dimen>
+    <dimen name="font_size_42">42sp</dimen>
+    <dimen name="font_size_36">36sp</dimen>
+    <dimen name="font_size_30">30sp</dimen>
+    <dimen name="font_size_29">29sp</dimen>
+    <dimen name="font_size_28">28sp</dimen>
+    <dimen name="font_size_27">27sp</dimen>
+    <dimen name="font_size_26">26sp</dimen>
+    <dimen name="font_size_25">25sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_23">23sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_21">21sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_19">19sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_17">17sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_9">9sp</dimen>
+    <dimen name="font_size_8">8sp</dimen>
+
+    <!-- xlistview 列表顶部 -->
+    <dimen name="xlistview_header_txt_msg_font_size">10dp</dimen>
+    <dimen name="xlistview_header_txt_datetime_font_size">8dp</dimen>
+    <dimen name="xlistview_header_height">57dp</dimen>
+    <dimen name="xlistview_header_txt_divider_height">6dp</dimen>
+    <dimen name="xlistview_header_txt_top_margin">11dp</dimen>
+    <dimen name="xlistview_header_txt_bottom_margin">11dp</dimen>
+    <dimen name="xlistview_header_progressbar_width">15dp</dimen>
+    <dimen name="xlistview_header_img_arrow_width">16dp</dimen>
+    <dimen name="xlistview_header_img_arrow_height">39dp</dimen>
+    <dimen name="xlistview_header_img_top_margin">9dp</dimen>
+    <dimen name="xlistview_header_img_bottom_margin">9dp</dimen>
+    <dimen name="xlistview_header_img_right_margin">17dp</dimen>
+
+    <!-- xlistview 列表底部 -->
+    <dimen name="xlistview_footer_txt_msg_font_size">10dp</dimen>
+    <dimen name="xlistview_footer_height">44dp</dimen>
+    <dimen name="xlistview_footer_txt_msg_top_margin">17dp</dimen>
+    <dimen name="xlistview_footer_progressbar_width">15dp</dimen>
+    <dimen name="xlistview_footer_progressbar_left_margin">24dp</dimen>
+
+    <!-- unified_loading_bg.xml -->
+    <dimen name="unified_loading_bg_0_radius">8dp</dimen>
+
+    <!-- SlidingMenu -->
+    <dimen name="slidingmenu_offset">87dp</dimen>
+    <dimen name="slidingmenu_shadow_width">5dp</dimen>
+    <dimen name="slidingmenu_item_height">74dp</dimen>
+
+</resources>

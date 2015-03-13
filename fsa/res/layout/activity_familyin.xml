@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_familyin"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_familyin_LinearLayout_marginTop"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:background="@color/comm_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/family_detail_toplayout_height" >
+
+            <ImageView
+                android:id="@+id/img_familyin_image"
+                android:layout_width="@dimen/family_detail_image"
+                android:layout_height="@dimen/family_detail_image"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_familyin_img_familyin_image_marginLeft"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/tv_familyin_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_familyin_tv_familyin_nickname_marginLeft"
+                android:layout_toRightOf="@id/img_familyin_image"
+                android:text=" "
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:background="@color/comm_line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_familyin_LinearLayout_marginTop"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:background="@color/comm_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/layout_familyin_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/family_detail_layout_height" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_familyin_TextView_marginLeft"
+                android:text="@string/activity_familyin_tv_relation"
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tv_familyin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_familyin_tv_familyin_name_marginRight"
+                android:text="@string/activity_familyin_tv_contact"
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/font_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:background="@color/comm_line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_familyin_LinearLayout_btn_marginTop"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_familyin_add"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_marginLeft="@dimen/comm_btn_margin"
+            android:layout_marginRight="@dimen/comm_btn_margin"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/activity_familyin_btn_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+
+        <Button
+            android:id="@+id/btn_familyin_accept"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_marginLeft="@dimen/comm_btn_margin"
+            android:layout_marginRight="@dimen/comm_btn_margin"
+            android:layout_marginTop="@dimen/activity_familyin_LinearLayout_marginTop"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/activity_familyin_btn_accept"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+
+        <Button
+            android:id="@+id/btn_familyin_reject"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_marginLeft="@dimen/comm_btn_margin"
+            android:layout_marginRight="@dimen/comm_btn_margin"
+            android:layout_marginTop="@dimen/activity_familyin_LinearLayout_marginTop"
+            android:background="@drawable/button_red_selector"
+            android:text="@string/activity_familyin_btn_reject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+</LinearLayout>

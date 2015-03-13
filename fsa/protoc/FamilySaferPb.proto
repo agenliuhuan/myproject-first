@@ -1,0 +1,350 @@
+option java_package = "mobi.dlys.android.familysafer.protobuf";
+
+option java_outer_classname = "FamilySaferProtobuf";
+
+message FamilySaferPb {
+
+  // 系统类型
+  optional SystemType systemType = 1;
+  // 客户端版本
+  optional ClientVersion clientVersion = 2;
+  optional Mobile mobile = 3;
+  optional Environment environment = 4;
+  // 命令头,用于客户端与服务端之间的请求头
+  required Command command = 5;
+  // 操作类型
+  optional ActionType actionType = 6;
+  // 返回状态
+  optional ResponseStatus responseStatus = 7;
+  // 分页信息
+  optional PageInfo pageInfo = 8;
+  // 用户信息
+  optional UserInfo userInfo = 9;
+  // 多个用户信息
+  repeated UserInfo userInfos = 10;
+  // 好友
+  optional Friend frd = 11;
+  // 多个好友
+  repeated Friend frds = 12;
+  // 好友请求
+  optional FriendRequest friendRequest = 13;
+  // 多个好友请求
+  repeated FriendRequest friendRequests = 14;
+  // 通知
+  optional Event event = 15;
+  // 多个通知
+  repeated Event events = 16;
+  // 线索
+  optional Clue clue = 17;
+  // 多个线索
+  repeated Clue clues = 18;
+  // 签到信息
+  optional CheckIn checkIn = 19;
+  // 普通求救信息
+  optional CommonSOS commonSOS = 20;
+  // 语音求救信息
+  optional VoiceSOS voiceSOS = 21;
+  // 主机类型
+  optional HostType hostType = 22;
+  // 辅助时间
+  optional RememberTime rememberTime = 23;
+  // 提醒
+  optional Tip tip = 24;
+  // 消息
+  optional Msg msg = 25;
+  // 多个消息
+  repeated Msg msgs = 26;
+  // 消息主题
+  optional MsgTopic msgTopic = 27;
+  // 多个消息主题
+  repeated MsgTopic msgTopics = 28;
+  // 多个语音求救
+  repeated VoiceSOS VoiceSOSs = 29;
+  // 多个通知类型
+  repeated EventType eventTypes = 30;
+
+  enum HostType {
+    API = 1;
+    RES = 2;
+  }
+
+  enum SystemType {
+    NONE = 0;
+    ANDROID = 1;
+    IOS = 2;
+  }
+
+  enum Command {
+    HOST_INFO = 1; // 获取主机环境
+    CHECK_VERSION = 2; // 检查版本
+    REGIST = 3; // 注册
+    LOGIN = 4; // 登录
+    LOGOUT = 5; // 退出登录
+    GET_AUTH_CODE = 6; // 获取验证码
+    VERIFY_AUTH_CODE = 7; // 判断验证码的有效性
+    SET_NEW_PWD = 8; // 设置新密码(忘记密码)
+    MODIFY_PWD = 9; // 修改密码
+    USER_INFO = 10; // 用户信息
+    MODIFY_USER = 11; // 修改用户信息
+    MODIFY_PHONE_VERIFY_PWD = 12; // 修改手机验证密码
+    MODIFY_PHONE = 13; // 修改手机
+    MODIFY_LOCATION = 14; // 修改地理位置
+    CHECK_USER_REGIST = 15; // 检查用户是否注册
+    ADD_FRIEND = 16; // 添加好友
+    FRIEND_REQ_LIST = 17; // 好友请求列表
+    OPT_FRIEND_REQ = 18; // 处理好友请求
+    FRIEND_LIST = 19; // 好友列表
+    DEL_FRIEND = 20; // 删除好友
+    SET_REMARK_NAME = 21; // 设置备注名
+    GET_USER_LOCATION = 22; // 获取用户坐标
+    CHECK_IN = 23; // 到达通知
+    EVENT_LIST = 24; // 通知列表
+    PUSH_CLUE = 25; // 拍线索
+    CLUE_LIST = 26; // 线索列表
+    SHOW_MY_POSITION = 27; // 显示我的位置
+    CHECK_USER_RELATION = 28; // 检查用户关系
+    CHECK_IN_CONFIRM = 29; // 签到确认
+    COMMON_SOS = 30; // 普通求救
+    VOICE_SOS = 31; // 语音求救
+    CANCEL_COMMON_SOS = 32; // 普通求救取消
+    MODIFY_HIDE_LOCATION = 33; // 修改隐藏位置
+    REFRESH_TOKEN = 34; // 刷新token
+    VOICE_SOS_CONFIRM = 35; // 语音求救确认
+    TIP_NEW_NUM = 36; // 新的提醒数
+    SEND_MSG = 37; // 发消息
+    MSG_TOPIC_LIST = 38; // 消息主题列表
+    MSG_LIST = 39; // 消息列表
+    VOICE_SOS_LIST = 40; // 语音求救列表
+  }
+
+  // 操作类型
+  enum ActionType {
+    AT_REGIST = 1; // 注册
+    AT_LOST_PWD = 2; // 忘记密码
+    AT_MODIFY_PHONE = 3; // 修改手机号码
+
+    AT_AGREE = 4; // 同意
+    AT_REFUSE = 5; // 拒绝
+
+    AT_ALL = 6; // 所有
+    AT_CUSTOM = 7; // 指定
+
+    AT_ALL_EVENT = 8; // 所有通知
+    AT_UNREAD_EVENT = 9; // 未读通知
+
+    AT_MY_CLUE_LIST = 10; // 我的线索
+    AT_CLUE_LIST = 11; // 公共线索列表
+
+    AT_MY_VOICE_SOS_LIST = 12; // 我的语音求救列表
+  }
+
+  // 用户关系
+  enum Relation {
+    R_UNKNOWN = 1; // 未知,未注册
+    R_STRANGER = 2; // 陌生人
+    R_FRIEND = 3; // 好友
+  }
+
+  // 动态类型
+  enum EventType {
+    ET_CHECK_IN = 1; // 到达通知
+    ET_CHECK_IN_CONFIRM = 2; // 到达通知确认
+    ET_VOICE_SOS = 3; // 语音求救通知
+    ET_VOICE_SOS_CONFIRM = 4; // 语音求救通知确认
+    ET_CLUE = 5; // 线索通知
+  }
+
+  // 动态状态
+  enum EventStatus {
+    ES_UNREAD = 1; // 未读
+    ES_READED = 2; // 已读
+    ES_CONFIRMED = 3; // 已确认
+  }
+
+  // 客户端版本信息
+  message ClientVersion {
+    optional int32 versionId = 1; // 版本ID
+    optional int32 versionCode = 2; // 版本号,判断新旧
+    optional string versionName = 3; // 版本名,展示版本号
+    optional string downloadUrl = 4; // 下载地址
+    optional string updateLog = 5; // 更新日志
+    optional int32 force = 6; // 是否强制安装
+    optional bool coverUpdate = 7; // 封面是否更新
+    optional string coverStartDate = 8; // 封面开始日期
+    optional string coverEndDate = 9; // 封面结束日期
+    optional string coverUrl = 10; // 封面地址
+    optional string downloadPageUrl = 11; // 下载页地址
+  }
+
+  // 手机信息
+  message Mobile {
+    optional int32 mobileId = 1; // 手机ID
+    optional SystemType systemType = 2; // 系统类型
+    optional string dn = 3; // 手机唯一标识(imei + @ + mac地址)
+    optional int32 userId = 4; // 用户ID
+  }
+
+  // 环境信息
+  message Environment {
+    // 客户端判断该值是否有新旧变化,一旦变化必须清除缓存.
+    optional string key = 1;
+    // 环境IP信息
+    repeated HostInfo hostInfos = 2;
+  }
+
+  // 环境IP信息
+  message HostInfo {
+    optional int32 hostId = 1; // 主机ID
+    optional string domain = 2; // 域名
+    optional int32 port = 3; // 端口
+    optional HostType hostType = 4; // 类型 1.api服务器地址 2.资源服务器地址
+  }
+
+  // 返回的状态信息
+  message ResponseStatus {
+    //状态码 00000成功
+    optional string code = 1;
+    //状态描述
+    optional string msg = 2;
+  }
+
+  // 分页信息
+  message PageInfo {
+    optional int32 pageNo = 1; // 页码
+    optional int32 pageSize = 2; // 每页大小
+    optional int32 totalResult = 3; // 总大小
+    optional int32 totalPage = 4; // 总页数
+    optional int32 index = 5; // 索引
+    optional bool lastPage = 6; // 是否最后一页
+  }
+
+  // 记住时间,辅助客户端获取服务器信息
+  message RememberTime {
+    optional int64 friendReqReceiveTime = 1; // 好友请求接收时间
+  }
+
+  // 用户信息
+  message UserInfo {
+    optional int32 userId = 1; // 用户ID
+    optional string phone = 2; // 手机号码
+    optional string nickname = 3; // 昵称
+    optional string password = 4; // 密码
+    optional string password2 = 5; // 二次验证密码
+    optional string image = 6; // 用户头像
+    optional string token = 7; // 用户session标识
+    optional string lng = 8; // 经度
+    optional string lat = 9; // 纬度
+    optional string location = 10; // 位置
+    optional string authCode = 11; // 验证码
+    optional string remarkName = 12; // 备注名
+    optional bool showMyPosition = 13; // 是否允许查看我的位置
+    optional bool registStatus = 14; // 注册状态
+    optional bool hideLocation = 15; // 隐藏地理位置
+    optional Relation relation = 16; // 关系
+    optional string lastMoveTime = 17; // 最后移动时间
+  }
+
+  // 好友
+  message Friend {
+    optional int32 userId = 1; // 用户ID
+    optional string phone = 2; // 手机号码
+    optional string nickname = 3; // 昵称
+    optional string image = 4; // 用户头像
+    optional string lng = 5; // 经度
+    optional string lat = 6; // 纬度
+    optional string location = 7; // 位置描述
+    optional string remarkName = 8; // 备注名
+    optional bool showMyPosition = 9; // 是否允许查看我的位置
+    optional string lastMoveTime = 10; // 最后移动时间
+    optional bool hideLocation = 11; // 隐藏地理位置
+  }
+
+  // 好友请求
+  message FriendRequest {
+    optional UserInfo userInfo = 1; // 用户信息
+    optional bool isReceive = 2; // 是否接收的请求
+    optional int32 status = 3; // 状态 0.已通过 1.等待 2.拒绝
+  }
+
+  // 通知
+  message Event {
+    optional int32 eventId = 1; // 通知ID
+    optional UserInfo userInfo = 2; // 用户信息
+    optional EventType eventType = 3; // 通知类型
+    optional string content = 4; // 内容
+    optional EventStatus eventStatus = 5; // 通知状态
+    optional string createTime = 6; // 时间
+  }
+
+  // 线索图片
+  message ClueImage {
+    optional string image = 1; // 图片地址
+    optional int32 width = 2; // 宽
+    optional int32 height = 3; // 高
+  }
+
+  // 线索
+  message Clue {
+    optional int32 clueId = 1; // 线索ID
+    optional UserInfo userInfo = 2; // 用户信息
+    repeated ClueImage images = 3; // 图片列表
+    optional string msg = 4; // 文字信息
+    optional string lng = 5; // 经度
+    optional string lat = 6; // 纬度
+    optional string location = 7; // 微信信息
+    optional string createTime = 8; // 时间
+    optional string phoneModel = 9; // 手机型号
+    optional bool isEvent = 10; // 是否通知
+  }
+
+  // 签到信息
+  message CheckIn {
+    optional int32 checkInId = 1; // 签到id
+    optional string msg = 2; // 签到消息
+  }
+
+  // 普通求救信息
+  message CommonSOS {
+    optional int32 commonSOSId = 1; // 求救信息ID
+  }
+
+  // 语音求救信息
+  message VoiceSOS {
+    optional int32 voiceSOSId = 1; // 求救信息ID
+    optional string voice = 2; // 语音地址
+    optional int32 duration = 3; // 时长
+    optional string lng = 4; // 经度
+    optional string lat = 5; // 纬度
+    optional string location = 6; // 微信信息
+    optional string createTime = 7; // 时间
+  }
+
+  // 提醒
+  message Tip {
+    optional int32 friendReqNewNum = 1; // 好友请求新数量
+    optional int32 eventNewNum = 2; // 通知新数量
+    optional int32 msgNewNum = 3; // 新消息数
+    optional int32 sosEventNewNum = 4; // SOS通知数
+    optional int32 checkInEventNewNum = 5; // 到达通知数
+    optional int32 confirmEventNewNum = 6; // 查收通知数
+    optional int32 clueEventNewNum = 7; // 线索通知数
+  }
+
+  // 消息主题
+  message MsgTopic {
+    optional int32 msgTopicId = 1; // 消息主题ID
+    optional UserInfo userInfo = 2; // 用户信息
+    optional int32 unreadCount = 3; // 未读数
+    optional string lastTime = 4; // 最后发言时间
+  }
+
+  // 消息
+  message Msg {
+    optional int32 msgId = 1; // 消息ID
+    optional UserInfo fromUser = 2; // 发信人信息
+    optional UserInfo toUser = 3; // 收信人信息
+    optional string voice = 4; // 语音地址
+    optional int32 duration = 5; // 时长
+    optional string createTime = 6; // 发送时间
+  }
+}

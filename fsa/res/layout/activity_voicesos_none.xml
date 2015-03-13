@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_voicesos_none"
+        layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_voicesos_none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_voicesos_none_tip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_voicesos_none_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="@dimen/activity_voicesos_none_tv_voicesos_none_tip_1_0_layout_marginTop"
+                android:text="@string/activity_voicesos_none_tv_tip_1"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_18" />
+
+            <ImageView
+                android:id="@+id/img_voicesos_none_image"
+                android:layout_width="@dimen/activity_voicesos_none_img_voicesos_none_image_2_layout_width"
+                android:layout_height="@dimen/activity_voicesos_none_img_voicesos_none_image_3_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_voicesos_none_img_voicesos_none_image_1_layout_marginTop"
+                android:src="@drawable/img_sos_1" />
+
+            <TextView
+                android:id="@+id/tv_voicesos_none_tip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_voicesos_none_tip_1"
+                android:layout_marginLeft="@dimen/activity_voicesos_none_tv_voicesos_none_tip_2_4_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_voicesos_none_tv_voicesos_none_tip_2_5_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_voicesos_none_tv_voicesos_none_tip_2_6_layout_marginTop"
+                android:lineSpacingExtra="@dimen/activity_voicesos_none_tv_voicesos_none_tip_2_7_lineSpacingExtra"
+                android:text="@string/activity_voicesos_none_tv_tip_2"
+                android:textColor="@color/textview_check_nobody_text_color"
+                android:textSize="@dimen/font_size_16" />
+
+            <Button
+                android:id="@+id/btn_voicesos_none_add"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@id/tv_voicesos_none_tip_2"
+                android:layout_centerHorizontal="false"
+                android:layout_marginBottom="@dimen/activity_voicesos_none_btn_voicesos_none_add_11_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_voicesos_none_btn_voicesos_none_add_8_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_voicesos_none_btn_voicesos_none_add_9_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_voicesos_none_btn_voicesos_none_add_10_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_voicesos_none_btn_add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

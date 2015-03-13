@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/comm_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="169px"
+        android:layout_below="@+id/layout_title"
+        android:background="@color/comm_activity_background" >
+
+        <EditText
+            android:id="@+id/edt_contacts_search"
+            android:layout_width="match_parent"
+            android:layout_height="121px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:layout_marginRight="18px"
+            android:layout_toLeftOf="@+id/tv_contacts_confim"
+            android:background="@drawable/edt_general_normal"
+            android:focusableInTouchMode="true"
+            android:hint="@string/activity_smslocation_contacttext"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:paddingLeft="120px"
+            android:paddingRight="16px"
+            android:singleLine="true"
+            android:textColor="@color/dialog_content_color"
+            android:textColorHint="@color/comm_edit_hint_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="46px"
+            android:background="@drawable/icon_edit_search" />
+    </RelativeLayout>
+
+    <cn.changl.safe360.android.ui.smslocation.CustomContactsListView
+        android:id="@+id/list_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_search_bar"
+        android:background="@color/comm_activity_background"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#eeeeee"
+        android:dividerHeight="3px"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

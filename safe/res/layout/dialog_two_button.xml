@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="540px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="18px"
+            android:text="@string/dialog_title_tip"
+            android:textColor="@color/dialog_btn_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D6D6D6" />
+
+        <TextView
+            android:id="@+id/txt_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="28px"
+            android:gravity="left|top"
+            android:lineSpacingExtra="5px"
+            android:minHeight="130px"
+            android:text="@string/dialog_title_tip"
+            android:textColor="@color/dialog_content_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#42bfe7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_dialog_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_left_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_confirm"
+                android:textColor="@drawable/btn_dialog_textcolor"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#42bfe7" />
+
+            <Button
+                android:id="@+id/btn_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_right_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_cancel"
+                android:textColor="@drawable/btn_dialog_textcolor"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

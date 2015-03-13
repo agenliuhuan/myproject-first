@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dialog_one_button_LinearLayout_0_layout_marginLeft"
+    android:layout_marginRight="@dimen/dialog_one_button_LinearLayout_1_layout_marginRight"
+    android:background="@drawable/button_mydialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_one_button_LinearLayout_4_layout_height"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/dialog_title_tip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+            android:id="@+id/txt_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_one_button_txt_dialog_content_11_layout_marginLeft"
+            android:layout_marginRight="@dimen/dialog_one_button_txt_dialog_content_12_layout_marginRight"
+            android:layout_marginTop="@dimen/dialog_one_button_txt_dialog_content_13_layout_marginTop"
+            android:lineSpacingExtra="@dimen/dialog_one_button_txt_dialog_content_15_lineSpacingExtra"
+            android:gravity="left"
+            android:text="@string/dialog_title_tip"
+            android:textColor="@color/comm_black"
+            android:textSize="@dimen/font_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_two_button_TextView_18_layout_width"
+        android:background="@color/button_dialog_border_color" 
+        android:layout_marginTop="@dimen/dialog_one_button_txt_dialog_content_14_layout_marginBottom"/>
+
+    <Button
+        android:id="@+id/btn_dialog_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_one_button_btn_dialog_confirm_16_layout_height"
+        android:background="@drawable/button_dialog_bg_selector"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/comm_green"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

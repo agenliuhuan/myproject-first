@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_checkin_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="@dimen/layout_avatatat_pop_tv_checkin_location_0_layout_width"
+            android:layout_height="@dimen/layout_avatatar_pop2_layout_title_0_layout_height"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:background="@drawable/img_pop_checkin" >
+
+            <LinearLayout
+                android:id="@+id/layout_location"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_avatatar_pop2_layout_location_3_layout_height"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="false"
+                android:layout_marginLeft="@dimen/layout_avatatar_pop2_layout_location_1_layout_marginLeft"
+                android:layout_marginRight="@dimen/layout_avatatar_pop2_layout_location_2_layout_marginRight"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_checkin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:textColor="#575757"
+                    android:textSize="@dimen/font_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_checkin_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_location2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_avatatar_pop2_layout_location2_6_layout_height"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="false"
+                android:layout_marginLeft="@dimen/layout_avatatar_pop2_layout_location2_4_layout_marginLeft"
+                android:layout_marginRight="@dimen/layout_avatatar_pop2_layout_location2_5_layout_marginRight"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_checkin_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:textColor="#575757"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_checkin_avatar"
+            android:layout_width="@dimen/layout_avatatat_pop_img_checkin_avatar_1_layout_width"
+            android:layout_height="@dimen/layout_avatatat_pop_img_checkin_avatar_2_layout_height"
+            android:layout_below="@+id/layout_title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_avatatat_pop_img_checkin_avatar_2_layout_marginTop"
+            android:background="@android:color/transparent"
+            android:cropToPadding="false" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/layout_avatatat_pop_img_checkin_avatar_frame_layout_width"
+            android:layout_height="@dimen/layout_avatatat_pop_img_checkin_avatar_frame_layout_height"
+            android:layout_below="@+id/layout_title"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/avatar" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_searchadd"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar_searchadd"
+        android:layout_marginLeft="@dimen/activity_searchadd_RelativeLayout_marginLeftRight"
+        android:layout_marginRight="@dimen/activity_searchadd_RelativeLayout_marginLeftRight"
+        android:layout_marginTop="@dimen/activity_searchadd_RelativeLayout_marginTop" >
+
+        <Button
+            android:id="@+id/btn_searchadd_search"
+            android:layout_width="@dimen/activity_searchadd_RelativeLayout_btn_width"
+            android:layout_height="@dimen/activity_searchadd_RelativeLayout_btn_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_green_selector"
+            android:gravity="center"
+            android:text="@string/btn_searchadd_search_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+
+        <EditText
+            android:id="@+id/edt_searchadd_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_searchadd_edt_height"
+            android:layout_marginRight="@dimen/activity_searchadd_edt_searchadd_marginRight"
+            android:layout_toLeftOf="@+id/btn_searchadd_search"
+            android:background="@drawable/edit_general_selector"
+            android:hint="@string/activity_searchadd_edt_phone"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/activity_searchadd_edt_searchadd_padding"
+            android:paddingRight="@dimen/activity_searchadd_edt_searchadd_padding"
+            android:textColorHint="@color/textview_hint_color"
+            android:textSize="@dimen/font_size_for_edit" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

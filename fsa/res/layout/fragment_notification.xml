@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_main_title"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_notification_sos_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_notification_rlHeight"
+        android:background="@drawable/on_item_selected" >
+
+        <ImageView
+            android:id="@+id/fragment_notification_sos_img"
+            android:layout_width="@dimen/fragment_notification_imagewidth"
+            android:layout_height="@dimen/fragment_notification_imageHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_imagemarginLeft"
+            android:src="@drawable/fragment_sos_img" />
+
+        <ImageView
+            android:id="@+id/fragment_notification_sos_arrow"
+            android:layout_width="@dimen/fragment_notification_arrowWidth"
+            android:layout_height="@dimen/fragment_notification_arrowHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:src="@drawable/fragment_arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_LLmarginLeft"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:layout_toLeftOf="@id/fragment_notification_sos_arrow"
+            android:layout_toRightOf="@id/fragment_notification_sos_img"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_notification_sos"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/fragment_notification_sos_numtv"
+                    android:layout_width="@dimen/fragment_notification_numWidth"
+                    android:layout_height="@dimen/fragment_notification_numHeight"
+                    android:layout_marginLeft="@dimen/fragment_notification_nummarginLeft"
+                    android:background="@drawable/icon_title_red_point"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_notification_sos_tip"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_notification_in_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_notification_rlHeight"
+        android:background="@drawable/on_item_selected" >
+
+        <ImageView
+            android:id="@+id/fragment_notification_in_img"
+            android:layout_width="@dimen/fragment_notification_imagewidth"
+            android:layout_height="@dimen/fragment_notification_imageHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_imagemarginLeft"
+            android:src="@drawable/fragment_in_img" />
+
+        <ImageView
+            android:id="@+id/fragment_notification_in_arrow"
+            android:layout_width="@dimen/fragment_notification_arrowWidth"
+            android:layout_height="@dimen/fragment_notification_arrowHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:src="@drawable/fragment_arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_LLmarginLeft"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:layout_toLeftOf="@id/fragment_notification_in_arrow"
+            android:layout_toRightOf="@id/fragment_notification_in_img"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_notification_in"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/fragment_notification_in_numtv"
+                    android:layout_width="@dimen/fragment_notification_numWidth"
+                    android:layout_height="@dimen/fragment_notification_numHeight"
+                    android:layout_marginLeft="@dimen/fragment_notification_nummarginLeft"
+                    android:background="@drawable/icon_title_red_point"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_notification_in_tip"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_notification_clue_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_notification_rlHeight"
+        android:background="@drawable/on_item_selected" >
+
+        <ImageView
+            android:id="@+id/fragment_notification_clue_img"
+            android:layout_width="@dimen/fragment_notification_imagewidth"
+            android:layout_height="@dimen/fragment_notification_imageHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_imagemarginLeft"
+            android:src="@drawable/fragment_clue_img" />
+
+        <ImageView
+            android:id="@+id/fragment_notification_clue_arrow"
+            android:layout_width="@dimen/fragment_notification_arrowWidth"
+            android:layout_height="@dimen/fragment_notification_arrowHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:src="@drawable/fragment_arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_LLmarginLeft"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:layout_toLeftOf="@id/fragment_notification_clue_arrow"
+            android:layout_toRightOf="@id/fragment_notification_clue_img"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_notification_clue"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/fragment_notification_clue_numtv"
+                    android:layout_width="@dimen/fragment_notification_numWidth"
+                    android:layout_height="@dimen/fragment_notification_numHeight"
+                    android:layout_marginLeft="@dimen/fragment_notification_nummarginLeft"
+                    android:background="@drawable/icon_title_red_point"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_notification_clue_tip"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_notification_tip_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_notification_rlHeight"
+        android:background="@drawable/on_item_selected" >
+
+        <ImageView
+            android:id="@+id/fragment_notification_tip_img"
+            android:layout_width="@dimen/fragment_notification_imagewidth"
+            android:layout_height="@dimen/fragment_notification_imageHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_imagemarginLeft"
+            android:src="@drawable/fragment_tip_img" />
+
+        <ImageView
+            android:id="@+id/fragment_notification_tip_arrow"
+            android:layout_width="@dimen/fragment_notification_arrowWidth"
+            android:layout_height="@dimen/fragment_notification_arrowHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:src="@drawable/fragment_arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_notification_LLmarginLeft"
+            android:layout_marginRight="@dimen/comm_item_margin"
+            android:layout_toLeftOf="@id/fragment_notification_tip_arrow"
+            android:layout_toRightOf="@id/fragment_notification_tip_img"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_notification_tip"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/fragment_notification_tip_numtv"
+                    android:layout_width="@dimen/fragment_notification_numWidth"
+                    android:layout_height="@dimen/fragment_notification_numHeight"
+                    android:layout_marginLeft="@dimen/fragment_notification_nummarginLeft"
+                    android:background="@drawable/icon_title_red_point"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_notification_tip_tip"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+</LinearLayout>

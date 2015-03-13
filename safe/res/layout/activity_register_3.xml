@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_register_3"
+        layout="@layout/comm_title_bar" />
+
+    <ImageView
+        android:id="@+id/img_register_3_image"
+        android:layout_width="214px"
+        android:layout_height="214px"
+        android:layout_below="@+id/titlebar_register_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120px"
+        android:src="@drawable/account_headimg_user" />
+
+    <TextView
+        android:id="@+id/tv_register_3_tip_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_register_3_image"
+        android:layout_marginTop="52px"
+        android:gravity="center"
+        android:text="@string/activity_register_3_tv_tip_2"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/register_3_choiceLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_3_tip_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/activity_register_3_choice"
+            android:textColor="#bab9b9"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/register_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:button="@drawable/radiobtn_register_selector"
+                android:checked="true"
+                android:paddingLeft="10px"
+                android:text="@string/activity_register_3_choiceman"
+                android:textColor="#bab9b9"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radiowoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:background="@color/transparent"
+                android:button="@drawable/radiobtn_register_selector"
+                android:checked="false"
+                android:paddingLeft="10px"
+                android:text="@string/activity_register_3_choicewoman"
+                android:textColor="#bab9b9"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_register_3_nickname"
+        android:layout_width="604px"
+        android:layout_height="82px"
+        android:layout_below="@+id/register_3_choiceLL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32px"
+        android:background="@drawable/edt_general_normal"
+        android:hint="@string/activity_register_3_edt_nickname"
+        android:inputType="text"
+        android:paddingLeft="20px"
+        android:textColor="#333333"
+        android:textColorHint="#bab9b9"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/layout_register_3_bk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="bottom|center_horizontal"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_register_3_bk_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/textview_green_text_color" />
+
+            <TextView
+                android:id="@+id/tv_image_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px"
+                android:text="@string/activity_register_3_image_tv_title"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_17" />
+
+            <Button
+                android:id="@+id/btn_image_snapshot"
+                android:layout_width="604px"
+                android:layout_height="80px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px"
+                android:background="@drawable/btn_green_selector"
+                android:text="@string/activity_register_3_image_btn_snapshot"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_image_album"
+                android:layout_width="604px"
+                android:layout_height="80px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px"
+                android:background="@drawable/btn_green_selector"
+                android:text="@string/activity_register_3_image_btn_album"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_image_cancel"
+                android:layout_width="604px"
+                android:layout_height="80px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/btn_blue_selector"
+                android:text="@string/activity_register_3_image_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

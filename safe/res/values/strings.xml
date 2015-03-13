@@ -1,0 +1,509 @@
+<resources>
+
+    <string name="app_name">暖途</string>
+    <string name="copyright">www.szsftx.com</string>
+
+    <!-- 网络错误 -->
+    <string name="network_error">网络错误</string>
+
+    <!-- 等待对话框 -->
+    <string name="default_unified_loading_text">请稍候&#8230;</string>
+
+    <!-- 对话框按钮 -->
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_close">关闭</string>
+
+    <!-- 下拉listview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载…</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 标题栏 -->
+    <string name="titlebar_button_tip_next">下一步</string>
+    <string name="titlebar_button_tip_over">完成</string>
+    <string name="titlebar_button_tip_skip">跳过</string>
+    <string name="titlebar_button_tip_delete">删除</string>
+    <string name="titlebar_button_tip_add">添加</string>
+    <string name="titlebar_button_tip_commit">提交</string>
+
+    <!-- 左侧菜单 -->
+    <string name="sliding_menu_message">通知</string>
+    <string name="sliding_menu_shake">摇一摇求救</string>
+    <string name="sliding_menu_setting">设置</string>
+    <string name="sliding_menu_exit">退出登录</string>
+    <string name="sliding_menu_guest">游客</string>
+
+    <!-- 登录向导界面 -->
+    <string name="activity_guide_btn_login">登录</string>
+    <string name="activity_guide_btn_register">注册</string>
+    <string name="activity_guide_btn_guest">游客</string>
+
+    <!-- 登录界面 -->
+    <string name="activity_login_ttb_title">登录</string>
+    <string name="activity_login_ttb_righttext">快速注册</string>
+    <string name="activity_login_edt_phone">输入注册手机号</string>
+    <string name="activity_login_phone">账号</string>
+    <string name="activity_login_edt_password">输入密码</string>
+    <string name="activity_login_password">密码</string>
+    <string name="activity_login_btn_login">登录</string>
+    <string name="activity_login_login_dialog_msg">正在登录</string>
+    <string name="activity_login_tv_forgot">找回密码？</string>
+
+    <!-- 忘记密码界面 -->
+    <!-- 1 -->
+    <string name="activity_fogot_1_ttb_title">重置密码</string>
+    <string name="activity_fogot_1_edt_phone">输入注册手机号</string>
+    <!-- 2 -->
+    <string name="activity_fogot_2_ttb_title">重置密码</string>
+    <string name="activity_fogot_2_edt_check">输入验证码</string>
+    <string name="activity_fogot_2_tv_tip_1">验证码已经发送到手机</string>
+    <string name="activity_fogot_2_tv_tip_1_1">%s</string>
+    <string name="activity_fogot_2_tv_tip_2">若没有收到，</string>
+    <string name="activity_fogot_2_tv_tip_3">%02d秒后重发</string>
+    <string name="activity_fogot_2_tv_resend">重新发送</string>
+
+    <!-- 3 -->
+    <string name="activity_fogot_3_ttb_title">重置密码</string>
+    <string name="activity_fogot_3_edt_password">输入新密码</string>
+    <string name="activity_fogot_3_tv_tip">密码最少6位，最多15位，区分大小写</string>
+
+    <!-- 注册界面 -->
+    <!-- 1 -->
+    <string name="activity_register_1_ttb_title">输入手机号1/3</string>
+    <string name="activity_register_1_edt_phone">输入注册手机号</string>
+    <string name="activity_register_1_edt_password">输入密码</string>
+    <string name="activity_register_1_tv_tip_1">手机号仅注册及亲友紧急联系时使用，不会透露给任何人</string>
+    <string name="activity_register_1_tv_tip_2">密码最少6位，最多15位，区分大小写</string>
+    <!-- 2 -->
+    <string name="activity_register_2_ttb_title">输入验证码2/3</string>
+    <string name="activity_register_2_edt_check">输入验证码</string>
+    <string name="activity_register_2_tv_tip_1">验证码已经发送到手机</string>
+    <string name="activity_register_2_tv_tip_1_1">%s</string>
+    <string name="activity_register_2_tv_tip_2">若没有收到，</string>
+    <string name="activity_register_2_tv_tip_3">%02d秒后重发</string>
+    <string name="activity_register_2_tv_resend">重新发送</string>
+    <!-- 3 -->
+    <string name="activity_register_3_ttb_title">输入资料3/3</string>
+    <string name="activity_register_3_tv_tip_1">设置头像</string>
+    <string name="activity_register_3_tv_tip_2">最好以本人照片作为头像，方便家人认出你</string>
+    <string name="activity_register_3_edt_nickname">输入昵称</string>
+    <string name="activity_register_3_choice">请选择性别</string>
+    <string name="activity_register_3_choiceman">男</string>
+    <string name="activity_register_3_choicewoman">女</string>
+    <string name="activity_register_3_image_tv_title">设置头像</string>
+    <string name="activity_register_3_image_btn_snapshot">拍照</string>
+    <string name="activity_register_3_image_btn_album">手机相册</string>
+    <string name="activity_register_3_image_btn_cancel">取消</string>
+    <string name="activity_register_3_tv_tip_3">正在创建资料 </string>
+
+    <!-- 提示 -->
+    <string name="toast_phone_format_error">请输入正确手机号码</string>
+    <string name="toast_phone_ismyselef">不能添加自己为家人</string>
+    <string name="toast_phone_length_error">请输入11位手机号码</string>
+    <string name="toast_phone_length_out">手机号码不能超过11位</string>
+    <string name="toast_phone_notnew_error">你输入的不是新手机号</string>
+    <string name="toast_phone_registered_error">该手机号码已被注册</string>
+    <string name="toast_phone_unregister_error">该手机号尚未注册</string>
+    <string name="toast_check_code_error">验证码错误</string>
+    <string name="toast_password_min_error">密码不能少于6位</string>
+    <string name="toast_password_max_error">密码不能超过15位</string>
+    <string name="toast_nickname_max_error">昵称不能超过10位</string>
+    <string name="toast_takemessage_max_error">不能超过16位</string>
+    <string name="toast_remark_max_error">备注不能超过10位</string>
+    <string name="toast_password_format_error">密码格式错误</string>
+    <string name="toast_phone_modify_succeed">手机号修改成功</string>
+    <string name="toast_nickname_modify_succeed">昵称修改成功</string>
+    <string name="toast_sex_modify_succeed">性别修改成功</string>
+    <string name="toast_nickname_format_error">昵称中含有特殊符号，请修改</string>
+    <string name="toast_remarkname_modify_succeed">备注名修改成功</string>
+    <string name="toast_password_modify_succeed">密码修改成功</string>
+    <string name="toast_avatar_modify_succeed">头像修改成功</string>
+    <string name="toast_avatar_modify_failed">头像修改失败</string>
+    <string name="toast_clue_snapshot_max_error">一次性不能超过8张照片</string>
+    <string name="toast_feedback_max_error">不能超过200字</string>
+    <string name="toast_update_version_succeed">你使用的已经是最新版了</string>
+    <string name="toast_get_contacts_failed">获取联系人失败</string>
+    <string name="toast_usernot_register">用户还未注册</string>
+    <string name="toast_send_add_friend_failed">添加失败，请稍后再试</string>
+    <string name="toast_send_add_friend_success">添加请求已发送，请等待对方通过</string>
+    <string name="toast_agree_friend_success">已通过家人请求</string>
+    <string name="toast_refuse_friend_success">已拒绝家人请求</string>
+    <string name="toast_del_friend_success">已删除家人成功</string>
+    <string name="toast_send_voice_sos_failled">发送语音求救失败</string>
+    <string name="toast_avatar_upload_failed">图片上传失败，失败原因：</string>
+    <string name="toast_clue_image_upload_failed">图片上传失败</string>
+    <string name="toast_clue_edit_length_error">不能超过200字</string>
+    <string name="toast_sos_voice_upload_failled">语音上传失败</string>
+    <string name="toast_sos_voice_canceled">语音求救已取消</string>
+    <string name="toast_sos_voice_fail">时间太短，语音录制失败</string>
+    <string name="toast_exit_app">再按一次将退出软件</string>
+    <string name="toast_no_more_data">没有更多了哦</string>
+    <string name="toast_sms_uploading">正在上传...</string>
+    <string name="toast_sms_upload_failed">上传语音失败</string>
+    <string name="toast_map_zoomin_min">地图已缩到最小</string>
+    <string name="toast_map_zoomout_max">地图已放到最大</string>
+    <string name="toast_noresult">抱歉，未找到结果，请重新设置</string>
+    <string name="toast_userhidelocation">无法获取对方位置</string>
+    <string name="toast_user_escorting">%s正在护航，请选择其他人为你护航</string>
+    <string name="toast_user_escorted">%s正在被护航中，请选择其他人为你护航</string>
+    <string name="toast_user_hidelocation">您已经开启隐身模式</string>
+    <string name="toast_user_nothidelocation">您已经关闭隐身模式</string>
+
+    <!-- 添加家人 -->
+    <string name="activity_addfamily_ttb_title">添加家人</string>
+    <string name="activity_addfamily_tv_tip_1">从中挑选家人并添加</string>
+    <string name="activity_addfamily_edit_tip">联系人姓名/手机号</string>
+    <string name="activity_addfamily_clear_text">取消</string>
+    <string name="activity_addfamily_nocontact_text1">请输入正确的手机号码</string>
+    <string name="activity_addfamily_nocontact_text2">你的通讯录没有此号码，确定向此号码发送邀请？</string>
+    <string name="activity_addfamily_tv_add">对方已注册，添加为家人</string>
+    <string name="activity_addfamily_btn_add">添加</string>
+    <string name="activity_addfamily_itemtv_added">已发送</string>
+    <string name="activity_addfamily_tv_invite">对方尚未注册，发送邀请</string>
+    <string name="activity_addfamily_btn_invite">邀请</string>
+    <string name="activity_addfamily_tv_invited">已发送</string>
+    <string name="activity_addfamily_tv_added">已添加为家人</string>
+    <string name="activity_addfamily_dlg_title">请稍等</string>
+    <string name="activity_addfamily_dlg_message">正在读取通讯录</string>
+
+    <!-- 查找家人 -->
+    <string name="activity_searchadd_ttb_title">查找家人</string>
+    <string name="activity_searchadd_edt_phone">输入手机号</string>
+    <string name="btn_searchadd_search_text">搜索</string>
+
+    <!-- 邀请短信内容 -->
+    <string name="sms_invite">hi，我正在使用暖途。这款软件可以保护自己保护家人，实时分享位置，互相保驾护航，打开此链接就可以跟我互相看到位置了，%s </string>
+
+    <!-- 修改手机号界面 -->
+    <!-- 1 -->
+    <string name="activity_phone_1_ttb_title">手机号</string>
+    <string name="activity_phone_1_tv_tip_1">当前手机号为%1$s，如果此手机号不再使用了，请及时更改手机号。更改成功后，下次登录可以使用新手机号登录。</string>
+    <string name="activity_phone_1_edt_new">输入新手机号</string>
+    <string name="activity_phone_1_edt_password">输入当前密码</string>
+    <!-- 2 -->
+    <string name="activity_phone_2_ttb_title">输入验证码</string>
+    <string name="activity_phone_2_edt_check">输入验证码</string>
+    <string name="activity_phone_2_tv_tip_1">验证码已经发送到手机%1$s，若没有收到，</string>
+    <string name="activity_phone_2_tv_tip_2">请在%1$s秒后点击</string>
+    <string name="activity_phone_2_tv_resend">重新发送</string>
+
+    <!-- 修改密码界面 -->
+    <string name="activity_password_ttb_title">修改密码</string>
+    <string name="activity_password_edt_old">请输入旧密码</string>
+    <string name="activity_password_tv_old">旧密码</string>
+    <string name="activity_password_edt_new">请输入新密码</string>
+    <string name="activity_password_tv_new">新密码</string>
+    <string name="activity_password_tv_tip">密码最少6位，最多15位，区分大小写</string>
+
+    <!-- 修改昵称界面 -->
+    <string name="activity_nickname_ttb_title">修改昵称</string>
+    <string name="activity_sex_ttb_title">性   别</string>
+    <string name="activity_sex_man">男性</string>
+    <string name="activity_sex_woman">女性</string>
+
+    <!-- 联系反馈界面 -->
+    <string name="activity_feedback_ttb_title">联系反馈</string>
+
+    <!-- 我的帐号界面 -->
+    <string name="activity_account_ttb_title">个人中心</string>
+    <string name="activity_account_tv_image">头像</string>
+    <string name="activity_account_tv_id">帐号</string>
+    <string name="activity_account_tv_phone">手机号</string>
+    <string name="activity_account_tv_nickname">昵称</string>
+    <string name="activity_account_tv_sex">性别</string>
+    <string name="activity_account_tv_password">修改密码</string>
+    <string name="activity_account_tv_image_title">设置头像</string>
+    <string name="activity_account_btn_image_snapshot">拍照</string>
+    <string name="activity_account_btn_image_album">手机相册</string>
+    <string name="activity_account_btn_image_cancel">取消</string>
+    <string name="activity_nickname_edithint_text">昵称不能超过十位</string>
+
+    <!-- 设置界面 -->
+    <string name="fragment_setting_ttb_title">设置</string>
+    <string name="fragment_setting_tv_account">我的帐号</string>
+    <string name="fragment_setting_tv_hide_title">隐藏位置</string>
+    <string name="fragment_setting_tv_hide_content">隐藏地理位置后，家人将不能查看您的位置</string>
+    <string name="fragment_setting_tv_send">SOS求救语音发送对象</string>
+    <string name="fragment_setting_tv_both">同时发送给附近警察和家人</string>
+    <string name="fragment_setting_tv_police">仅发送给附近警察</string>
+    <string name="fragment_setting_tv_guide">功能介绍</string>
+    <string name="fragment_setting_tv_update">检查新版本</string>
+    <string name="fragment_setting_btn_exit">退出圈子</string>
+    <string name="fragment_setting_dlg_title">提示</string>
+    <string name="fragment_setting_dlg_tip_1">求救时附近可能没有警察，是否继续设置为“仅发送给附近警察”？</string>
+    <string name="fragment_setting_dlg_check">正在获取最新版本信息！</string>
+    <string name="fragment_setting_dlg_newest">你使用的已经是最新版了</string>
+    <string name="fragment_setting_dlg_btn_update">立即更新</string>
+    <string name="fragment_setting_dlg_btn_notnow">暂不更新</string>
+    <string name="fragment_setting_copyright1">使用条款和隐私政策</string>
+    <string name="fragment_setting_copyright2">深圳四方天下科技有限公司 版权所有</string>
+    <string name="fragment_setting_copyright3">Copyright @2015 All Rights Reserved.</string>
+    <string name="activity_helper_title">帮助与反馈</string>
+    <string name="activity_copyright_title">使用条款和隐私政策</string>
+    <string name="activity_helper_common">常见问题</string>
+    <string name="activity_helper_feedback">意见反馈</string>
+    <string name="activity_helper_itemtitle1">1.暖途软件安装了之后，会收费吗？</string>
+    <string name="activity_helper_itemcontent1">暖途的服务完全免费，在使用过程中产生的数据流量费用，由运营商收取。</string>
+    <string name="activity_helper_itemtitle2">2.怎样邀请好友来到我的圈子？</string>
+    <string name="activity_helper_itemcontent2">添加好友输入对方手机号发送邀请即可，对方同意之后你们将会在同一个圈子里，彼此可以看到彼此的位置，也可以邀请圈中好友来为你护航，还可摇一摇求救将自己的求救信息发送到圈子中所有好友中。</string>
+    <string name="activity_helper_itemtitle3">3.为什么我看不到好友的位置更新？</string>
+    <string name="activity_helper_itemcontent3">（1）对方可能关闭了定位服务，苹果手机可在设置中点击菜单中的定位服务，确认打开定位服务开关\n
+ （2）对方手机可能没有连接网络，对方连接网络（2G，3G， 4G，wifi网络）即可重新看到\n
+ （3）对方开启了隐身模式，圈中好友将都看不到他/她的位置\n
+ （4）对方没有打开暖途，或者没有将暖途放在后台运行，把暖途完全从后台关闭了\n
+ （5）对方卸载了暖途应用\n
+ （6）对方的网络环境较差，导致位置更新有点延迟</string>
+    <string name="activity_helper_itemtitle4">4.未安装暖途客户端的用户也可以跟我共享位置吗？</string>
+    <string name="activity_helper_itemcontent4">可以，添加好友的时候只需输入对方手机号，然后给对方发送一条短信，对方点开短信中的链接并可和你共享位置，临时添加好友以后，也可以给好友发送短信来邀请为您保驾护航。</string>
+    <string name="activity_helper_itemtitle5">5.目前只有一个圈子吗？</string>
+    <string name="activity_helper_itemcontent5">在当前版本中只能在一个圈子里面，并且你邀请你的好友你们两个的圈子不会合并，你的好友会单独来到你的圈子。后续会增加多圈子功能，敬请期待。</string>
+    <string name="activity_helper_itemtitle6">6.圈子中最多可以添加多少人，护航可以邀请多少人？</string>
+    <string name="activity_helper_itemcontent6">圈子中的好友最多可以添加20个，护航状态下最多邀请五个人来为您护航。</string>
+    <string name="activity_helper_itemtitle7">7.地图定位准确吗？</string>
+    <string name="activity_helper_itemcontent7">手机GPS定位精度取决于GPS硬件和GPS卫星信号。越空旷、开阔的地方定位精度越高，一般在20米以内，最高可以达到2米以内。如果是室内定位，因为是靠基站或wifi定位，会存在一定偏移，所以如果是在室内，需要连接wifi才比较准确。</string>
+    <string name="activity_helper_itemtitle8">8.不想让好友看到我的位置怎么办？</string>
+    <string name="activity_helper_itemcontent8">您可以在抽屉-设置中开启隐身模式，好友将看不到您的位置，只能看到您上一次的位置。</string>
+
+    <!-- 对话框 -->
+    <string name="dialog_title_tip">提示</string>
+    <string name="dialog_title_sos">紧急求救！</string>
+    <string name="dialog_confim_check">查看</string>
+    <string name="dialog_content_arrivte">已顺利到达</string>
+    <string name="dialog_content_clue">拍摄了照片证据，他可能有危险，请确认他是否安全</string>
+    <string name="dialog_content_arrivte_confim">已经查收了你的到达通知</string>
+    <string name="dialog_content_getsos_confim">已经查收了你的求救通知</string>
+    <string name="dialog_content_getsos">发来求救语音，请抓紧处理！</string>
+    <string name="dialog_editclue_content">确定放弃此次编辑吗？</string>
+    <string name="dialog_editclue_yes">放弃</string>
+    <string name="dialog_editclue_no">不放弃</string>
+    <string name="dialog_exitgroup_content">您确定要退出圈子吗？退出以后您将收不到圈中好友的任何信息!</string>
+    <string name="dialog_exitgroup_yes">退出</string>
+    <string name="dialog_exitgroup_no">取消</string>
+    <string name="dialog_logout_content">退出账号后将无法收到好友发来的求救和聊天消息，确认退出吗？</string>
+    <string name="dialog_logout_yes">退出</string>
+    <string name="dialog_logout_no">暂不退出</string>
+    <string name="dialog_hide_content">隐藏地理位置后，家人不能查看你的位置，但你仍可继续使用到达通知/SOS等需要地理位置的功能</string>
+    <string name="dialog_hide_yes">立即隐藏</string>
+    <string name="dialog_hide_no">暂不隐藏</string>
+    <string name="dialog_addfamily_content">您还未添加任何家人或者紧急联系人</string>
+    <string name="dialog_addfamily_yes">添加</string>
+    <string name="dialog_addfamily_no">取消</string>
+    <string name="dialog_confim_agree">同意</string>
+    <string name="dialog_confim_refuse">残忍拒绝</string>
+    <string name="dialog_confim_know">知道了</string>
+    <string name="dialog_delfri_title">提示</string>
+    <string name="dialog_delfri_content">你确定要把%s请出圈子吗？</string>
+    <string name="dialog_delfri_local_content">你确定要删除%s这个用户吗？</string>
+    <string name="dialog_delfri_yes">确定</string>
+    <string name="dialog_delfri_no">取消</string>
+    <string name="dialog_login_content">你正在游客模式中，想要更好的体验请进行下一步操作哦！</string>
+    <string name="dialog_login_yes">注册登录</string>
+    <string name="dialog_login_no">继续游客</string>
+    <string name="dialog_finishTriped_content">确定要结束此次护航吗? 按home键可以返回到手机主界面并保持后台护航！</string>
+    <string name="dialog_finishTrip_content">您确定要退出此次护航吗？退出之后您将不能再次进入此护航。</string>
+    <string name="dialog_finishTrip_yes">退出护航</string>
+    <string name="dialog_finishTriped_yes">结束护航</string>
+    <string name="dialog_nofamily_content">添加家人之后才能有更好的用户体验哦，快去添加家人吧！</string>
+    <string name="dialog_nofamilyescort_content">添加家人之后才能发送求救，快去添加家人吧！</string>
+    <string name="dialog_nofamilyescort_yes">添加家人</string>
+    <string name="dialog_nofamilyescort_no">取消</string>
+    <string name="dialog_addtoescort_content">你选择的家人里有不是我们的用户，需要给对方发送短信，对方打开短信链接方可对你进行护航。</string>
+    <string name="dialog_addtoescort_yes">发短信</string>
+    <string name="dialog_addtoescort_no">取消</string>
+    <string name="dialog_callphone_yes">拨打</string>
+    <string name="dialog_callphone_no">取消</string>
+    <string name="dialog_mainsendsms_content">你需要给好友发送短信，对方点开短信中的链接才可以互相看到位置</string>
+    <string name="dialog_mainsendsms_yes">发短信</string>
+    <string name="dialog_mainsendsms_no">取消</string>
+    <string name="dialog_invitesms_content">你添加的好友不是我们的用户，是否发送邀请短信？</string>
+    <string name="dialog_invitesms_yes">取消</string>
+    <string name="dialog_invitesms_no">发短信</string>
+    <string name="dialog_friendallexit_content">您的好友都已经退出此次护航，要结束本次护航吗？</string>
+    <string name="dialog_friendallexit_yes">取消</string>
+    <string name="dialog_friendallexit_no">结束护航</string>
+
+    <!-- 版本更新 -->
+    <string name="update_title">版本更新</string>
+    <string name="update_yes">立即更新</string>
+    <string name="update_no">暂不更新</string>
+    <string name="update_no_update_version">您使用的已经是最新版了</string>
+
+    <!-- sos -->
+    <string name="activity_sos_title">求救</string>
+    <string name="activity_sos_tip">倒数完成后将会给你圈子的所有人发送你的求救信息和地理位置信息。</string>
+    <string name="activity_sos_result_110">拨打110</string>
+    <string name="activity_sos_result_nearby">附近求救电话</string>
+    <string name="activity_sos_result_tip">你的求救信息及地理位置已经发送给你圈子中的所有人！</string>
+    <string name="error_key">key验证无效!</string>
+    <string name="error_code">错误码为：</string>
+    <string name="activity_sosok_btn">立即确认</string>
+    <string name="activity_nearsos_police">派出所</string>
+    <string name="activity_nearsos_Hospital">医院</string>
+    <string name="activity_nearsos_mi">米</string>
+    <string name="activity_nearsos_gongli">公里</string>
+    <string name="activity_nearsos_nophone">没有电话</string>
+    <string name="activity_sosmap_title">详情</string>
+
+    <!-- 主页地图 -->
+    <string name="activity_homepage_map_titile">地图</string>
+
+    <!-- sms location -->
+    <string name="activity_smslocation_titile">短信定位</string>
+    <string name="activity_smslocation_edit_hint">请输入家人手机号码</string>
+    <string name="activity_smslocation_tiptext">您可以通过短信进行临时定位，对方打开短信中的链接后，即可查看彼此的位置。</string>
+    <string name="activity_smslocation_contacttext">快速查找</string>
+    <string name="activity_smslocation_contact_title">选择家人</string>
+
+    <!-- 主界面 -->
+    <string name="activity_main_item_title_alarm">安全预警</string>
+    <string name="activity_main_item_title_family">家人定位</string>
+    <string name="activity_main_item_title_checkin">报平安</string>
+    <string name="activity_main_item_title_sms_location">短信定位</string>
+    <string name="mainfragment_notmore">最多只能添加9个好友</string>
+    <string name="mainfragment_locationTV">定位</string>
+    <string name="mainfragment_chatTV">聊天</string>
+    <string name="mainfragment_phoneTV">电话</string>
+    <string name="mainfragment_ChatSendText">发送</string>
+    <string name="mainfragment_ChatTopTitleText">正在和\"%s\"聊天</string>
+    <string name="mainfragment_ChatVoiceBtnText">长按说话</string>
+    <string name="mainfragment_ChatVoiceBtnedText">松开结束</string>
+    <string name="mainfragment_Chattip1">[表情]</string>
+    <string name="mainfragment_Chattip2">暖途：你有新的消息</string>
+    <string name="mainfragment_Chattip3">你有新的消息</string>
+    <string name="recording_popviewTV">正在录音...</string>
+    <string name="mainfragment_window_updatetiem">最后更新：</string>
+    <string name="mainfragment_smscontent">hi，我正在使用暖途。这款软件可以保护自己保护家人，实时分享位置，互相保驾护航，打开此链接就可以互相看到位置了，http：//t.cn/RZjQGRR </string>
+    <!-- safe warning -->
+    <string name="activity_safewarning_titile">安全预警</string>
+    <string name="activity_safewarning_riding_text">外出乘车</string>
+    <string name="activity_safewarning_stranger_text">见陌生人</string>
+    <string name="activity_safewarning_walknight_text">行走夜路</string>
+    <string name="activity_safewarning_other_text">其他模式</string>
+    <string name="activity_safewarning_constants_text">紧急联系人</string>
+    <string name="activity_safewarning_photo_text">拍照存证</string>
+    <string name="activity_safewarning_voice_text">播放警示音</string>
+    <string name="activity_safewarning_call_text">提醒联系人定时来电</string>
+    <string name="activity_safewarning_startbtn_text">开始</string>
+    <string name="activity_safewarning_tip_text">预警说明</string>
+    <string name="activity_safewarning_know_text">知道了</string>
+    <string name="activity_safewarning_tip_contenttext">1.拍照存证;\n2.播放警示音;\n3.平安到达前如果在陌生环境停留，会发预警信息给紧急联系人;\n4.定时提醒紧急联系人来电。</string>
+    <string name="activity_safewarning_stopwarning_protec_text">外出乘车预警中，如果你已经安全到达，请解除预警！</string>
+    <string name="activity_safewarning_stopwarning_tip_text">您已预警</string>
+    <string name="activity_safewarning_stopwarningbtn_text">解除预警</string>
+
+    <!-- 护航 -->
+    <string name="activity_startescort_titile">选择护航</string>
+    <string name="activity_startescort_sendBtntext">开始护航</string>
+    <string name="activity_startescort_notmore">最多只能选择5个护航人</string>
+    <string name="activity_startescort_sendtiptext">可以选择多人同时为您护航，也可以不选择任何人开始！</string>
+    <string name="activity_startescort_smscontent">我在长虹科技大厦，正要出发去往其他地方，请你来为我保驾护航吧！打开链接就可以看到我的实时轨迹哦！http：//api.antu.com </string>
+    <string name="activity_escort_titile">护航</string>
+    <string name="activity_escorted_righttext">结束护航</string>
+    <string name="activity_escort_righttext">退出护航</string>
+    <string name="activity_escort_position">当前位置：</string>
+    <string name="activity_escort_positioned">TA的位置：</string>
+    <string name="activity_escort_arrive">&#160;目 的 地 ：</string>
+    <string name="activity_escort_arriveed">TA的目的地 ：</string>
+    <string name="activity_escort_overplus">剩余路程：</string>
+    <string name="activity_escort_power">剩余电量：</string>
+    <string name="activity_escort_powered">TA的电量：</string>
+    <string name="activity_escort_pass">护航时长：</string>
+    <string name="activity_escort_familynum">护航人：</string>
+    <string name="activity_escort_arriveBtn">目的地</string>
+    <string name="activity_escort_wu">未设</string>
+    <string name="activity_escort_unknow">未知</string>
+    <string name="activity_escort_chattitile">群聊</string>
+    <string name="activity_escort_arrivatetitle">到达信息</string>
+    <string name="activity_escort_arrivatedesc">已到达%s附近</string>
+    <string name="activity_escort_nochangetitle">提醒</string>
+    <string name="activity_escort_nochangedesc">已在%s超过10分钟，关心一下</string>
+    <string name="activity_setposi_edithint">输入目的地名称</string>
+    <string name="activity_setposi_ttb_title">设置目的地</string>
+    <string name="hour">时</string>
+    <string name="munite">分</string>
+    <string name="second">秒</string>
+    <string name="sheng">省</string>
+
+    <!-- 消息 -->
+    <string name="activity_message_titile">通知</string>
+    <string name="activity_nomessage">还没有通知~</string>
+    <string name="activity_message_refuse">%s拒绝加入您的圈子</string>
+    <string name="activity_message_addfri">你加入了%s的圈子</string>
+    <string name="activity_message_addfri_content1">邀请你加入Ta的圈子</string>
+    <string name="activity_message_addfri_content2">邀请你加入Ta的圈子，您可能会退出您当前所在的圈子</string>
+
+    <!-- 推送 -->
+    <string name="baidu_push_bind_failed">百度推送绑定失败</string>
+
+    <!-- 环信 -->
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_voice_call">语音电话</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败，</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="forward">转发</string>
+    <string name="button_logout">退出登录</string>
+    <string name="button_uploadlog">上传运行日志</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="voice">[语音]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">查找</string>
+    <string name="button_add">添加</string>
+    <string name="search_header">搜</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="confirm_forward_to">确定转发到：%1$s ?</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+    <string name="exit_group">退出</string>
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+    <string name="exit">退出</string>
+    <string name="hide">隐藏</string>
+    <string name="exit_tip_content">你可以隐藏软件到后台，确定继续退出？</string>
+    <string name="exiting">正在退出，请稍候&#8230;</string>
+    <string name="reading_contacts">正在读取联系人&#8230;</string>
+    <string name="matching_contacts">正在匹配联系人</string>
+    <string name="dialog_gps_open_tip">开启GPS定位更加准确，是否现在开启？</string>
+
+</resources>

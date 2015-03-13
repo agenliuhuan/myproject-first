@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_voicesos_relativeLayout1_3_layout_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="@dimen/activity_voicesos_relativeLayout1_0_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_voicesos_relativeLayout1_1_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_voicesos_relativeLayout1_2_layout_marginTop"
+            android:background="@drawable/notication_red_bg" >
+
+            <ImageView
+                android:id="@+id/img_voicesos_play"
+                android:layout_width="@dimen/activity_voicesos_img_voicesos_play_5_layout_width"
+                android:layout_height="@dimen/activity_voicesos_img_voicesos_play_6_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_voicesos_img_voicesos_play_4_layout_marginTop"
+                android:src="@drawable/notification_play_selector" />
+
+            <TextView
+                android:id="@+id/tv_voicesos_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/activity_voicesos_tv_voicesos_tip_7_layout_marginBottom"
+                android:text="@string/activity_voicesos_tv_tip"
+                android:textColor="@color/button_dialog_background_color"
+                android:textSize="@dimen/font_size_17" />
+
+            <TextView
+                android:id="@+id/tv_voicesos_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_voicesos_play"
+                android:layout_toRightOf="@+id/img_voicesos_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_17" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="@dimen/activity_voicesos_relativeLayout2_8_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_voicesos_relativeLayout2_9_layout_marginRight"
+            android:background="@drawable/notification_detail_bg" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_voicesos_rl_13_layout_height"
+                android:layout_below="@+id/layout_voicesos_map"
+                android:layout_marginTop="@dimen/activity_voicesos_rl_13_layout_top" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/activity_voicesos_imageView4_12_layout_width"
+                    android:layout_height="@dimen/activity_voicesos_imageView4_13_layout_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_voicesos_imageView4_10_layout_marginLeft"
+                    android:src="@drawable/icon_location2" />
+
+                <TextView
+                    android:id="@+id/tv_voicesos_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_voicesos_tv_voicesos_loc_14_layout_marginLeft"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/textview_voicesos_location_color"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_voicesos_map"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_voicesos_layout_voicesos_map_18_layout_height"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/activity_voicesos_layout_voicesos_map_15_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_voicesos_layout_voicesos_map_16_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_voicesos_layout_voicesos_map_17_layout_marginTop"
+                android:background="@color/comm_activity_background"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginLeft="@dimen/activity_voicesos_LinearLayout_19_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_voicesos_LinearLayout_20_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_voicesos_LinearLayout_21_layout_marginTop" >
+
+            <Button
+                android:id="@+id/btn_voicesos_cancel"
+                android:layout_width="@dimen/activity_voicesos_btn_voicesos_cancel_23_layout_width"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_marginRight="@dimen/activity_voicesos_btn_voicesos_cancel_22_layout_marginRight"
+                android:layout_weight="1"
+                android:background="@drawable/button_red_selector"
+                android:text="@string/activity_voicesos_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_voicesos_send"
+                android:layout_width="@dimen/activity_voicesos_btn_voicesos_send_25_layout_width"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_marginLeft="@dimen/activity_voicesos_btn_voicesos_send_24_layout_marginLeft"
+                android:layout_weight="1"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_voicesos_btn_send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

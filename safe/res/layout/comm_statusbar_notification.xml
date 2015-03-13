@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dlna_notify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_notify_device"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ellipsize="middle"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/txt_notify_res_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ellipsize="middle"
+            android:gravity="top|left"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

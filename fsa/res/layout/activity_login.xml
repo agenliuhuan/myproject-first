@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_login"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_login_phone"
+        style="@style/EditStyle"
+        android:layout_below="@id/titlebar_login"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="@dimen/activity_login_edt_login_phone_0_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_login_edt_login_phone_1_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_login_edt_login_phone_2_layout_marginTop"
+        android:hint="@string/activity_login_edt_phone"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_login_password"
+        style="@style/EditStyle"
+        android:layout_below="@id/edt_login_phone"
+        android:layout_marginLeft="@dimen/activity_login_edt_login_password_3_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_login_edt_login_password_4_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_login_edt_login_password_5_layout_marginTop"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="@string/activity_login_edt_password"
+        android:inputType="textVisiblePassword" />
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/comm_button_height"
+        android:layout_below="@+id/edt_login_password"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="@dimen/activity_login_btn_login_login_6_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_login_btn_login_login_7_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_login_btn_login_login_8_layout_marginTop"
+        android:background="@drawable/button_green_selector"
+        android:text="@string/activity_login_btn_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+        android:id="@+id/tv_login_fogot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_login_password"
+        android:layout_centerHorizontal="false"
+        android:layout_marginRight="@dimen/activity_login_tv_login_fogot_9_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_login_tv_login_fogot_10_layout_marginTop"
+        android:text="@string/activity_login_tv_forgot"
+        android:textColor="@color/comm_green"
+        android:textSize="@dimen/font_size_15" />
+
+</RelativeLayout>

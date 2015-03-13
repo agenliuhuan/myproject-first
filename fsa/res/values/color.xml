@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="first_over_tip">#818181</color>
+    <color name="counter">#e2dc40</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <!-- 通用颜色值 -->
+    <color name="comm_green">#05b031</color>
+    <color name="comm_black">#333333</color>
+    <color name="comm_black_gray">#818181</color>
+    <color name="comm_gray">#b9b9b9</color>
+    <color name="comm_item_gray_bg">#f5f6f7</color>
+    <color name="comm_line_color">#dadada</color>
+    <color name="comm_text_press_color">#b4e7c1</color>
+
+    <!-- 等待对话框 -->
+    <color name="unified_loading_bg">#909090</color>
+    <color name="unified_loading_text">#575757</color>
+
+    <!-- 标题 -->
+    <color name="title_green_line">#49B556</color>
+
+    <!-- 通用界面背景 -->
+    <color name="comm_activity_background">#F5F6F7</color>
+
+    <!-- 通用黑色半透明背景 -->
+    <color name="comm_black_transparent_background">#50000000</color>
+    <color name="image_click_color">#40000000</color>
+    <color name="checkin_textview_bg">#70000000</color>
+
+    <!-- 设置项 -->
+    <color name="setting_item_border_color">#e8e8e8</color>
+    <color name="setting_item_background_color">#ffffff</color>
+    <color name="setting_item_background_hover_color">#e8e8e8</color>
+    <color name="setting_item_background_disable_color">#E3E4E6</color>
+    <color name="setting_item_text_color">#333333</color>
+    <color name="setting_item_text_gray_color">#A1A1A1</color>
+    <color name="setting_item_text_color2">#646464</color>
+    <!-- sliding menu -->
+    <color name="slidingmenu_text_color">#C3C3C3</color>
+    <color name="slidingmenu_transparent_color">#1e1b1a</color>
+
+    <!-- xlistview -->
+    <color name="xlistview_header_background">#f8f0e3</color>
+    <color name="xlistview_header_txt_color">#566b88</color>
+    <color name="xlistview_footer_background">#f8f0e3</color>
+    <color name="xlistview_footer_txt_color">#566b88</color>
+
+    <!-- splash background color -->
+    <color name="splash_background_color">#EcEcEc</color>
+    <!-- line color -->
+    <color name="line_color">#E3E3E3</color>
+
+    <!-- 输入框提示文字 -->
+    <color name="textview_hint_color">#818181</color>
+
+    <!-- 输入框提示文字 -->
+    <color name="button_disable_text_color">#999999</color>
+
+    <!-- 绿色提示文字 -->
+    <color name="textview_green_text_color">#44b651</color>
+
+    <!-- 灰色提示文字（文字按钮按下时显示） -->
+    <color name="textview_gray_text_color">#C3C3C3</color>
+
+    <!-- 列表头提示文字 -->
+    <color name="listview_head_text_color">#7a7a7a</color>
+
+    <!-- 列表项名称文字 -->
+    <color name="listitem_name_text_color">#585a5c</color>
+
+    <!-- 列表项描述文字 -->
+    <color name="listitem_desc_text_color">#b0b0b0</color>
+
+    <!-- 列表项选中色 -->
+    <color name="listitem_press_color">#E8E8E8</color>
+
+    <!-- 关系文字 -->
+    <color name="textview_relation_text_color">#818181</color>
+
+    <!-- 发送文字 -->
+    <color name="textview_sending_text_color">#575757</color>
+
+    <!-- 到达通知无人 -->
+    <color name="textview_check_nobody_text_color">#818181</color>
+
+    <!-- 家人定位无人 -->
+    <color name="textview_locate_nobody_text_color">#86898c</color>
+
+    <!-- 语音求救背景 -->
+    <color name="textview_voicesos_background_color">#f46c6a</color>
+
+    <!-- 语音求救位置 -->
+    <color name="textview_voicesos_location_color">#575757</color>
+
+    <!-- dialog button -->
+    <color name="button_dialog_background_color">#F5F5F5</color>
+    <color name="button_dialog_background_hover_color">#DEDFE0</color>
+    <color name="button_dialog_border_color">#b9b9b9</color>
+    <color name="button_dialog_bg_color">#ebebeb</color>
+
+    <!-- main_menu -->
+    <color name="main_menu_name_color">#bcbcbc</color>
+    <color name="main_menu_my_color">#9a9a9a</color>
+    <color name="main_menu_bg_color">#24211f</color>
+    <color name="main_menu_line_color">#1e1b1a</color>
+    <color name="main_menu_setting_color">#6e6e6e</color>
+    <color name="main_menu_click_color">#10ffffff</color>
+
+    <!-- fragment_main -->
+    <color name="fragment_main_layout_main_background">#05b031</color>
+    <color name="fragment_main_layout_location_background">#26ffffff</color>
+    <color name="fragment_main_textView1_background">#59ffffff</color>
+    <color name="fragment_main_textView2_background">#d4d4d4</color>
+    <color name="fragment_main_layout_main_recode_background">#99000000</color>
+    
+    <color name="takemessage_tv_color">#676767</color>
+
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_takemessage"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/takeMessage_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_edit_height"
+        android:layout_marginLeft="@dimen/activity_takemessage_edit_marginLeftRight"
+        android:layout_marginRight="@dimen/activity_takemessage_edit_marginLeftRight"
+        android:layout_marginTop="@dimen/activity_takemessage_marginTop"
+        android:background="@drawable/takemessage_edit_bg"
+        android:maxLength="16"
+        android:paddingLeft="@dimen/style_EditStyle_2_paddingLeft"
+        android:paddingRight="@dimen/style_EditStyle_3_paddingRight"
+        android:textColor="@color/comm_black"
+        android:textSize="@dimen/font_size_for_edit" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:layout_marginTop="@dimen/activity_takemessage_marginTop"
+        android:background="@color/comm_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_takemessage_ll_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/takeMessage_tipLL1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/on_item_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/activity_takemessage_img_width"
+                android:layout_height="@dimen/activity_takemessage_img_height"
+                android:layout_marginLeft="@dimen/activity_takemessage_ll_marginLeft"
+                android:src="@drawable/takemessage_img_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_takemessage_tv_marginLeft"
+                android:text="@string/takemessage_tip1"
+                android:textColor="@color/takemessage_tv_color"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/comm_line_height"
+            android:layout_height="match_parent"
+            android:background="@color/comm_line_color" />
+
+        <LinearLayout
+            android:id="@+id/takeMessage_tipLL2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/on_item_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/activity_takemessage_img_width"
+                android:layout_height="@dimen/activity_takemessage_img_height"
+                android:layout_marginLeft="@dimen/activity_takemessage_ll_marginLeft"
+                android:src="@drawable/takemessage_img_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_takemessage_tv_marginLeft"
+                android:text="@string/takemessage_tip2"
+                android:textColor="@color/takemessage_tv_color"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_takemessage_ll_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/takeMessage_tipLL3"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/on_item_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/activity_takemessage_img_width"
+                android:layout_height="@dimen/activity_takemessage_img_height"
+                android:layout_marginLeft="@dimen/activity_takemessage_ll_marginLeft"
+                android:src="@drawable/takemessage_img_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_takemessage_tv_marginLeft"
+                android:text="@string/takemessage_tip3"
+                android:textColor="@color/takemessage_tv_color"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/comm_line_height"
+            android:layout_height="match_parent"
+            android:background="@color/comm_line_color" />
+
+        <LinearLayout
+            android:id="@+id/takeMessage_tipLL4"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/on_item_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/activity_takemessage_img_width"
+                android:layout_height="@dimen/activity_takemessage_img_height"
+                android:layout_marginLeft="@dimen/activity_takemessage_ll_marginLeft"
+                android:src="@drawable/takemessage_img_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_takemessage_tv_marginLeft"
+                android:text="@string/takemessage_tip4"
+                android:textColor="@color/takemessage_tv_color"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_takemessage_ll_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/takeMessage_tipLL5"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/on_item_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/activity_takemessage_img_width"
+                android:layout_height="@dimen/activity_takemessage_img_height"
+                android:layout_marginLeft="@dimen/activity_takemessage_ll_marginLeft"
+                android:src="@drawable/takemessage_img_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_takemessage_tv_marginLeft"
+                android:text="@string/takemessage_tip5"
+                android:textColor="@color/takemessage_tv_color"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/comm_line_height"
+            android:layout_height="match_parent"
+            android:background="@color/comm_line_color" />
+
+        <LinearLayout
+            android:id="@+id/takeMessage_tipLL6"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/on_item_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/activity_takemessage_img_width"
+                android:layout_height="@dimen/activity_takemessage_img_height"
+                android:layout_marginLeft="@dimen/activity_takemessage_ll_marginLeft"
+                android:src="@drawable/takemessage_img_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_takemessage_tv_marginLeft"
+                android:text="@string/takemessage_tip6"
+                android:textColor="@color/takemessage_tv_color"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_line_height"
+        android:background="@color/comm_line_color" />
+
+</LinearLayout>

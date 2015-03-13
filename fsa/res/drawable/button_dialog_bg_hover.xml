@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="@color/button_dialog_background_hover_color" >
+            </solid>
+
+            <corners
+                android:bottomLeftRadius="@dimen/button_dialog_bg_hover_corners_0_bottomLeftRadius"
+                android:bottomRightRadius="@dimen/button_dialog_bg_hover_corners_1_bottomRightRadius"
+                android:topLeftRadius="@dimen/button_dialog_bg_hover_corners_2_topLeftRadius"
+                android:topRightRadius="@dimen/button_dialog_bg_hover_corners_3_topRightRadius" />
+        </shape>
+    </item>
+</layer-list>

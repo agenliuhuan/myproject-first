@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/button_dialog_bg_color" >
+    </solid>
+
+    <corners
+        android:radius="@dimen/button_dialog_bg_corners_Radius"
+        />
+
+</shape>

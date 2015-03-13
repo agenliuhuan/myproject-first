@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_register_1"
+        layout="@layout/comm_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="604px"
+        android:layout_height="82px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px" >
+
+        <EditText
+            android:id="@+id/edt_register_1_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edt_general_normal"
+            android:hint="@string/activity_register_1_edt_phone"
+            android:inputType="phone"
+            android:paddingLeft="128px"
+            android:textColor="#333333"
+            android:textColorHint="#bab9b9"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="102px"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/activity_login_phone"
+                android:textColor="#888888"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="44px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#949494" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="604px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16px"
+        android:text="@string/activity_register_1_tv_tip_1"
+        android:textColor="#888888"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="604px"
+        android:layout_height="82px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px" >
+
+        <EditText
+            android:id="@+id/edt_register_1_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edt_general_normal"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/activity_register_1_edt_password"
+            android:inputType="textVisiblePassword"
+            android:paddingLeft="128px"
+            android:textColor="#333333"
+            android:textColorHint="#bab9b9"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="102px"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/activity_login_password"
+                android:textColor="#888888"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="44px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#949494" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="604px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16px"
+        android:text="@string/activity_register_1_tv_tip_2"
+        android:textColor="#888888"
+        android:textSize="12sp" />
+
+</LinearLayout>

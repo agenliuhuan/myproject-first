@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="106px"
+    android:layout_height="106px"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/griditem_contactRL"
+        android:layout_width="106px"
+        android:layout_height="106px" >
+
+        <ImageView
+            android:id="@+id/griditem_contact_img"
+            android:layout_width="102px"
+            android:layout_height="102px"
+            android:layout_centerInParent="true"
+            android:scaleType="center" />
+        
+        <TextView
+            android:id="@+id/griditem_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/itemcontact_namebg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#667769"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/griditem_contact_exitimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/escort_family_exitbg"
+            android:scaleType="fitXY" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

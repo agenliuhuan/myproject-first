@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/comm_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_smslocation_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginLeft="67px"
+        android:layout_marginRight="67px"
+        android:layout_marginTop="25px"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/edt_smslocation_phone"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_centerHorizontal="false"
+            android:background="@drawable/edt_general_normal"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_smslocation_edit_hint"
+            android:inputType="number"
+            android:paddingLeft="35px"
+            android:paddingRight="160px"
+            android:textColorHint="@color/comm_edit_hint_color"
+            android:textSize="48px" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_smslocation_contacts"
+            android:layout_width="91px"
+            android:layout_height="67px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:background="@drawable/icon_edit_right_find" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_smslocation_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="120px"
+        android:layout_below="@+id/layout_smslocation_edit"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="67px"
+        android:layout_marginRight="67px"
+        android:layout_marginTop="71px"
+        android:background="@drawable/btn_green_selector"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/white"
+        android:textSize="58px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_smslocation_confirm"
+        android:layout_marginLeft="67px"
+        android:layout_marginRight="67px"
+        android:layout_marginTop="35px"
+        android:lineSpacingExtra="8px"
+        android:text="@string/activity_smslocation_tiptext"
+        android:textColor="#595959"
+        android:textSize="14sp" />
+
+</RelativeLayout>

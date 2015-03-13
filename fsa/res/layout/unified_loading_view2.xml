@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loading_background"
+    android:gravity="center"
+    android:minHeight="@dimen/unified_loading_view_LinearLayout_1_minHeight"
+    android:minWidth="@dimen/unified_loading_view_LinearLayout_0_minWidth"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/unified_loading_view_circle"
+        android:layout_width="@dimen/unified_loading_view_unified_loading_view_circle_2_layout_width"
+        android:layout_height="@dimen/unified_loading_view_unified_loading_view_circle_3_layout_height"
+        android:indeterminate="false"
+        android:indeterminateBehavior="cycle"
+        android:indeterminateDrawable="@drawable/unified_loading_circle_drawable"
+        android:indeterminateDuration="1"
+        android:interpolator="@android:anim/accelerate_interpolator" />
+
+    <TextView
+        android:id="@+id/unified_loading_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/unified_loading_view_unified_loading_view_text_6_layout_marginTop"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="@dimen/unified_loading_view_unified_loading_view_text_4_paddingLeft"
+        android:paddingRight="@dimen/unified_loading_view_unified_loading_view_text_5_paddingRight"
+        android:singleLine="true"
+        android:text="@string/default_unified_loading_text2"
+        android:textColor="@color/unified_loading_text"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

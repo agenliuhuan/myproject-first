@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/notificationdetail2_title"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/img_notificationdetail_2_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notificationdetail2_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" />
+
+    <include
+        android:id="@+id/mapbar_mapsos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_notificationdetai2_pop2"
+        android:layout_marginBottom="@dimen/mapbar_layout_marginBottom"
+        android:layout_marginLeft="@dimen/mapbar_layout_marginLeft"
+        android:layout_marginRight="@dimen/mapbar_layout_marginRight"
+        layout="@layout/layout_mapbar" />
+
+    <LinearLayout
+        android:id="@+id/layout_notificationdetai2_pop2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/comm_activity_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_checkin_textView2_0_layout_height"
+            android:background="@color/title_green_line" />
+
+        <include
+            android:id="@+id/callchart_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificationdetail_RL_2"
+            android:layout_marginBottom="@dimen/activity_checkin_LinearLayout_4_layout_marginBottom"
+            android:layout_marginTop="@dimen/activity_checkin_LinearLayout_3_layout_marginTop"
+            layout="@layout/layout_callchat" />
+    </LinearLayout>
+
+</RelativeLayout>

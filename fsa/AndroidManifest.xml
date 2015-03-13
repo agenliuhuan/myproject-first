@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobi.dlys.android.familysafer"
+    android:versionCode="5"
+    android:versionName="1.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 调用相机所需权限 -->
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+
+    <!-- 联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <!-- 任务 -->
+    <uses-permission android:name="android.permission.GET_TASKS" >
+    </uses-permission>
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- 系统对话框 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 切换到前台 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <!-- 设置手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 唤醒屏幕并解锁 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 接受短信的权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="mobi.dlys.android.familysafer.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/ThemeActivity" >
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="EFWzFdEPQLnmq71W0o6jOwcC" />
+
+        <service android:name="mobi.dlys.android.familysafer.service.CoreService" >
+            <intent-filter>
+                <action android:name="mobi.dlys.android.familysafer.action.coreservice" />
+            </intent-filter>
+        </service>
+        <service android:name="mobi.dlys.android.familysafer.player.service.PlayerService" />
+
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.main.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="mobi.dlys.android.familysafer.receiver.BootBroadcastReceiver" >
+        </receiver>
+        <receiver
+            android:name="mobi.dlys.android.familysafer.receiver.ConnectionChangeReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="mobi.dlys.android.familysafer.service.ReadContactsService" >
+        </service>
+
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.communication.CommunicationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.main.GotoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.main.NotificationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.main.GuideActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.main.Guide2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.login.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.login.Fogot1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.login.Fogot2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.login.Fogot3Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.register.Register1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.register.Register2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.register.Register3Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.register.RegisteredActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.sos.MapSOSActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.sos.VoiceSOSActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.sos.VoiceSOSNoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.sos.SendSOSActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.sos.SentSOSActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.sos.ShowMapActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.AddFamily1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.AddFamily2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyIn1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyIn2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyOut1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyOut2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyRemarkActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.FamilyRequestActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.MyFamilyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.family.SearchAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.CheckinActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.FirstCheckInActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.TakeMessageActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.CheckinNoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.FamiliesActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.SendCheckActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.checkin.SentCheckActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.FirstStartClueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.ClueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.SendClueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.SendClueOKActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.MyClueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.SentClueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.ViewClueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.ViewerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.clue.ClueImageActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.location.FamilyLocateActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.location.FamilyLocationsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.location.FamilyLocationsNoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.location.FamilyLocateNoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.notification.NotificationDetail1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.notification.NotificationDetail2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.notification.MyNotificationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.notification.ClueNotificationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.AccountActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.FeedbackActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.NicknameActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.PasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.Phone1Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.Phone2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.location.LostActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="mobi.dlys.android.familysafer.ui.setting.SettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+
+        <!-- umeng activity -->
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+        <activity android:name="com.umeng.fb.ContactActivity" />
+
+        <!-- umeng key -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="537979fb56240b3f7416f0a0" >
+        </meta-data>
+    </application>
+
+</manifest>

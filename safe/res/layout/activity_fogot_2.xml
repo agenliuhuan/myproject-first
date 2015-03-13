@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_fogot_2"
+        layout="@layout/comm_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_fogot_2_check"
+        android:layout_width="604px"
+        android:layout_height="82px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px"
+        android:background="@drawable/edt_general_normal"
+        android:hint="@string/activity_fogot_2_edt_check"
+        android:inputType="number"
+        android:paddingLeft="20px"
+        android:textColor="#333333"
+        android:textColorHint="#bab9b9"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="604px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_fogot_2_tip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_fogot_2_tv_tip_1"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_fogot_2_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_fogot_2_tv_tip_1_1"
+            android:textColor="#22B1DD"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="，"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="604px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_fogot_2_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_fogot_2_tv_tip_2"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_fogot_2_resend"
+            android:layout_width="180px"
+            android:layout_height="60px"
+            android:layout_toRightOf="@id/tv_fogot_2_tip_2"
+            android:background="@drawable/btn_green_selector"
+            android:text="@string/activity_fogot_2_tv_resend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/titlebar_phone_1"
+            layout="@layout/layout_title_bar" />
+
+        <ImageView
+            android:id="@+id/img_phone_1_image"
+            android:layout_width="@dimen/activity_phone_1_img_phone_1_image_1_layout_width"
+            android:layout_height="@dimen/activity_phone_1_img_phone_1_image_2_layout_height"
+            android:layout_marginTop="@dimen/activity_phone_1_img_phone_1_image_0_layout_marginTop"
+            android:src="@drawable/icon_setting_phone" />
+
+        <TextView
+            android:id="@+id/tv_phone_1_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_phone_1_tv_phone_1_tip_3_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_phone_1_tv_phone_1_tip_4_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_phone_1_tv_phone_1_tip_5_layout_marginTop"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/setting_item_text_color"
+            android:textSize="@dimen/font_size_16" />
+
+        <EditText
+            android:id="@+id/edt_phone_1_password"
+            style="@style/EditStyle"
+            android:layout_marginLeft="@dimen/activity_phone_1_edt_phone_1_password_9_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_phone_1_edt_phone_1_password_10_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_phone_1_edt_phone_1_number_8_layout_marginTop"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:ems="10"
+            android:hint="@string/activity_phone_1_edt_password" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_phone_1_number"
+            style="@style/EditStyle"
+            android:layout_marginLeft="@dimen/activity_phone_1_edt_phone_1_number_6_layout_marginLeft"
+            android:layout_marginRight="@dimen/activity_phone_1_edt_phone_1_number_7_layout_marginRight"
+            android:layout_marginTop="@dimen/activity_phone_1_edt_phone_1_password_11_layout_marginTop"
+            android:ems="10"
+            android:hint="@string/activity_phone_1_edt_new"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

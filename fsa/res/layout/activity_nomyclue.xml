@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/titlebar_nomyclue"
+        layout="@layout/layout_title_bar" />
+
+    <ImageView
+        android:id="@+id/img_nomyclue_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_nomyclue_img_nomyclue_tip_0_layout_marginTop" />
+
+    <TextView
+        android:id="@+id/tv_nomyclue_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_nomyclue_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_nomyclue_tv_nomyclue_tip_1_layout_marginTop"
+        android:text="@string/activity_nomyclue_tv_tip" />
+
+</RelativeLayout>

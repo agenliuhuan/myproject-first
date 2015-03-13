@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="unified_loading_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SettingItemBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_item_height</item>
+    </style>
+
+    <style name="SettingItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/setting_item_text_color</item>
+        <item name="android:textSize">@dimen/font_size_setting_item_name</item>
+    </style>
+
+    <style name="ThemeActivity" mce_bogus="1" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/translate_between_interface_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/translate_between_interface_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/translate_between_interface_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/translate_between_interface_right_out</item>
+    </style>
+
+    <style name="RevertThemeActivity" mce_bogus="1" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/RevertAnimationActivity</item>
+    </style>
+
+    <style name="RevertAnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/translate_between_interface_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/translate_between_interface_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/translate_between_interface_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/translate_between_interface_right_out</item>
+    </style>
+
+    <style name="EditStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/comm_edit_height</item>
+        <item name="android:paddingLeft">@dimen/style_EditStyle_2_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/style_EditStyle_3_paddingRight</item>
+        <item name="android:textColorHint">@color/textview_hint_color</item>
+        <item name="android:background">@drawable/edit_general_selector</item>
+        <item name="android:textSize">@dimen/font_size_for_edit</item>
+    </style>
+
+    <!-- 自定义弹出框样式 -->
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+
+</resources>

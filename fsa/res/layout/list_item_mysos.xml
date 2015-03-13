@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/on_item_selected"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/item_mysos_user_image"
+            android:layout_width="@dimen/comm_image_width_small"
+            android:layout_height="@dimen/comm_image_height_small"
+            android:layout_marginLeft="@dimen/comm_item_margin"
+            android:layout_marginTop="@dimen/comm_item_margin"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_item_margin"
+            android:layout_toRightOf="@id/item_mysos_user_image"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/item_mysos_status_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_mysos_status_LL_marginLeft"
+                android:layout_marginRight="@dimen/item_mysos_status_LL_marginRight"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/item_mysos_status_img"
+                    android:layout_width="@dimen/item_mysos_status_imgWidth"
+                    android:layout_height="@dimen/item_mysos_status_imgHeight"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/item_mysos_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/item_mysos_status_tv_marginleft"
+                    android:textColor="@color/listitem_name_text_color"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/item_mysos_status_tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/listitem_name_text_color"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/list_item_mysos_map_width"
+                android:layout_height="@dimen/list_item_mysos_content_height"
+                android:layout_marginLeft="@dimen/item_mysos_status_tv_marginleft"
+                android:layout_marginTop="@dimen/item_mysos_status_tv_marginleft" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/list_item_mysos_map_width"
+                    android:layout_height="@dimen/list_item_mysos_map_height"
+                    android:background="@drawable/item_mysos_map_bg" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/item_mysos_mapimage"
+                            android:layout_width="@dimen/list_item_mysos_map_width"
+                            android:layout_height="@dimen/list_item_mysos_map_height"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/item_mysos_mapimage_dian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/icon_mapcenter_dian"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_mysos_voice_LL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/map_voice_selector" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/item_mysos_voiceTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_16" />
+
+                        <ImageView
+                            android:id="@+id/item_mysos_voiceImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/item_mysos_voice_marginLeft"
+                            android:background="@drawable/voicefto3" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/item_mysos_date_marginBottom"
+        android:layout_marginTop="@dimen/item_mysos_date_marginTop" >
+
+        <TextView
+            android:id="@+id/item_mysos_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/notification_item_timebg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_small" />
+    </RelativeLayout>
+
+</LinearLayout>

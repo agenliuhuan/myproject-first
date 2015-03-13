@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/message_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <ListView
+        android:id="@+id/messageXList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_titlebar"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/transparent"
+        android:fastScrollEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/message_nullRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_titlebar" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="244px"
+                android:layout_height="310px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/message_nullimage" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

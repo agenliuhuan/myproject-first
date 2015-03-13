@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_four_p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="81px"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/img_guide_first"
+            android:layout_width="12px"
+            android:layout_height="12px"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/current" />
+
+        <ImageView
+            android:id="@+id/img_guide_second"
+            android:layout_width="12px"
+            android:layout_height="12px"
+            android:layout_centerHorizontal="false"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/other" />
+
+        <ImageView
+            android:id="@+id/img_guide_third"
+            android:layout_width="12px"
+            android:layout_height="12px"
+            android:layout_centerHorizontal="false"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/other" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_four_p"
+        android:layout_marginBottom="62px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_guide_register"
+                android:layout_width="284px"
+                android:layout_height="78px"
+                android:background="@drawable/btn_register_selector"
+                android:text="@string/activity_guide_btn_register"
+                android:textColor="#0c92df"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_guide_login"
+                android:layout_width="284px"
+                android:layout_height="78px"
+                android:layout_marginLeft="38px"
+                android:background="@drawable/btn_login_selector"
+                android:text="@string/activity_guide_btn_login"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_buttons"
+        android:layout_marginBottom="96px" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guide_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</RelativeLayout>

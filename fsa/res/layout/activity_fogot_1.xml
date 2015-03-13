@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/titlebar_fogot_1"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_fogot_1_phone"
+        style="@style/EditStyle"
+        android:layout_below="@+id/titlebar_fogot_1"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="@dimen/activity_fogot_1_edt_fogot_1_phone_0_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_fogot_1_edt_fogot_1_phone_1_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_fogot_1_edt_fogot_1_phone_2_layout_marginTop"
+        android:hint="@string/activity_fogot_1_edt_phone"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

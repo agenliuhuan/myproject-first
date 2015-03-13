@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/titlebar_register_1"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_register_1_phone"
+        style="@style/EditStyle"
+        android:layout_below="@+id/titlebar_register_1"
+        android:layout_marginLeft="@dimen/activity_register_1_edt_register_1_phone_0_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_register_1_edt_register_1_phone_1_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_register_1_edt_register_1_phone_2_layout_marginTop"
+        android:hint="@string/activity_register_1_edt_phone"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_register_1_password"
+        style="@style/EditStyle"
+        android:layout_below="@+id/edt_register_1_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_register_1_edt_register_1_password_3_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_register_1_edt_register_1_password_4_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_register_1_edt_register_1_password_5_layout_marginTop"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="@string/activity_register_1_edt_password"
+        android:inputType="textVisiblePassword" />
+
+    <TextView
+        android:id="@+id/tv_register_1_tip_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_register_1_password"
+        android:layout_marginLeft="@dimen/activity_register_1_tv_register_1_tip_1_6_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_register_1_tv_register_1_tip_1_7_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_register_1_tv_register_1_tip_1_8_layout_marginTop"
+        android:lineSpacingExtra="@dimen/activity_register_1_tv_register_1_tip_1_9_lineSpacingExtra"
+        android:text="@string/activity_register_1_tv_tip_1"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@+id/tv_register_1_tip_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_1_tip_1"
+        android:layout_marginLeft="@dimen/activity_register_1_tv_register_1_tip_2_10_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_register_1_tv_register_1_tip_2_11_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_register_1_tv_register_1_tip_2_12_layout_marginTop"
+        android:lineSpacingExtra="@dimen/activity_register_1_tv_register_1_tip_2_13_lineSpacingExtra"
+        android:text="@string/activity_register_1_tv_tip_2"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_16" />
+
+</RelativeLayout>

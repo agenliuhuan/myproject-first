@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="57dp" >
+
+        <LinearLayout
+            android:id="@+id/xlistview_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/xlistview_header_arrow"
+                    android:layout_width="16dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/refresh_list_pull"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/xlistview_header_progressbar"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/refresh_list_pulling"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/xlistview_header_hint_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/xlistview_header_hint_normal"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

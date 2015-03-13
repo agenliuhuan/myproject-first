@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/titlebar_register_3"
+        layout="@layout/layout_title_bar" />
+
+    <ImageView
+        android:id="@+id/img_register_3_image"
+        android:layout_width="@dimen/activity_register_3_img_register_3_image_1_layout_width"
+        android:layout_height="@dimen/activity_register_3_img_register_3_image_2_layout_height"
+        android:layout_below="@+id/titlebar_register_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_register_3_img_register_3_image_0_layout_marginTop"
+        android:src="@drawable/default_account_image" />
+
+    <TextView
+        android:id="@+id/tv_register_3_tip_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_register_3_image"
+        android:layout_marginLeft="@dimen/activity_register_3_tv_register_3_tip_2_3_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_register_3_tv_register_3_tip_2_4_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_register_3_tv_register_3_tip_2_5_layout_marginTop"
+        android:lineSpacingExtra="@dimen/activity_register_3_tv_register_3_tip_2_6_lineSpacingExtra"
+        android:text="@string/activity_register_3_tv_tip_2"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_16" />
+
+    <EditText
+        android:id="@+id/edt_register_3_nickname"
+        style="@style/EditStyle"
+        android:layout_below="@+id/tv_register_3_tip_2"
+        android:layout_marginLeft="@dimen/activity_register_3_edt_register_3_nickname_7_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_register_3_edt_register_3_nickname_8_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_register_3_edt_register_3_nickname_9_layout_marginTop"
+        android:hint="@string/activity_register_3_edt_nickname"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:id="@+id/layout_register_3_bk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="bottom|center_horizontal"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_register_3_bk_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_register_3_textView1_10_layout_height"
+                android:background="@color/textview_green_text_color" />
+
+            <TextView
+                android:id="@+id/tv_image_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_register_3_tv_image_tip_11_layout_marginTop"
+                android:text="@string/activity_register_3_image_tv_title"
+                android:textColor="@color/setting_item_text_color"
+                android:textSize="@dimen/font_size_17" />
+
+            <Button
+                android:id="@+id/btn_image_snapshot"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_register_3_btn_image_snapshot_15_layout_height"
+                android:layout_below="@id/tv_image_tip"
+                android:layout_marginLeft="@dimen/activity_register_3_btn_image_snapshot_12_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_register_3_btn_image_snapshot_13_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_register_3_btn_image_snapshot_14_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_register_3_image_btn_snapshot"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_image_album"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_register_3_btn_image_album_19_layout_height"
+                android:layout_below="@id/btn_image_snapshot"
+                android:layout_marginLeft="@dimen/activity_register_3_btn_image_album_16_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_register_3_btn_image_album_17_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_register_3_btn_image_album_18_layout_marginTop"
+                android:background="@drawable/button_green_selector"
+                android:text="@string/activity_register_3_image_btn_album"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_image_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_register_3_btn_image_cancel_24_layout_height"
+                android:layout_below="@id/btn_image_album"
+                android:layout_marginBottom="@dimen/activity_register_3_btn_image_cancel_23_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_register_3_btn_image_cancel_20_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_register_3_btn_image_cancel_21_layout_marginRight"
+                android:layout_marginTop="@dimen/activity_register_3_btn_image_cancel_22_layout_marginTop"
+                android:background="@drawable/button_red_selector"
+                android:text="@string/activity_register_3_image_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_searchadd"
+        layout="@layout/comm_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar_searchadd"
+        android:layout_marginLeft="44px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="26px" >
+
+        <Button
+            android:id="@+id/btn_searchadd_search"
+            android:layout_width="120px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_setposition_selector"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/edt_searchadd_phone"
+            android:layout_width="496px"
+            android:layout_height="70px"
+            android:layout_marginRight="24px"
+            android:layout_toLeftOf="@+id/btn_searchadd_search"
+            android:background="@drawable/edit_general_selector"
+            android:hint="@string/activity_searchadd_edt_phone"
+            android:inputType="phone"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:textColorHint="#888888"
+            android:textSize="@dimen/font_size_16" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

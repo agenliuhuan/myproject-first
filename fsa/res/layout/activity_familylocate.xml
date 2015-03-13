@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_familylocate"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_familylocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titlebar_familylocate"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mapbar_familylocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_familylocate_families"
+        android:layout_marginBottom="@dimen/mapbar_layout_marginBottom"
+        android:layout_marginLeft="@dimen/mapbar_layout_marginLeft"
+        android:layout_marginRight="@dimen/mapbar_layout_marginRight"
+        layout="@layout/layout_mapbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_familylocate_families"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:background="@color/comm_activity_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_familylocate_textView1_21_layout_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/comm_green" />
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_familylocate_HorizontalScrollView_25_layout_Bottom"
+            android:layout_marginTop="@dimen/activity_familylocate_HorizontalScrollView_26_layout_Top"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/lv_familylocate_families"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_familylocate_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="bottom|center_horizontal"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_familylocate_pop2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_familylocate_textView2_0_layout_height"
+                android:background="@color/title_green_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_familylocate_RelativeLayout_2_layout_marginBottom"
+                android:layout_marginTop="@dimen/activity_familylocate_RelativeLayout_1_layout_marginTop" >
+
+                <ImageView
+                    android:id="@+id/img_familylocate_image"
+                    android:layout_width="@dimen/activity_familylocate_img_familylocate_image_4_layout_width"
+                    android:layout_height="@dimen/activity_familylocate_img_familylocate_image_5_layout_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_familylocate_img_familylocate_image_3_layout_marginLeft"
+                    android:src="@drawable/img_family" />
+
+                <TextView
+                    android:id="@+id/tv_familylocate_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_familylocate_tv_familylocate_name_6_layout_marginLeft"
+                    android:layout_marginRight="@dimen/activity_familylocate_tv_familylocate_name_7_layout_marginRight"
+                    android:layout_toRightOf="@+id/img_familylocate_image"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/setting_item_text_color"
+                    android:textSize="@dimen/font_size_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_familylocate_RelativeLayout_8_layout_marginBottom" >
+
+                <ImageView
+                    android:id="@+id/img_familylocate_location"
+                    android:layout_width="@dimen/activity_familylocate_img_familylocate_location_10_layout_width"
+                    android:layout_height="@dimen/activity_familylocate_img_familylocate_location_11_layout_height"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_familylocate_img_familylocate_location_9_layout_marginLeft"
+                    android:src="@drawable/img_location" />
+
+                <TextView
+                    android:id="@+id/tv_familylocate_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_familylocate_tv_familylocate_location_12_layout_marginLeft"
+                    android:layout_marginRight="@dimen/activity_familylocate_tv_familylocate_location_12_layout_marginLeft"
+                    android:layout_toLeftOf="@+id/tv_lasttime"
+                    android:layout_toRightOf="@+id/img_familylocate_location"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/setting_item_text_color"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_lasttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_familylocate_tv_lasttime_0_layout_marginRight"
+                    android:text=" "
+                    android:textColor="#999999"
+                    android:textSize="@dimen/font_size_12" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/callchart_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_familylocate_btn_familylocate_call_16_layout_marginBottom"
+                layout="@layout/layout_callchat" />
+
+            <Button
+                android:id="@+id/btn_familylocate_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_marginBottom="@dimen/activity_familylocate_btn_familylocate_cancel_19_layout_marginBottom"
+                android:layout_marginLeft="@dimen/activity_familylocate_btn_familylocate_cancel_17_layout_marginLeft"
+                android:layout_marginRight="@dimen/activity_familylocate_btn_familylocate_cancel_18_layout_marginRight"
+                android:background="@drawable/button_red_selector"
+                android:text="@string/activity_familylocate_pop_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

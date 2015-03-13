@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/on_item_selected"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_item_height_big"
+        android:layout_marginLeft="@dimen/comm_item_margin"
+        android:layout_marginRight="@dimen/comm_item_margin" >
+
+        <ImageView
+            android:id="@+id/img_tiding_item"
+            android:layout_width="@dimen/comm_image_width_big"
+            android:layout_height="@dimen/comm_image_height_big"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:id="@+id/item_tiding_rightLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_tiding_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/item_tiding_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/list_item_request_textview_tip_marginTop"
+                android:background="@drawable/item_tiding_num_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/list_item_request_LinearLayout_layout_margin"
+            android:layout_marginRight="@dimen/list_item_request_LinearLayout_layout_margin"
+            android:layout_toLeftOf="@id/item_tiding_rightLL"
+            android:layout_toRightOf="@id/img_tiding_item"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_tiding_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/comm_black"
+		        android:ellipsize="end"
+		        android:singleLine="true"                
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/item_tiding_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_item_request_textview_tip_marginTop"
+                android:text="@string/item_tiding_tip"
+                android:textColor="@color/comm_black_gray"
+                android:textSize="@dimen/font_size_midle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

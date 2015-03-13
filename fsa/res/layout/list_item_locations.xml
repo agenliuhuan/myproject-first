@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/on_item_selected"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/layout_locations_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_locations_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_item_height_big"
+        android:layout_marginLeft="@dimen/comm_item_margin"
+        android:layout_marginRight="@dimen/comm_item_margin"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_locations_image"
+            android:layout_width="@dimen/comm_image_width_big"
+            android:layout_height="@dimen/comm_image_height_big"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/list_item_request_LinearLayout_layout_margin"
+            android:layout_marginLeft="@dimen/list_item_request_LinearLayout_layout_margin"
+            android:layout_marginTop="@dimen/list_item_locations_LinearLayout_0_layout_marginTop"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_locations_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" "
+                android:textColor="#585a5c"
+        		android:ellipsize="end"
+        		android:singleLine="true"                
+                android:textSize="@dimen/font_size_17" />
+
+            <TextView
+                android:id="@+id/tv_locations_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" "
+                android:textColor="#999999"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_locations_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/list_item_request_LinearLayout_layout_margin"
+                android:layout_marginRight="@dimen/list_item_request_LinearLayout_layout_margin"
+                android:text=" "
+                android:textColor="#05b031"
+                android:textSize="@dimen/font_size_12" />
+
+            <ImageView
+                android:id="@+id/img_locations_icon"
+                android:layout_width="@dimen/list_item_locations_img_locations_icon_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_icon_3_layout_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/setting_item_arrow" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_locations_content2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_item_height_big"
+        android:layout_marginLeft="@dimen/comm_item_margin"
+        android:layout_marginRight="@dimen/comm_item_margin"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_locations_image2"
+            android:layout_width="@dimen/comm_image_width_big"
+            android:layout_height="@dimen/comm_image_height_big"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/list_item_request_LinearLayout_layout_margin"
+            android:layout_marginLeft="@dimen/list_item_request_LinearLayout_layout_margin"
+            android:layout_marginTop="@dimen/list_item_locations_LinearLayout_0_layout_marginTop"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_locations_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textColor="#585a5c"
+        			android:ellipsize="end"
+        			android:singleLine="true"                    
+                    android:textSize="@dimen/font_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_locations_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/list_item_request_LinearLayout_layout_margin"
+                    android:layout_marginRight="@dimen/list_item_request_LinearLayout_layout_margin"
+                    android:text=" "
+                    android:textColor="#dc3e17"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_locations_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" "
+                android:textColor="#999999"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/img_locations_hide"
+                android:layout_width="@dimen/list_item_locations_img_locations_hide_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_hide_3_layout_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/image_hide_selector" />
+
+            <ImageView
+                android:id="@+id/img_locations_show"
+                android:layout_width="@dimen/list_item_locations_img_locations_hide_2_layout_width"
+                android:layout_height="@dimen/list_item_locations_img_locations_hide_3_layout_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/image_show_selector" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

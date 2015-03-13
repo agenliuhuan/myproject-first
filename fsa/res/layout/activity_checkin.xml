@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_checkin"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_checkin_bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/comm_activity_background"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:background="@color/comm_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_tipLL6"
+                android:layout_width="0px"
+                android:layout_height="@dimen/activity_checkin_LinearLayout_height"
+                android:layout_weight="1"
+                android:background="@drawable/checkin_ll_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/activity_checkin_LinearLayout_img_width"
+                    android:layout_height="@dimen/activity_checkin_LinearLayout_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/checkin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_tv_margintop"
+                    android:gravity="center"
+                    android:text="@string/activity_checkin_notify_familyLLTip6"
+                    android:textColor="@color/setting_item_text_color2"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/comm_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/comm_line_color" />
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_tipLL1"
+                android:layout_width="0px"
+                android:layout_height="@dimen/activity_checkin_LinearLayout_height"
+                android:layout_weight="1"
+                android:background="@drawable/checkin_ll_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/activity_checkin_LinearLayout_img_width"
+                    android:layout_height="@dimen/activity_checkin_LinearLayout_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/checkin_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_tv_margintop"
+                    android:gravity="center"
+                    android:text="@string/activity_checkin_notify_familyLLTip1"
+                    android:textColor="@color/setting_item_text_color2"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/comm_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/comm_line_color" />
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_tipLL2"
+                android:layout_width="0px"
+                android:layout_height="@dimen/activity_checkin_LinearLayout_height"
+                android:layout_weight="1"
+                android:background="@drawable/checkin_ll_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/activity_checkin_LinearLayout_img_width"
+                    android:layout_height="@dimen/activity_checkin_LinearLayout_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/checkin_school" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_tv_margintop"
+                    android:gravity="center"
+                    android:text="@string/activity_checkin_notify_familyLLTip2"
+                    android:textColor="@color/setting_item_text_color2"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/comm_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/comm_line_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:background="@color/comm_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_tipLL3"
+                android:layout_width="0px"
+                android:layout_height="@dimen/activity_checkin_LinearLayout_height"
+                android:layout_weight="1"
+                android:background="@drawable/checkin_ll_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/activity_checkin_LinearLayout_img_width"
+                    android:layout_height="@dimen/activity_checkin_LinearLayout_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/checkin_company" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_tv_margintop"
+                    android:gravity="center"
+                    android:text="@string/activity_checkin_notify_familyLLTip3"
+                    android:textColor="@color/setting_item_text_color2"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/comm_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/comm_line_color" />
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_tipLL4"
+                android:layout_width="0px"
+                android:layout_height="@dimen/activity_checkin_LinearLayout_height"
+                android:layout_weight="1"
+                android:background="@drawable/checkin_ll_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/activity_checkin_LinearLayout_img_width"
+                    android:layout_height="@dimen/activity_checkin_LinearLayout_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/checkin_train" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_tv_margintop"
+                    android:gravity="center"
+                    android:text="@string/activity_checkin_notify_familyLLTip4"
+                    android:textColor="@color/setting_item_text_color2"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/comm_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/comm_line_color" />
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_tipLL5"
+                android:layout_width="0px"
+                android:layout_height="@dimen/activity_checkin_LinearLayout_height"
+                android:layout_weight="1"
+                android:background="@drawable/checkin_ll_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/activity_checkin_LinearLayout_img_width"
+                    android:layout_height="@dimen/activity_checkin_LinearLayout_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/checkin_airport" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_LinearLayout_tv_margintop"
+                    android:gravity="center"
+                    android:text="@string/activity_checkin_notify_familyLLTip5"
+                    android:textColor="@color/setting_item_text_color2"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/comm_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/comm_line_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_checkin_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_checkin_bottomLL"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titlebar_checkin"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_checkin_bottomLL_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_checkin_LinearLayout_title_height"
+        android:layout_above="@+id/layout_checkin_bottomLL"
+        android:background="@drawable/checkin_notify_family_bg"
+        android:gravity="center"
+        android:text="@string/activity_checkin_notify_family"
+        android:textColor="@color/comm_black"
+        android:textSize="@dimen/font_size_15" />
+
+    <include
+        android:id="@+id/mapbar_checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_checkin_bottomLL_title"
+        android:layout_marginBottom="@dimen/mapbar_layout_marginBottom"
+        android:layout_marginLeft="@dimen/mapbar_layout_marginLeft"
+        android:layout_marginRight="@dimen/mapbar_layout_marginRight"
+        layout="@layout/layout_mapbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar_checkin"
+        android:background="@color/comm_black_transparent_background"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_addr2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_checkin_layout_addr2_0_layout_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_checkin_textView2_0_layout_height"
+                android:background="@color/title_green_line" />
+
+            <ListView
+                android:id="@+id/lv_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/line_color"
+                android:dividerHeight="@dimen/comm_line_height"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sendcheck_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_black_transparent_background"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layout_sendcheck_pop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/comm_activity_background"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_familylocate_textView1_21_layout_height"
+                android:background="@color/comm_green" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_sendcheck_pop_topRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_checkin_popLL_margintop" >
+
+                    <TextView
+                        android:id="@+id/layout_sendcheck_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/comm_btn_margin"
+                        android:gravity="center"
+                        android:textColor="@color/takemessage_tv_color"
+                        android:textSize="@dimen/font_size_15"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/layout_sendcheck_takemessageBtn"
+                        android:layout_width="@dimen/activity_checkin_takemessage_img_width"
+                        android:layout_height="@dimen/activity_checkin_takemessage_img_height"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/transparent"
+                        android:drawableTop="@drawable/take_message_img_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/comm_item_margin"
+                        android:paddingRight="@dimen/comm_item_margin"
+                        android:text="@string/activity_checkin_takemessage"
+                        android:textColor="@color/comm_black_gray"
+                        android:textSize="@dimen/font_size_12" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/hs_checkin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_sendcheck_pop_topRL"
+                    android:layout_marginTop="@dimen/activity_checkin_popHorizontalScrollView_margintop"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/lv_checkin_families"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hs_checkin"
+                    android:layout_marginLeft="@dimen/activity_checkin_LinearLayout_1_layout_marginLeft"
+                    android:layout_marginRight="@dimen/activity_checkin_LinearLayout_2_layout_marginRight"
+                    android:paddingBottom="@dimen/activity_checkin_LinearLayout_1_layout_marginLeft"
+                    android:paddingTop="@dimen/activity_checkin_LinearLayout_1_layout_marginLeft" >
+
+                    <Button
+                        android:id="@+id/btn_checkin_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comm_button_height"
+                        android:background="@drawable/button_green_selector"
+                        android:text="@string/activity_checkin_send"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_18" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

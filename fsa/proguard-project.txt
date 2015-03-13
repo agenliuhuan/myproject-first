@@ -1,0 +1,97 @@
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+-dontoptimize
+-dontpreverify
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+-dontwarn android.support.**
+
+#友盟统计
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keep public class mobi.dlys.android.familysafer.R$*{
+public static final int *;
+}
+
+-keep public class com.umeng.fb.ui.ThreadView {
+}
+
+# 百度地图
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;}
+
+# ormlite
+-keep class com.j256.**
+-keepclassmembers class com.j256.** { *; }
+-keep enum com.j256.**
+-keepclassmembers enum com.j256.** { *; }
+-keep interface com.j256.**
+-keepclassmembers interface com.j256.** { *; }
+
+#在通信协议中采用OJM框架来反射解析成java对象，所以不能混淆
+-keep class * extends mobi.dlys.android.core.mvc.BaseObject {
+	public <fields>;
+	private <fields>;
+	protected <fields>;
+	default <fields>;
+}
+
+#在通信协议中采用OJM框架来反射解析成java对象，所以不能混淆
+-keep class * extends mobi.dlys.android.core.mvc.FieldsUnproguard {
+	public <fields>;
+	private <fields>;
+	protected <fields>;
+	default <fields>;
+}
+
+#protobuf
+-keep class mobi.dlys.android.familysafer.protobuf.**{*;}
+-keep class com.google.protobuf.**{*;}
+-keepattributes Signature
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }

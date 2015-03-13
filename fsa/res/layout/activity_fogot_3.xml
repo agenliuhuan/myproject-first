@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/titlebar_fogot_3"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_fogot_3_newpassword"
+        style="@style/EditStyle"
+        android:layout_below="@+id/titlebar_fogot_3"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="@dimen/activity_fogot_3_edt_fogot_3_newpassword_2_layout_marginLeft"
+        android:layout_marginRight="@dimen/activity_fogot_3_edt_fogot_3_newpassword_3_layout_marginRight"
+        android:layout_marginTop="@dimen/activity_fogot_3_edt_fogot_3_newpassword_4_layout_marginTop"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="@string/activity_fogot_3_edt_password"
+        android:inputType="textVisiblePassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_fogot_3_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_fogot_3_newpassword"
+        android:layout_alignRight="@+id/edt_fogot_3_newpassword"
+        android:layout_below="@+id/edt_fogot_3_newpassword"
+        android:layout_marginTop="@dimen/activity_fogot_3_tv_fogot_3_tip_5_layout_marginTop"
+        android:text="@string/activity_fogot_3_tv_tip"
+        android:textColor="@color/setting_item_text_color"
+        android:textSize="@dimen/font_size_15" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/titlebar_startescort"
+            layout="@layout/comm_title_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="570px" >
+
+            <FrameLayout
+                android:id="@+id/startescort_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58px"
+            android:background="#F6F6F6"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="32px"
+                android:text="@string/activity_startescort_sendtiptext"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/startescort_familiesGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="225px"
+            android:layout_marginLeft="32px"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="26px"
+            android:listSelector="@color/transparent"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:verticalSpacing="12px" >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="604px"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/startescort_startBtn"
+                android:layout_width="604px"
+                android:layout_height="82px"
+                android:background="@drawable/btn_blue_selector"
+                android:gravity="center"
+                android:text="@string/activity_startescort_sendBtntext"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/startescort_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="738px"
+            android:background="@drawable/startguide_allbtn" />
+
+        <ImageView
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_marginLeft="156px"
+            android:layout_marginTop="738px"
+            android:background="@drawable/startguide_onebtn" />
+
+        <ImageView
+            android:layout_width="484px"
+            android:layout_height="358px"
+            android:layout_marginLeft="98px"
+            android:layout_marginTop="380px"
+            android:background="@drawable/startguide_text" />
+
+        <Button
+            android:id="@+id/startescort_guide_knowBtn"
+            android:layout_width="224px"
+            android:layout_height="69px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="98px"
+            android:background="@drawable/btn_guide_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

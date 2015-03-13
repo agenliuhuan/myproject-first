@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/radar_view_FrameLayout_0_layout_width"
+    android:layout_height="@dimen/radar_view_FrameLayout_1_layout_height"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:layout_width="@dimen/radar_view_ImageView_2_layout_width"
+        android:layout_height="@dimen/radar_view_ImageView_3_layout_height"
+        android:layout_gravity="center"
+        android:src="@drawable/radar_bg" />
+
+    <ImageView
+        android:id="@+id/im_scan"
+        android:layout_width="@dimen/radar_view_im_scan_4_layout_width"
+        android:layout_height="@dimen/radar_view_im_scan_5_layout_height"
+        android:layout_gravity="center"
+        android:src="@drawable/radar_scaning" />
+
+    <ImageView
+        android:id="@+id/im_dian1"
+        android:layout_width="@dimen/radar_view_im_dian1_8_layout_width"
+        android:layout_height="@dimen/radar_view_im_dian1_9_layout_height"
+        android:layout_marginLeft="@dimen/radar_view_im_dian1_6_layout_marginLeft"
+        android:layout_marginTop="@dimen/radar_view_im_dian1_7_layout_marginTop"
+        android:src="@drawable/radar_dian" />
+
+    <ImageView
+        android:id="@+id/im_dian2"
+        android:layout_width="@dimen/radar_view_im_dian2_12_layout_width"
+        android:layout_height="@dimen/radar_view_im_dian2_13_layout_height"
+        android:layout_marginLeft="@dimen/radar_view_im_dian2_10_layout_marginLeft"
+        android:layout_marginTop="@dimen/radar_view_im_dian2_11_layout_marginTop"
+        android:src="@drawable/radar_dian" />
+
+    <ImageView
+        android:id="@+id/im_dian3"
+        android:layout_width="@dimen/radar_view_im_dian3_16_layout_width"
+        android:layout_height="@dimen/radar_view_im_dian3_17_layout_height"
+        android:layout_marginLeft="@dimen/radar_view_im_dian3_14_layout_marginLeft"
+        android:layout_marginTop="@dimen/radar_view_im_dian3_15_layout_marginTop"
+        android:src="@drawable/radar_dian" />
+
+    <ImageView
+        android:id="@+id/im_dian4"
+        android:layout_width="@dimen/radar_view_im_dian4_20_layout_width"
+        android:layout_height="@dimen/radar_view_im_dian4_21_layout_height"
+        android:layout_marginLeft="@dimen/radar_view_im_dian4_18_layout_marginLeft"
+        android:layout_marginTop="@dimen/radar_view_im_dian4_19_layout_marginTop"
+        android:src="@drawable/radar_dian" />
+
+</FrameLayout>

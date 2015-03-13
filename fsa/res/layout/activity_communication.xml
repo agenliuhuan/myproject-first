@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/communication_mainRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background" >
+
+    <include
+        android:id="@+id/titlebar_communication"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/communication_bottomRL"
+        android:layout_below="@+id/titlebar_communication"
+        android:background="@drawable/communication_contentbg" >
+
+        <mobi.dlys.android.familysafer.ui.comm.xlistview.XListView
+            android:id="@+id/lv_communication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/transparent"
+            android:fastScrollEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </mobi.dlys.android.familysafer.ui.comm.xlistview.XListView>
+
+        <LinearLayout
+            android:id="@+id/communication_voice_contentLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/communication_voice_green_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/communication_voice_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@anim/img_voice"
+                android:paddingTop="@dimen/communication_voice_contentLLpadding" />
+
+            <TextView
+                android:id="@+id/communication_voice_tip1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/communication_voice_contentLLpadding"
+                android:paddingTop="@dimen/communication_voice_contentLLpadding"
+                android:text="@string/communication_voice_tip1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_15" />
+
+            <TextView
+                android:id="@+id/communication_voice_tip2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/communication_voice_contentLLpadding"
+                android:text="@string/communication_voice_tip2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_13" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/communication_bottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_line_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/comm_line_color" />
+
+        <Button
+            android:id="@+id/communication_voice_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_button_height"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/communication_voice_button_marginLeftRight"
+            android:layout_marginLeft="@dimen/communication_voice_button_marginLeftRight"
+            android:layout_marginRight="@dimen/communication_voice_button_marginLeftRight"
+            android:layout_marginTop="@dimen/communication_voice_button_marginLeftRight"
+            android:background="@drawable/button_green_selector" />
+
+        <ImageView
+            android:layout_width="@dimen/communication_voice_button_image"
+            android:layout_height="@dimen/communication_voice_button_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/communication_voice_button_image_marginLeft"
+            android:src="@drawable/voice_on_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/communication_voice_button_text_marginLeft"
+            android:text="@string/communication_clicklong_tip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17" />
+    </RelativeLayout>
+
+</RelativeLayout>
